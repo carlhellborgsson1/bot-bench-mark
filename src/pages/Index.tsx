@@ -107,7 +107,7 @@ const Index = () => {
       {/* CTA Section */}
       <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-12 text-center mb-12">
         <h2 className="text-3xl font-bold mb-4">Ready to Find Your Perfect AI Assistant?</h2>
-        <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+        <p className="text-lg text-black mb-8 max-w-2xl mx-auto">
           Use our intelligent matching tool to get personalized recommendations based on your specific needs and requirements.
         </p>
         <Button asChild size="lg" className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white">
