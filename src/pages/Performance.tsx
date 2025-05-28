@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { BarChart3, Clock, Target, Zap, Info } from "lucide-react";
@@ -46,7 +45,7 @@ const Performance = () => {
           <div className="p-2 rounded-lg bg-gradient-to-br from-blue-500/10 to-purple-500/10">
             <BarChart3 className="h-6 w-6 text-blue-600" />
           </div>
-          <h1 className="text-3xl font-bold">Performance Comparison</h1>
+          <h1 className="text-3xl font-bold text-white">Performance Comparison</h1>
         </div>
         <p className="text-lg text-muted-foreground max-w-3xl">
           Compare AI chatbots across key performance metrics including response time, accuracy, 
