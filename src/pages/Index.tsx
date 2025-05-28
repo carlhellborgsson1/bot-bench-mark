@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { BarChart3, Shield, Zap, DollarSign, Globe, Code, ArrowRight, Sparkles, Compass } from "lucide-react";
@@ -53,10 +54,10 @@ const Index = () => {
             AI Comparison Platform
           </Link>
         </div>
-        <h1 className="text-5xl font-bold tracking-tight mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+        <h1 className="text-5xl font-bold tracking-tight mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
           Find Your Perfect AI Chatbot
         </h1>
-        <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-xl text-muted-foreground mb-6 max-w-3xl mx-auto leading-relaxed">
           Navigate the complex world of AI assistants with comprehensive comparisons across performance, 
           security, pricing, and features. Make informed decisions with data-driven insights.
         </p>
