@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { BarChart3, Shield, Zap, DollarSign, Globe, Code, ArrowRight, Sparkles, Compass } from "lucide-react";
@@ -50,7 +49,7 @@ const Index = () => {
       <div className="text-center py-20 px-4">
         <div className="flex items-center justify-center gap-2 mb-6">
           <Sparkles className="h-8 w-8 text-blue-500" />
-          <span className="text-sm font-medium text-muted-foreground bg-blue-50 px-3 py-1 rounded-full">
+          <span className="text-sm font-medium text-blue-600 bg-blue-50 px-3 py-1 rounded-full">
             AI Comparison Platform
           </span>
         </div>
