@@ -95,13 +95,11 @@
     background: linear-gradient(
       to bottom,
       #3b82f6 0%,
-      #6366f1 20%,
-      #8b5cf6 35%,
-      #c084fc 45%,
-      #ec4899 50%,
-      #c084fc 55%,
-      #8b5cf6 65%,
-      #6366f1 80%,
+      #6366f1 25%,
+      #8b5cf6 40%,
+      #c084fc 50%,
+      #8b5cf6 60%,
+      #6366f1 75%,
       #3b82f6 100%
     );
     background-attachment: fixed;
@@ -113,13 +111,11 @@
     background: linear-gradient(
       to bottom,
       #3b82f6 0%,
-      #6366f1 20%,
-      #8b5cf6 35%,
-      #c084fc 45%,
-      #ec4899 50%,
-      #c084fc 55%,
-      #8b5cf6 65%,
-      #6366f1 80%,
+      #6366f1 25%,
+      #8b5cf6 40%,
+      #c084fc 50%,
+      #8b5cf6 60%,
+      #6366f1 75%,
       #3b82f6 100%
     );
     background-attachment: fixed;
