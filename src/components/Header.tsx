@@ -6,8 +6,8 @@ const Header = () => {
   return (
     <div className="bg-transparent">
       <div className="flex items-center justify-between px-8 py-4">
-        <Link to="/" className="ml-4">
-          <span className="font-bold text-2xl text-white hover:text-white/80 transition-colors">DivideAI</span>
+        <Link to="/" className="ml-8">
+          <span className="font-bold text-3xl text-white hover:text-white/80 transition-colors">DivideAI</span>
         </Link>
         
         <div className="mr-4">
