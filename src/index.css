@@ -92,17 +92,42 @@
 
   body {
     @apply bg-background text-foreground font-sans;
-    background: white;
+    background: linear-gradient(
+      to bottom,
+      #3b82f6 0%,
+      #9333ea 15%,
+      #c084fc 25%,
+      #f3e8ff 35%,
+      #ffffff 50%,
+      #f3e8ff 65%,
+      #c084fc 75%,
+      #9333ea 85%,
+      #3b82f6 100%
+    );
+    background-attachment: fixed;
+    min-height: 100vh;
     overscroll-behavior: none;
   }
 
   html {
-    background: white;
+    background: linear-gradient(
+      to bottom,
+      #3b82f6 0%,
+      #9333ea 15%,
+      #c084fc 25%,
+      #f3e8ff 35%,
+      #ffffff 50%,
+      #f3e8ff 65%,
+      #c084fc 75%,
+      #9333ea 85%,
+      #3b82f6 100%
+    );
+    background-attachment: fixed;
     overscroll-behavior: none;
   }
 
   #root {
-    background: white;
+    background: transparent;
     min-height: 100vh;
   }
 }
