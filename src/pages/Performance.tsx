@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { BarChart3, Clock, Target, Zap, Info } from "lucide-react";
@@ -174,20 +175,20 @@ const Performance = () => {
           </CardHeader>
           <CardContent className="space-y-4">
             <div>
-              <h4 className="font-semibold mb-2">Response Time</h4>
-              <p className="text-muted-foreground">Average time from query to first response token</p>
+              <h4 className="font-semibold mb-2 text-foreground">Response Time</h4>
+              <p className="text-foreground">Average time from query to first response token</p>
             </div>
             <div>
-              <h4 className="font-semibold mb-2">Accuracy</h4>
-              <p className="text-muted-foreground">Correctness on standardized question sets</p>
+              <h4 className="font-semibold mb-2 text-foreground">Accuracy</h4>
+              <p className="text-foreground">Correctness on standardized question sets</p>
             </div>
             <div>
-              <h4 className="font-semibold mb-2">Throughput</h4>
-              <p className="text-muted-foreground">Maximum concurrent requests handling</p>
+              <h4 className="font-semibold mb-2 text-foreground">Throughput</h4>
+              <p className="text-foreground">Maximum concurrent requests handling</p>
             </div>
             <div>
-              <h4 className="font-semibold mb-2">Reliability</h4>
-              <p className="text-muted-foreground">Service availability over 30-day periods</p>
+              <h4 className="font-semibold mb-2 text-foreground">Reliability</h4>
+              <p className="text-foreground">Service availability over 30-day periods</p>
             </div>
           </CardContent>
         </Card>
