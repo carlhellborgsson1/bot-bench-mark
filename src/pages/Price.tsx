@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { DollarSign, TrendingUp, Users, Zap } from "lucide-react";
+import { DollarSign, TrendingUp, Users, Zap, Info } from "lucide-react";
 
 const Price = () => {
   return (
@@ -18,6 +18,39 @@ const Price = () => {
           to find the most cost-effective solution for your needs.
         </p>
       </div>
+
+      {/* Pricing Explanation */}
+      <Card className="mb-8 bg-green-50 border-green-200">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2 text-green-900">
+            <Info className="h-5 w-5" />
+            Understanding Pricing Models
+          </CardTitle>
+          <CardDescription className="text-green-700">
+            Here's what different pricing terms and models mean:
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="p-3 bg-white rounded-lg border border-green-200">
+              <h4 className="font-semibold text-green-900 mb-2">Monthly Subscription</h4>
+              <p className="text-sm text-green-700">Fixed monthly fee for unlimited or high-limit usage of the AI model with premium features</p>
+            </div>
+            <div className="p-3 bg-white rounded-lg border border-green-200">
+              <h4 className="font-semibold text-green-900 mb-2">API Pricing (per 1K tokens)</h4>
+              <p className="text-sm text-green-700">Pay-per-use model where 1K tokens ≈ 750 words. You pay only for what you consume</p>
+            </div>
+            <div className="p-3 bg-white rounded-lg border border-green-200">
+              <h4 className="font-semibold text-green-900 mb-2">Usage Limits</h4>
+              <p className="text-sm text-green-700">Restrictions on message count per time period (e.g., "40 messages per 3 hours")</p>
+            </div>
+            <div className="p-3 bg-white rounded-lg border border-green-200">
+              <h4 className="font-semibold text-green-900 mb-2">Enterprise Pricing</h4>
+              <p className="text-sm text-green-700">Custom pricing for large organizations with volume discounts and additional features</p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
         <Card className="hover:shadow-lg transition-all duration-300">
@@ -53,7 +86,7 @@ const Price = () => {
             </div>
             <Badge className="bg-purple-100 text-purple-700">Claude Pro</Badge>
             <ul className="text-sm space-y-2 text-left">
-              <li>• 5x more usage</li>
+              <li>• 5x more usage vs free</li>
               <li>• Priority bandwidth</li>
               <li>• Early access features</li>
               <li>• Longer conversations</li>
@@ -98,7 +131,7 @@ const Price = () => {
               <li>• GPT-3.5 access</li>
               <li>• Basic Claude</li>
               <li>• Gemini Pro</li>
-              <li>• Usage limits</li>
+              <li>• Usage limits apply</li>
               <li>• Standard support</li>
             </ul>
           </CardContent>

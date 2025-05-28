@@ -1,7 +1,6 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Code, Terminal, Layers, Zap } from "lucide-react";
+import { Code, Terminal, Layers, Zap, Info } from "lucide-react";
 
 const API = () => {
   return (
@@ -19,6 +18,49 @@ const API = () => {
         </p>
       </div>
 
+      {/* API Metrics Explanation */}
+      <Card className="mb-8 bg-indigo-50 border-indigo-200">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2 text-indigo-900">
+            <Info className="h-5 w-5" />
+            Understanding API Metrics
+          </CardTitle>
+          <CardDescription className="text-indigo-700">
+            Here's what each API metric means for developers:
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="p-3 bg-white rounded-lg border border-indigo-200">
+            <div className="flex items-center gap-2 mb-2">
+              <Zap className="h-4 w-4 text-indigo-600" />
+              <h4 className="font-semibold text-indigo-900">Rate Limits (RPM)</h4>
+            </div>
+            <p className="text-sm text-indigo-700">Maximum API requests per minute your application can make</p>
+          </div>
+          <div className="p-3 bg-white rounded-lg border border-indigo-200">
+            <div className="flex items-center gap-2 mb-2">
+              <Terminal className="h-4 w-4 text-indigo-600" />
+              <h4 className="font-semibold text-indigo-900">Context Length</h4>
+            </div>
+            <p className="text-sm text-indigo-700">Maximum tokens (words) the AI can process in a single conversation</p>
+          </div>
+          <div className="p-3 bg-white rounded-lg border border-indigo-200">
+            <div className="flex items-center gap-2 mb-2">
+              <Code className="h-4 w-4 text-indigo-600" />
+              <h4 className="font-semibold text-indigo-900">Response Time</h4>
+            </div>
+            <p className="text-sm text-indigo-700">Average time from API request to response completion</p>
+          </div>
+          <div className="p-3 bg-white rounded-lg border border-indigo-200">
+            <div className="flex items-center gap-2 mb-2">
+              <Layers className="h-4 w-4 text-indigo-600" />
+              <h4 className="font-semibold text-indigo-900">Streaming</h4>
+            </div>
+            <p className="text-sm text-indigo-700">Real-time response delivery as the AI generates text (like ChatGPT interface)</p>
+          </div>
+        </CardContent>
+      </Card>
+
       <div className="grid lg:grid-cols-2 gap-6 mb-8">
         <Card className="hover:shadow-lg transition-all duration-300">
           <CardHeader>
@@ -26,7 +68,7 @@ const API = () => {
               <Terminal className="h-5 w-5 text-green-600" />
               API Features Comparison
             </CardTitle>
-            <CardDescription>Core API capabilities and limitations</CardDescription>
+            <CardDescription>Core API capabilities and technical limitations</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="space-y-4">
@@ -38,19 +80,19 @@ const API = () => {
                 <div className="grid grid-cols-2 gap-3 text-sm">
                   <div>
                     <p className="font-medium">Rate Limits</p>
-                    <p className="text-muted-foreground">10,000 RPM</p>
+                    <p className="text-muted-foreground">10,000 requests/min</p>
                   </div>
                   <div>
                     <p className="font-medium">Context Length</p>
-                    <p className="text-muted-foreground">128K tokens</p>
+                    <p className="text-muted-foreground">128K tokens (~96,000 words)</p>
                   </div>
                   <div>
                     <p className="font-medium">Response Time</p>
-                    <p className="text-muted-foreground">2-5 seconds</p>
+                    <p className="text-muted-foreground">2-5 seconds average</p>
                   </div>
                   <div>
                     <p className="font-medium">Streaming</p>
-                    <p className="text-muted-foreground">Yes</p>
+                    <p className="text-muted-foreground">Yes (real-time)</p>
                   </div>
                 </div>
                 <div className="mt-3 flex flex-wrap gap-1">
@@ -68,19 +110,19 @@ const API = () => {
                 <div className="grid grid-cols-2 gap-3 text-sm">
                   <div>
                     <p className="font-medium">Rate Limits</p>
-                    <p className="text-muted-foreground">5,000 RPM</p>
+                    <p className="text-muted-foreground">5,000 requests/min</p>
                   </div>
                   <div>
                     <p className="font-medium">Context Length</p>
-                    <p className="text-muted-foreground">200K tokens</p>
+                    <p className="text-muted-foreground">200K tokens (~150,000 words)</p>
                   </div>
                   <div>
                     <p className="font-medium">Response Time</p>
-                    <p className="text-muted-foreground">3-6 seconds</p>
+                    <p className="text-muted-foreground">3-6 seconds average</p>
                   </div>
                   <div>
                     <p className="font-medium">Streaming</p>
-                    <p className="text-muted-foreground">Yes</p>
+                    <p className="text-muted-foreground">Yes (real-time)</p>
                   </div>
                 </div>
                 <div className="mt-3 flex flex-wrap gap-1">

@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Globe, MapPin, Clock, Wifi } from "lucide-react";
+import { Globe, MapPin, Clock, Wifi, Info } from "lucide-react";
 
 const Availability = () => {
   return (
@@ -19,6 +19,49 @@ const Availability = () => {
         </p>
       </div>
 
+      {/* Availability Metrics Explanation */}
+      <Card className="mb-8 bg-blue-50 border-blue-200">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2 text-blue-900">
+            <Info className="h-5 w-5" />
+            Understanding Availability Metrics
+          </CardTitle>
+          <CardDescription className="text-blue-700">
+            Here's what each availability metric means for global users:
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="p-3 bg-white rounded-lg border border-blue-200">
+            <div className="flex items-center gap-2 mb-2">
+              <MapPin className="h-4 w-4 text-blue-600" />
+              <h4 className="font-semibold text-blue-900">Regional Access</h4>
+            </div>
+            <p className="text-sm text-blue-700">Countries and regions where the service is officially available and supported</p>
+          </div>
+          <div className="p-3 bg-white rounded-lg border border-blue-200">
+            <div className="flex items-center gap-2 mb-2">
+              <Globe className="h-4 w-4 text-blue-600" />
+              <h4 className="font-semibold text-blue-900">Language Count</h4>
+            </div>
+            <p className="text-sm text-blue-700">Number of human languages the AI can understand and respond in effectively</p>
+          </div>
+          <div className="p-3 bg-white rounded-lg border border-blue-200">
+            <div className="flex items-center gap-2 mb-2">
+              <Clock className="h-4 w-4 text-blue-600" />
+              <h4 className="font-semibold text-blue-900">Uptime %</h4>
+            </div>
+            <p className="text-sm text-blue-700">Percentage of time the service is operational and accessible over a 30-day period</p>
+          </div>
+          <div className="p-3 bg-white rounded-lg border border-blue-200">
+            <div className="flex items-center gap-2 mb-2">
+              <Wifi className="h-4 w-4 text-blue-600" />
+              <h4 className="font-semibold text-blue-900">Access Methods</h4>
+            </div>
+            <p className="text-sm text-blue-700">Different ways to use the service (web browser, mobile app, API, desktop app)</p>
+          </div>
+        </CardContent>
+      </Card>
+
       <div className="grid lg:grid-cols-2 gap-6 mb-8">
         <Card className="hover:shadow-lg transition-all duration-300">
           <CardHeader>
@@ -26,7 +69,7 @@ const Availability = () => {
               <MapPin className="h-5 w-5 text-red-500" />
               Regional Availability
             </CardTitle>
-            <CardDescription>Geographic access and restrictions</CardDescription>
+            <CardDescription>Geographic access and restrictions by country/region</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="space-y-3">
@@ -35,7 +78,7 @@ const Availability = () => {
                   <h4 className="font-semibold">GPT-4 / ChatGPT</h4>
                   <Badge className="bg-green-100 text-green-700">Global</Badge>
                 </div>
-                <p className="text-sm text-muted-foreground mb-2">Available in 160+ countries</p>
+                <p className="text-sm text-muted-foreground mb-2">Available in 160+ countries with full feature access</p>
                 <div className="flex flex-wrap gap-1">
                   <Badge variant="outline" className="text-xs">US</Badge>
                   <Badge variant="outline" className="text-xs">EU</Badge>
@@ -49,7 +92,7 @@ const Availability = () => {
                   <h4 className="font-semibold">Claude 3</h4>
                   <Badge className="bg-yellow-100 text-yellow-700">Limited</Badge>
                 </div>
-                <p className="text-sm text-muted-foreground mb-2">Available in select regions</p>
+                <p className="text-sm text-muted-foreground mb-2">Available in select regions, expanding gradually</p>
                 <div className="flex flex-wrap gap-1">
                   <Badge variant="outline" className="text-xs">US</Badge>
                   <Badge variant="outline" className="text-xs">UK</Badge>
@@ -62,7 +105,7 @@ const Availability = () => {
                   <h4 className="font-semibold">Gemini Pro</h4>
                   <Badge className="bg-green-100 text-green-700">Expanding</Badge>
                 </div>
-                <p className="text-sm text-muted-foreground mb-2">Rapidly expanding globally</p>
+                <p className="text-sm text-muted-foreground mb-2">Rapidly expanding globally with Google integration</p>
                 <div className="flex flex-wrap gap-1">
                   <Badge variant="outline" className="text-xs">US</Badge>
                   <Badge variant="outline" className="text-xs">EU</Badge>
@@ -80,7 +123,7 @@ const Availability = () => {
               <Globe className="h-5 w-5 text-blue-500" />
               Language Support
             </CardTitle>
-            <CardDescription>Multilingual capabilities and coverage</CardDescription>
+            <CardDescription>Number of languages supported for conversation</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="grid grid-cols-2 gap-4">
@@ -103,7 +146,7 @@ const Availability = () => {
             </div>
             
             <div className="space-y-2">
-              <h4 className="font-semibold">Top Supported Languages:</h4>
+              <h4 className="font-semibold">Most Supported Languages:</h4>
               <div className="flex flex-wrap gap-1">
                 <Badge variant="outline">English</Badge>
                 <Badge variant="outline">Spanish</Badge>
