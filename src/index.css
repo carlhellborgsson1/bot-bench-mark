@@ -90,23 +90,6 @@
     @apply border-border;
   }
 
-  body {
-    @apply bg-background text-foreground font-sans;
-    background: linear-gradient(
-      to bottom,
-      #3b82f6 0%,
-      #6366f1 25%,
-      #8b5cf6 40%,
-      #c084fc 55%,
-      #8b5cf6 70%,
-      #6366f1 85%,
-      #3b82f6 100%
-    );
-    background-attachment: fixed;
-    min-height: 100vh;
-    overscroll-behavior: none;
-  }
-
   html {
     background: linear-gradient(
       to bottom,
@@ -119,11 +102,45 @@
       #3b82f6 100%
     );
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-height: 100dvh; /* Better mobile support */
     overscroll-behavior: none;
+  }
+
+  body {
+    @apply bg-transparent text-foreground font-sans;
+    background: transparent;
+    min-height: 100vh;
+    min-height: 100dvh; /* Better mobile support */
+    overscroll-behavior: none;
+    margin: 0;
+    padding: 0;
   }
 
   #root {
     background: transparent;
     min-height: 100vh;
+    min-height: 100dvh; /* Better mobile support */
+  }
+
+  /* Ensure all cards and content boxes are white */
+  .bg-card,
+  [class*="bg-card"] {
+    @apply bg-white !important;
+  }
+
+  /* Force white background for content areas */
+  .card,
+  [data-card],
+  .bg-white {
+    background-color: white !important;
+  }
+
+  /* Ensure proper mobile viewport handling */
+  @supports (-webkit-touch-callout: none) {
+    html {
+      background-attachment: scroll;
+    }
   }
 }
