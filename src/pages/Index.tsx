@@ -49,9 +49,9 @@ const Index = () => {
       <div className="text-center py-20 px-4">
         <div className="flex items-center justify-center gap-2 mb-6">
           <Sparkles className="h-8 w-8 text-blue-500" />
-          <span className="text-sm font-medium text-blue-600 bg-blue-50 px-3 py-1 rounded-full">
+          <Link to="/about" className="text-sm font-medium text-blue-600 bg-blue-50 px-3 py-1 rounded-full hover:bg-blue-100 transition-colors cursor-pointer">
             AI Comparison Platform
-          </span>
+          </Link>
         </div>
         <h1 className="text-5xl font-bold tracking-tight mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
           Find Your Perfect AI Chatbot

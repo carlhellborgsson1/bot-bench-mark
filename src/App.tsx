@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import Layout from "./components/Layout";
 import Index from "./pages/Index";
+import About from "./pages/About";
 import Performance from "./pages/Performance";
 import Security from "./pages/Security";
 import Functions from "./pages/Functions";
