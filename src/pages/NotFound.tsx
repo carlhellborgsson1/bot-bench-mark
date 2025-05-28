@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Home, Search, Compass, ArrowLeft } from "lucide-react";
+import { Home, Compass, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const NotFound = () => {
@@ -11,7 +11,7 @@ const NotFound = () => {
 
   useEffect(() => {
     console.error(
-      "404 Error: User attempted to access non-existent route:",
+      "User attempted to access non-existent route:",
       location.pathname
     );
   }, [location.pathname]);
@@ -20,14 +20,9 @@ const NotFound = () => {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 flex items-center justify-center p-4">
       <Card className="max-w-2xl w-full shadow-xl border-2 border-blue-200">
         <CardHeader className="text-center pb-4">
-          <div className="flex justify-center mb-4">
-            <div className="p-4 rounded-full bg-gradient-to-br from-blue-500/15 to-purple-500/15 border border-blue-200">
-              <Search className="h-12 w-12 text-blue-600" />
-            </div>
-          </div>
-          <CardTitle className="text-4xl font-bold mb-2 text-gray-900">404 - Page Not Found</CardTitle>
+          <CardTitle className="text-3xl font-bold mb-2 text-gray-900">Welcome to ChatBot Compass</CardTitle>
           <CardDescription className="text-lg text-gray-600">
-            Oops! The page you're looking for doesn't exist.
+            Your comprehensive AI comparison platform
           </CardDescription>
         </CardHeader>
         
