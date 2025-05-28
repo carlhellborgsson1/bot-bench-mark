@@ -1,5 +1,6 @@
+
 import { AppSidebar } from "./AppSidebar";
-import { SidebarTrigger } from "@/components/ui/sidebar";
+import { SidebarTrigger, useSidebar } from "@/components/ui/sidebar";
 import { Separator } from "@/components/ui/separator";
 
 interface LayoutProps {
@@ -7,10 +8,14 @@ interface LayoutProps {
 }
 
 const Layout = ({ children }: LayoutProps) => {
+  const { open } = useSidebar();
+
   return (
     <>
       <AppSidebar />
-      <Separator orientation="vertical" className="h-full bg-black" />
+      {open && (
+        <Separator orientation="vertical" className="h-full bg-gray-200" />
+      )}
       <main className="flex-1 overflow-auto">
         <div className="sticky top-0 z-40 bg-background/80 backdrop-blur-sm border-b border-border">
           <div className="flex items-center gap-4 p-4">
