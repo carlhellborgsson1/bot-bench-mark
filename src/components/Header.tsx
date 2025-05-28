@@ -10,22 +10,22 @@ const Header = () => {
 
   return (
     <>
-      <div className="sticky top-0 z-40 bg-background/80 backdrop-blur-sm border-b border-border">
+      <div className="sticky top-0 z-40 bg-gradient-to-r from-blue-500 to-purple-600 border-b border-blue-400">
         <div className="flex items-center justify-between p-4">
           <Button
             variant="ghost"
             size="icon"
             onClick={toggleSidebar}
-            className="hover:bg-accent hover:text-accent-foreground transition-colors"
+            className="hover:bg-blue-400/20 hover:text-white transition-colors text-white"
           >
             <Menu className="h-5 w-5" />
           </Button>
           
           <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
-              <span className="text-white font-bold text-lg">CC</span>
+            <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-lg">
+              <span className="text-blue-600 font-bold text-lg">CC</span>
             </div>
-            <span className="font-bold text-2xl">ChatBot Compass</span>
+            <span className="font-bold text-2xl text-white">ChatBot Compass</span>
           </Link>
           
           <div className="w-10"></div>

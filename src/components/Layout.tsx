@@ -14,7 +14,7 @@ const Layout = ({ children }: LayoutProps) => {
       <AppSidebar />
       <main className="flex-1 overflow-auto flex flex-col">
         <Header />
-        <div className="p-6 flex-1">
+        <div className="p-3 flex-1">
           {children}
         </div>
         <Footer />
