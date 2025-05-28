@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { BarChart3, Shield, Zap, DollarSign, Globe, Code, ArrowRight, Sparkles, Compass } from "lucide-react";
@@ -79,23 +80,23 @@ const Index = () => {
       {/* Features Grid */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
         {features.map((feature, index) => (
-          <Card key={feature.title} className="group hover:shadow-lg transition-all duration-300 border-0 shadow-sm hover:shadow-blue-100 animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
+          <Card key={feature.title} className="group hover:shadow-xl transition-all duration-300 border-2 border-gray-200 shadow-md hover:shadow-blue-200 hover:border-blue-300 bg-white animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
             <CardHeader className="pb-4">
               <div className="flex items-center gap-3 mb-2">
-                <div className="p-2 rounded-lg bg-gradient-to-br from-blue-500/10 to-purple-500/10 group-hover:from-blue-500/20 group-hover:to-purple-500/20 transition-colors">
-                  <feature.icon className="h-5 w-5 text-blue-600" />
+                <div className="p-3 rounded-lg bg-gradient-to-br from-blue-500/15 to-purple-500/15 group-hover:from-blue-500/25 group-hover:to-purple-500/25 transition-colors border border-blue-200">
+                  <feature.icon className="h-6 w-6 text-blue-700" />
                 </div>
-                <CardTitle className="text-lg">{feature.title}</CardTitle>
+                <CardTitle className="text-lg text-gray-900">{feature.title}</CardTitle>
               </div>
-              <CardDescription className="text-base leading-relaxed">
+              <CardDescription className="text-base leading-relaxed text-gray-700">
                 {feature.description}
               </CardDescription>
             </CardHeader>
             <CardContent className="pt-0">
-              <Button asChild variant="ghost" className="group/btn w-full justify-between hover:bg-blue-50 transition-colors">
+              <Button asChild variant="ghost" className="group/btn w-full justify-between hover:bg-blue-50 transition-colors border border-gray-200 hover:border-blue-300">
                 <Link to={feature.link}>
-                  Explore
-                  <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
+                  <span className="text-gray-800">Explore</span>
+                  <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform text-blue-600" />
                 </Link>
               </Button>
             </CardContent>
