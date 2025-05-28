@@ -99,22 +99,22 @@ export function AppSidebar() {
             <span className="text-white font-bold">CC</span>
           </div>
           <div>
-            <h2 className="font-bold text-lg text-sidebar-foreground">ChatBot Compass</h2>
-            <p className="text-xs text-sidebar-foreground/60">AI Comparison Platform</p>
+            <h2 className="font-bold text-lg text-black">ChatBot Compass</h2>
+            <p className="text-xs text-black/60">AI Comparison Platform</p>
           </div>
         </div>
       </SidebarHeader>
       
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>Comparison Features</SidebarGroupLabel>
+          <SidebarGroupLabel className="text-black/70">Comparison Features</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {navigationItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild className="hover:bg-sidebar-accent hover:text-sidebar-accent-foreground transition-all duration-200">
+                  <SidebarMenuButton asChild className="hover:bg-sidebar-accent hover:text-black transition-all duration-200 text-black">
                     <Link to={item.url} className="flex items-center gap-3">
-                      <item.icon className="h-4 w-4" />
+                      <item.icon className="h-4 w-4 text-black" />
                       <span>{item.title}</span>
                     </Link>
                   </SidebarMenuButton>
@@ -125,14 +125,14 @@ export function AppSidebar() {
         </SidebarGroup>
 
         <SidebarGroup>
-          <SidebarGroupLabel>Use Cases</SidebarGroupLabel>
+          <SidebarGroupLabel className="text-black/70">Use Cases</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {useItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild className="hover:bg-sidebar-accent hover:text-sidebar-accent-foreground transition-all duration-200">
+                  <SidebarMenuButton asChild className="hover:bg-sidebar-accent hover:text-black transition-all duration-200 text-black">
                     <Link to={item.url} className="flex items-center gap-3">
-                      <item.icon className="h-4 w-4" />
+                      <item.icon className="h-4 w-4 text-black" />
                       <span>{item.title}</span>
                     </Link>
                   </SidebarMenuButton>
@@ -143,14 +143,14 @@ export function AppSidebar() {
         </SidebarGroup>
 
         <SidebarGroup>
-          <SidebarGroupLabel>Tools</SidebarGroupLabel>
+          <SidebarGroupLabel className="text-black/70">Tools</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {toolItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild className="hover:bg-sidebar-accent hover:text-sidebar-accent-foreground transition-all duration-200">
+                  <SidebarMenuButton asChild className="hover:bg-sidebar-accent hover:text-black transition-all duration-200 text-black">
                     <Link to={item.url} className="flex items-center gap-3">
-                      <item.icon className="h-4 w-4" />
+                      <item.icon className="h-4 w-4 text-black" />
                       <span>{item.title}</span>
                     </Link>
                   </SidebarMenuButton>
