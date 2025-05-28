@@ -92,17 +92,17 @@
 
   body {
     @apply bg-background text-foreground font-sans;
-    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    background: white;
     overscroll-behavior: none;
   }
 
   html {
-    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    background: white;
     overscroll-behavior: none;
   }
 
   #root {
-    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    background: white;
     min-height: 100vh;
   }
 }
