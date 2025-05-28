@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { BarChart3, Shield, Zap, DollarSign, Globe, Code, ArrowRight, Sparkles } from "lucide-react";
+import { BarChart3, Shield, Zap, DollarSign, Globe, Code, ArrowRight, Sparkles, Compass } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
