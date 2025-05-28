@@ -3,6 +3,7 @@ import { AppSidebar } from "./AppSidebar";
 import { SidebarTrigger, useSidebar } from "@/components/ui/sidebar";
 import { Separator } from "@/components/ui/separator";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -17,7 +18,7 @@ const Layout = ({ children }: LayoutProps) => {
       {open && (
         <Separator orientation="vertical" className="h-full bg-gray-200" />
       )}
-      <main className="flex-1 overflow-auto">
+      <main className="flex-1 overflow-auto flex flex-col">
         <div className="sticky top-0 z-40 bg-background/80 backdrop-blur-sm border-b border-border">
           <div className="flex items-center gap-4 p-4">
             <SidebarTrigger className="hover:bg-accent hover:text-accent-foreground transition-colors" />
@@ -29,9 +30,10 @@ const Layout = ({ children }: LayoutProps) => {
             </Link>
           </div>
         </div>
-        <div className="p-6">
+        <div className="p-6 flex-1">
           {children}
         </div>
+        <Footer />
       </main>
     </>
   );
