@@ -1,4 +1,3 @@
-
 import { SidebarTrigger, useSidebar } from "@/components/ui/sidebar";
 import { Separator } from "@/components/ui/separator";
 import { Link } from "react-router-dom";
@@ -10,7 +9,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="sticky top-0 z-40 bg-gradient-to-r from-blue-500 to-purple-600 border-b border-blue-400">
+      <div className="sticky top-0 z-40 bg-gradient-to-r from-blue-500 to-purple-600 border-b border-blue-400 shadow-sm">
         <div className="flex items-center justify-between p-4">
           <Button
             variant="ghost"
