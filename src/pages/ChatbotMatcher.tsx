@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -227,7 +228,7 @@ const ChatbotMatcher = () => {
       <div className="text-center mb-8">
         <div className="flex items-center justify-center gap-3 mb-4">
           <div className="p-2 rounded-lg bg-gradient-to-br from-blue-500/10 to-purple-500/10">
-            <Compass className="h-6 w-6 text-blue-600" />
+            <Compass className="h-6 w-6 text-white" />
           </div>
           <h1 className="text-3xl font-bold text-white">Find Your Perfect AI Chatbot</h1>
         </div>
