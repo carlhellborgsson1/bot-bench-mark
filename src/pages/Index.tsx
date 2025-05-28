@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { BarChart3, Shield, Zap, DollarSign, Globe, Code, ArrowRight, Sparkles, Compass } from "lucide-react";
@@ -61,17 +60,12 @@ const Index = () => {
           Navigate the complex world of AI assistants with comprehensive comparisons across performance, 
           security, pricing, and features. Make informed decisions with data-driven insights.
         </p>
-        <div className="flex gap-4 justify-center flex-wrap">
+        <div className="flex justify-center">
           <Button asChild size="lg" className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white shadow-lg hover:shadow-xl transition-all duration-300">
             <Link to="/chatbot-matcher" className="flex items-center gap-2">
               <Sparkles className="h-4 w-4" />
               Find My Chatbot
               <ArrowRight className="h-4 w-4" />
-            </Link>
-          </Button>
-          <Button asChild variant="outline" size="lg" className="hover:bg-accent transition-colors">
-            <Link to="/performance">
-              Explore Comparisons
             </Link>
           </Button>
         </div>
