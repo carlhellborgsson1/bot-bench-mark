@@ -49,7 +49,7 @@ const Index = () => {
       {/* Hero Section */}
       <div className="text-center py-8 px-4">
         <div className="flex items-center justify-center gap-2 mb-6">
-          <Sparkles className="h-8 w-8 text-blue-500" />
+          <Sparkles className="h-8 w-8 text-blue-500 drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]" />
           <Link to="/about" className="text-sm font-medium text-blue-600 bg-blue-50 px-3 py-1 rounded-full hover:bg-blue-100 transition-colors cursor-pointer">
             AI Comparison Platform
           </Link>
