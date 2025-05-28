@@ -6,11 +6,8 @@ const Header = () => {
   return (
     <div className="bg-transparent">
       <div className="flex items-center justify-between px-8 py-4">
-        <Link to="/" className="flex items-center gap-3 ml-4">
-          <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-lg">
-            <span className="text-blue-600 font-bold text-lg">CC</span>
-          </div>
-          <span className="font-bold text-2xl text-white">ChatBot Compass</span>
+        <Link to="/" className="ml-4">
+          <span className="font-bold text-2xl text-white hover:text-white/80 transition-colors">DivideAI</span>
         </Link>
         
         <div className="mr-4">
