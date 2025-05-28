@@ -8,13 +8,13 @@ const Header = () => {
   const { toggleSidebar } = useSidebar();
 
   return (
-    <div className="bg-gradient-to-r from-blue-500 to-purple-600 border-b border-blue-400 shadow-sm">
+    <div className="bg-transparent border-b border-white/20 shadow-sm">
       <div className="flex items-center justify-between p-4">
         <Button
           variant="ghost"
           size="icon"
           onClick={toggleSidebar}
-          className="hover:bg-blue-400/20 hover:text-white transition-colors text-white"
+          className="hover:bg-white/20 hover:text-white transition-colors text-white"
         >
           <Menu className="h-5 w-5" />
         </Button>
