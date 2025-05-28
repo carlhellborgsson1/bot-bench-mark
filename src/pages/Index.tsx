@@ -1,5 +1,4 @@
 
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { BarChart3, Shield, Zap, DollarSign, Globe, Code, ArrowRight, Sparkles, Compass } from "lucide-react";
@@ -46,9 +45,9 @@ const Index = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto animate-fade-in">
+    <div className="max-w-7xl mx-auto p-4 animate-fade-in">
       {/* Hero Section */}
-      <div className="text-center py-12 px-4">
+      <div className="text-center py-8 px-4">
         <div className="flex items-center justify-center gap-2 mb-6">
           <Sparkles className="h-8 w-8 text-blue-500" />
           <Link to="/about" className="text-sm font-medium text-blue-600 bg-blue-50 px-3 py-1 rounded-full hover:bg-blue-100 transition-colors cursor-pointer">
@@ -118,4 +117,3 @@ const Index = () => {
 };
 
 export default Index;
-
