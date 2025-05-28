@@ -94,13 +94,12 @@
     @apply bg-background text-foreground font-sans;
     background: linear-gradient(
       to bottom,
-      #e0f2fe 0%,
-      #3b82f6 15%,
-      #6366f1 30%,
-      #8b5cf6 45%,
+      #3b82f6 0%,
+      #6366f1 25%,
+      #8b5cf6 40%,
       #c084fc 55%,
-      #8b5cf6 65%,
-      #6366f1 80%,
+      #8b5cf6 70%,
+      #6366f1 85%,
       #3b82f6 100%
     );
     background-attachment: fixed;
@@ -111,13 +110,12 @@
   html {
     background: linear-gradient(
       to bottom,
-      #e0f2fe 0%,
-      #3b82f6 15%,
-      #6366f1 30%,
-      #8b5cf6 45%,
+      #3b82f6 0%,
+      #6366f1 25%,
+      #8b5cf6 40%,
       #c084fc 55%,
-      #8b5cf6 65%,
-      #6366f1 80%,
+      #8b5cf6 70%,
+      #6366f1 85%,
       #3b82f6 100%
     );
     background-attachment: fixed;
