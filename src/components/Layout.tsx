@@ -1,0 +1,33 @@
+
+import { AppSidebar } from "./AppSidebar";
+import { SidebarTrigger } from "@/components/ui/sidebar";
+
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+const Layout = ({ children }: LayoutProps) => {
+  return (
+    <>
+      <AppSidebar />
+      <main className="flex-1 overflow-auto">
+        <div className="sticky top-0 z-40 bg-background/80 backdrop-blur-sm border-b border-border">
+          <div className="flex items-center gap-4 p-4">
+            <SidebarTrigger className="hover:bg-accent hover:text-accent-foreground transition-colors" />
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-sm">CC</span>
+              </div>
+              <span className="font-semibold text-lg">ChatBot Compass</span>
+            </div>
+          </div>
+        </div>
+        <div className="p-6">
+          {children}
+        </div>
+      </main>
+    </>
+  );
+};
+
+export default Layout;
