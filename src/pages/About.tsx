@@ -102,7 +102,7 @@ const About = () => {
       </div>
 
       {/* Mission */}
-      <Card className="mb-8 bg-gradient-to-r from-blue-50 to-purple-50 border-2 border-blue-200">
+      <Card className="bg-gradient-to-r from-blue-50 to-purple-50 border-2 border-blue-200">
         <CardHeader>
           <CardTitle className="text-2xl">Our Mission</CardTitle>
         </CardHeader>
@@ -114,15 +114,6 @@ const About = () => {
           </p>
         </CardContent>
       </Card>
-
-      {/* CTA */}
-      <div className="text-center">
-        <Button asChild size="lg" className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white">
-          <Link to="/chatbot-matcher">
-            Start Finding Your Perfect AI Assistant
-          </Link>
-        </Button>
-      </div>
     </div>
   );
 };
