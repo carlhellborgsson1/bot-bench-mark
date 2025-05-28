@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -230,7 +229,7 @@ const ChatbotMatcher = () => {
           <div className="p-2 rounded-lg bg-gradient-to-br from-blue-500/10 to-purple-500/10">
             <Compass className="h-6 w-6 text-blue-600" />
           </div>
-          <h1 className="text-3xl font-bold">Find Your Perfect AI Chatbot</h1>
+          <h1 className="text-3xl font-bold text-white">Find Your Perfect AI Chatbot</h1>
         </div>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
           Answer a few quick questions and we'll recommend the best AI chatbot for your specific needs
