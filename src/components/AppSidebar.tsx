@@ -10,7 +10,8 @@ import {
   User,
   Building,
   Compass,
-  Home
+  Home,
+  Info
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -90,6 +91,14 @@ const toolItems = [
   },
 ];
 
+const aboutItems = [
+  {
+    title: "Learn more about us",
+    url: "/about",
+    icon: Info,
+  },
+];
+
 export function AppSidebar() {
   return (
     <Sidebar className="border-r border-sidebar-border">
@@ -147,6 +156,24 @@ export function AppSidebar() {
           <SidebarGroupContent>
             <SidebarMenu>
               {toolItems.map((item) => (
+                <SidebarMenuItem key={item.title}>
+                  <SidebarMenuButton asChild className="hover:bg-sidebar-accent hover:text-black transition-all duration-200 text-black">
+                    <Link to={item.url} className="flex items-center gap-3">
+                      <item.icon className="h-4 w-4 text-black" />
+                      <span>{item.title}</span>
+                    </Link>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+              ))}
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
+
+        <SidebarGroup>
+          <SidebarGroupLabel className="text-black/70">About</SidebarGroupLabel>
+          <SidebarGroupContent>
+            <SidebarMenu>
+              {aboutItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild className="hover:bg-sidebar-accent hover:text-black transition-all duration-200 text-black">
                     <Link to={item.url} className="flex items-center gap-3">
