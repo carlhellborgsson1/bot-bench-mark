@@ -303,7 +303,7 @@ const CompanyUse = () => {
             <div className="space-y-3">
               <div>
                 <h4 className="font-semibold text-sm mb-2">Team Size Recommendations:</h4>
-                <ul className="text-sm text-muted-foreground space-y-1">
+                <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Small (1-50): Gemini Workspace or ChatGPT Team</li>
                   <li>• Medium (51-500): Claude for Work or GPT-4 Enterprise</li>
                   <li>• Large (500+): Custom enterprise solutions</li>
@@ -312,7 +312,7 @@ const CompanyUse = () => {
               
               <div>
                 <h4 className="font-semibold text-sm mb-2">Critical Success Factors:</h4>
-                <ul className="text-sm text-muted-foreground space-y-1">
+                <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Executive sponsorship and change management</li>
                   <li>• Clear use case definition and pilot programs</li>
                   <li>• Employee training and adoption support</li>
