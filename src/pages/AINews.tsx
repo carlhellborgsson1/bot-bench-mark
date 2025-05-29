@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -5,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Calendar, ExternalLink, TrendingUp, Zap, Brain, Cpu } from 'lucide-react';
 
 const AINews = () => {
-  const newsArticles = [
+  const allNewsArticles = [
     {
       id: 1,
       title: "GPT-5 Release: Revolutionary Breakthrough in AI Reasoning",
@@ -71,15 +72,95 @@ const AINews = () => {
       trending: false,
       icon: Zap,
       color: "bg-emerald-500"
+    },
+    {
+      id: 7,
+      title: "Meta's Llama 3 Outperforms Competitors in New Benchmarks",
+      summary: "Open-source model shows significant improvements in reasoning and factual accuracy.",
+      category: "Research",
+      date: "2024-12-09",
+      readTime: "4 min read",
+      trending: false,
+      icon: TrendingUp,
+      color: "bg-red-500"
+    },
+    {
+      id: 8,
+      title: "AI Chips Market Reaches $100 Billion Milestone",
+      summary: "Semiconductor industry sees unprecedented growth driven by AI demand.",
+      category: "Business",
+      date: "2024-12-08",
+      readTime: "3 min read",
+      trending: false,
+      icon: Cpu,
+      color: "bg-yellow-500"
+    },
+    {
+      id: 9,
+      title: "Robotics AI Makes Major Breakthrough in Dexterity",
+      summary: "New algorithms enable robots to perform complex manipulation tasks with human-like precision.",
+      category: "Research",
+      date: "2024-12-07",
+      readTime: "5 min read",
+      trending: false,
+      icon: Brain,
+      color: "bg-teal-500"
+    },
+    {
+      id: 10,
+      title: "AI Safety Institute Releases New Guidelines",
+      summary: "Comprehensive framework for evaluating and mitigating AI risks in development.",
+      category: "Policy",
+      date: "2024-12-06",
+      readTime: "6 min read",
+      trending: false,
+      icon: Zap,
+      color: "bg-pink-500"
+    },
+    {
+      id: 11,
+      title: "Quantum-AI Hybrid Computing Shows Promise",
+      summary: "Researchers demonstrate quantum-classical hybrid systems for enhanced AI performance.",
+      category: "Research",
+      date: "2024-12-05",
+      readTime: "7 min read",
+      trending: false,
+      icon: Cpu,
+      color: "bg-cyan-500"
+    },
+    {
+      id: 12,
+      title: "AI-Powered Drug Discovery Accelerates Clinical Trials",
+      summary: "Machine learning models reduce drug development time from years to months.",
+      category: "Research",
+      date: "2024-12-04",
+      readTime: "5 min read",
+      trending: false,
+      icon: Brain,
+      color: "bg-violet-500"
     }
   ];
 
   const categories = ["All", "Product Launch", "Research", "Update", "Policy", "Business"];
   const [selectedCategory, setSelectedCategory] = React.useState("All");
+  const [articlesPerPage] = React.useState(6);
+  const [currentPage, setCurrentPage] = React.useState(1);
 
   const filteredArticles = selectedCategory === "All" 
-    ? newsArticles 
-    : newsArticles.filter(article => article.category === selectedCategory);
+    ? allNewsArticles 
+    : allNewsArticles.filter(article => article.category === selectedCategory);
+
+  const displayedArticles = filteredArticles.slice(0, currentPage * articlesPerPage);
+  const hasMoreArticles = displayedArticles.length < filteredArticles.length;
+
+  const handleLoadMore = () => {
+    setCurrentPage(prev => prev + 1);
+  };
+
+  const handleCategoryChange = (category: string) => {
+    setSelectedCategory(category);
+    setCurrentPage(1); // Reset to first page when category changes
+  };
 
   return (
     <div className="container mx-auto px-4 py-8 max-w-7xl">
@@ -102,7 +183,7 @@ const AINews = () => {
           <Button
             key={category}
             variant={selectedCategory === category ? "default" : "outline"}
-            onClick={() => setSelectedCategory(category)}
+            onClick={() => handleCategoryChange(category)}
             className="text-sm"
           >
             {category}
@@ -112,7 +193,7 @@ const AINews = () => {
 
       {/* News Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {filteredArticles.map((article) => {
+        {displayedArticles.map((article) => {
           const IconComponent = article.icon;
           return (
             <Card key={article.id} className="hover:shadow-lg transition-shadow duration-300 group cursor-pointer">
@@ -163,11 +244,13 @@ const AINews = () => {
 
       {/* Load More Section */}
       <div className="text-center mt-12">
-        <Button variant="outline" size="lg" className="px-8">
-          Load More Articles
-        </Button>
+        {hasMoreArticles && (
+          <Button variant="outline" size="lg" className="px-8" onClick={handleLoadMore}>
+            Load More Articles
+          </Button>
+        )}
         <p className="text-sm text-white mt-4">
-          Showing {filteredArticles.length} of 50+ articles
+          Showing {displayedArticles.length} of {filteredArticles.length} articles
         </p>
       </div>
     </div>
