@@ -124,17 +124,29 @@
     min-height: 100dvh; /* Better mobile support */
   }
 
-  /* Ensure all cards and content boxes are white */
+  /* Ensure all cards and content boxes are white with consistent borders */
   .bg-card,
   [class*="bg-card"] {
-    @apply bg-white !important;
+    @apply bg-white border-gray-200 !important;
   }
 
-  /* Force white background for content areas */
+  /* Force white background for content areas and remove any yellow borders */
   .card,
   [data-card],
   .bg-white {
     background-color: white !important;
+    border-color: #e5e7eb !important; /* gray-200 */
+  }
+
+  /* Remove any yellow/amber outlines from cards on mobile */
+  @media (max-width: 768px) {
+    .card,
+    [data-card],
+    .bg-white,
+    .rounded-lg {
+      border-color: #e5e7eb !important; /* gray-200 */
+      outline: none !important;
+    }
   }
 
   /* Ensure proper mobile viewport handling */
