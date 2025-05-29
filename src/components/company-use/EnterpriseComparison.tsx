@@ -7,26 +7,26 @@ const EnterpriseComparison = () => {
   return (
     <Card className="hover:shadow-lg transition-all duration-300">
       <CardHeader>
-        <CardTitle className="flex items-center gap-2 text-amber-900">
-          <Briefcase className="h-5 w-5 text-amber-700" />
+        <CardTitle className="flex items-center gap-2 text-black">
+          <Briefcase className="h-5 w-5 text-white" />
           Enterprise Solutions Comparison
         </CardTitle>
-        <CardDescription className="text-amber-700">Professional-grade AI for business environments</CardDescription>
+        <CardDescription className="text-black">Professional-grade AI for business environments</CardDescription>
       </CardHeader>
       <CardContent className="space-y-6">
         <div className="space-y-4">
           <div className="p-4 border rounded-lg bg-gradient-to-r from-blue-50 to-indigo-50">
             <div className="flex items-center justify-between mb-3">
-              <h4 className="font-semibold text-lg text-amber-900">GPT-4 Enterprise</h4>
+              <h4 className="font-semibold text-lg text-black">GPT-4 Enterprise</h4>
               <Badge className="bg-blue-500 text-white">Most Popular</Badge>
             </div>
-            <p className="text-amber-800 mb-3">
+            <p className="text-black mb-3">
               Comprehensive enterprise solution with advanced security and admin controls.
             </p>
             <div className="grid md:grid-cols-2 gap-3">
               <div>
-                <p className="font-medium text-sm text-amber-800">Key Features:</p>
-                <ul className="text-sm text-amber-700 space-y-1">
+                <p className="font-medium text-sm text-black">Key Features:</p>
+                <ul className="text-sm text-black space-y-1">
                   <li>• Advanced admin dashboard</li>
                   <li>• SSO integration</li>
                   <li>• Usage analytics</li>
@@ -34,8 +34,8 @@ const EnterpriseComparison = () => {
                 </ul>
               </div>
               <div>
-                <p className="font-medium text-sm text-amber-800">Pricing:</p>
-                <ul className="text-sm text-amber-700 space-y-1">
+                <p className="font-medium text-sm text-black">Pricing:</p>
+                <ul className="text-sm text-black space-y-1">
                   <li>• $60/user/month</li>
                   <li>• Volume discounts available</li>
                   <li>• Unlimited GPT-4 usage</li>
@@ -47,16 +47,16 @@ const EnterpriseComparison = () => {
 
           <div className="p-4 border rounded-lg bg-gradient-to-r from-purple-50 to-pink-50">
             <div className="flex items-center justify-between mb-3">
-              <h4 className="font-semibold text-lg text-amber-900">Claude for Work</h4>
+              <h4 className="font-semibold text-lg text-black">Claude for Work</h4>
               <Badge className="bg-purple-500 text-white">Best Security</Badge>
             </div>
-            <p className="text-amber-800 mb-3">
+            <p className="text-black mb-3">
               Privacy-focused enterprise AI with constitutional safety guarantees.
             </p>
             <div className="grid md:grid-cols-2 gap-3">
               <div>
-                <p className="font-medium text-sm text-amber-800">Key Features:</p>
-                <ul className="text-sm text-amber-700 space-y-1">
+                <p className="font-medium text-sm text-black">Key Features:</p>
+                <ul className="text-sm text-black space-y-1">
                   <li>• No data training usage</li>
                   <li>• Constitutional AI safety</li>
                   <li>• Long context windows</li>
@@ -64,8 +64,8 @@ const EnterpriseComparison = () => {
                 </ul>
               </div>
               <div>
-                <p className="font-medium text-sm text-amber-800">Pricing:</p>
-                <ul className="text-sm text-amber-700 space-y-1">
+                <p className="font-medium text-sm text-black">Pricing:</p>
+                <ul className="text-sm text-black space-y-1">
                   <li>• Custom enterprise pricing</li>
                   <li>• Usage-based billing</li>
                   <li>• Dedicated support</li>
@@ -77,16 +77,16 @@ const EnterpriseComparison = () => {
 
           <div className="p-4 border rounded-lg bg-gradient-to-r from-green-50 to-teal-50">
             <div className="flex items-center justify-between mb-3">
-              <h4 className="font-semibold text-lg text-amber-900">Google Workspace AI</h4>
+              <h4 className="font-semibold text-lg text-black">Google Workspace AI</h4>
               <Badge className="bg-green-500 text-white">Best Integration</Badge>
             </div>
-            <p className="text-amber-800 mb-3">
+            <p className="text-black mb-3">
               Seamlessly integrated with Google Workspace for enhanced productivity.
             </p>
             <div className="grid md:grid-cols-2 gap-3">
               <div>
-                <p className="font-medium text-sm text-amber-800">Key Features:</p>
-                <ul className="text-sm text-amber-700 space-y-1">
+                <p className="font-medium text-sm text-black">Key Features:</p>
+                <ul className="text-sm text-black space-y-1">
                   <li>• Native Workspace integration</li>
                   <li>• Gmail and Docs AI</li>
                   <li>• Meet transcription</li>
@@ -94,8 +94,8 @@ const EnterpriseComparison = () => {
                 </ul>
               </div>
               <div>
-                <p className="font-medium text-sm text-amber-800">Pricing:</p>
-                <ul className="text-sm text-amber-700 space-y-1">
+                <p className="font-medium text-sm text-black">Pricing:</p>
+                <ul className="text-sm text-black space-y-1">
                   <li>• $30/user/month</li>
                   <li>• Includes Workspace Premium</li>
                   <li>• Unlimited Gemini access</li>
