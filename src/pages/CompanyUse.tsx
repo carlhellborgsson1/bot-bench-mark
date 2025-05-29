@@ -58,10 +58,10 @@ const CompanyUse = () => {
                 <h4 className="font-semibold text-lg text-black">GPT-4 Enterprise</h4>
                 <Badge className="bg-blue-500 text-white">Most Popular</Badge>
               </div>
-              <p className="text-muted-foreground mb-4">
+              <p className="text-black mb-4">
                 Comprehensive enterprise solution with advanced security and admin controls for large organizations.
               </p>
-              <ul className="text-sm text-gray-600 space-y-1 mb-4">
+              <ul className="text-sm text-black space-y-1 mb-4">
                 <li>• $60/user/month</li>
                 <li>• Advanced admin dashboard</li>
                 <li>• SSO integration</li>
@@ -81,10 +81,10 @@ const CompanyUse = () => {
                 <h4 className="font-semibold text-lg text-black">Claude for Work</h4>
                 <Badge className="bg-purple-500 text-white">Best Security</Badge>
               </div>
-              <p className="text-muted-foreground mb-4">
+              <p className="text-black mb-4">
                 Privacy-focused enterprise AI with constitutional safety guarantees and no data training usage.
               </p>
-              <ul className="text-sm text-gray-600 space-y-1 mb-4">
+              <ul className="text-sm text-black space-y-1 mb-4">
                 <li>• Custom enterprise pricing</li>
                 <li>• No data training usage</li>
                 <li>• Constitutional AI safety</li>
@@ -104,10 +104,10 @@ const CompanyUse = () => {
                 <h4 className="font-semibold text-lg text-black">Google Workspace AI</h4>
                 <Badge className="bg-green-500 text-white">Best Integration</Badge>
               </div>
-              <p className="text-muted-foreground mb-4">
+              <p className="text-black mb-4">
                 Seamlessly integrated with Google Workspace for enhanced productivity and familiar interface.
               </p>
-              <ul className="text-sm text-gray-600 space-y-1 mb-4">
+              <ul className="text-sm text-black space-y-1 mb-4">
                 <li>• $30/user/month</li>
                 <li>• Native Workspace integration</li>
                 <li>• Gmail and Docs AI</li>

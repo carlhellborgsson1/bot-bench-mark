@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -312,13 +313,13 @@ const PrivateUse = () => {
           <div className="grid md:grid-cols-3 gap-6">
             <div className="p-4 border rounded-lg bg-gradient-to-r from-blue-50 to-purple-50">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-semibold text-lg">ChatGPT Plus (GPT-4)</h4>
+                <h4 className="font-semibold text-lg text-black">ChatGPT Plus (GPT-4)</h4>
                 <Badge className="bg-blue-500 text-white">Most Versatile</Badge>
               </div>
-              <p className="text-muted-foreground mb-4">
+              <p className="text-black mb-4">
                 Perfect for creative writing, learning, and daily assistance with advanced capabilities.
               </p>
-              <ul className="text-sm text-gray-600 space-y-1 mb-4">
+              <ul className="text-sm text-black space-y-1 mb-4">
                 <li>• $20/month for GPT-4 access</li>
                 <li>• Image analysis & generation</li>
                 <li>• Web browsing capability</li>
@@ -335,13 +336,13 @@ const PrivateUse = () => {
 
             <div className="p-4 border rounded-lg bg-gradient-to-r from-purple-50 to-pink-50">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-semibold text-lg">Claude 3</h4>
+                <h4 className="font-semibold text-lg text-black">Claude 3</h4>
                 <Badge className="bg-purple-500 text-white">Best for Writing</Badge>
               </div>
-              <p className="text-muted-foreground mb-4">
+              <p className="text-black mb-4">
                 Exceptional for long-form content, analysis, and thoughtful conversations with privacy focus.
               </p>
-              <ul className="text-sm text-gray-600 space-y-1 mb-4">
+              <ul className="text-sm text-black space-y-1 mb-4">
                 <li>• $20/month for Pro access</li>
                 <li>• 200K token context window</li>
                 <li>• No data retention policy</li>
@@ -358,13 +359,13 @@ const PrivateUse = () => {
 
             <div className="p-4 border rounded-lg bg-gradient-to-r from-green-50 to-teal-50">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-semibold text-lg">Gemini Pro</h4>
+                <h4 className="font-semibold text-lg text-black">Gemini Pro</h4>
                 <Badge className="bg-green-500 text-white">Free & Powerful</Badge>
               </div>
-              <p className="text-muted-foreground mb-4">
+              <p className="text-black mb-4">
                 Completely free option with Google integration and multimodal capabilities.
               </p>
-              <ul className="text-sm text-gray-600 space-y-1 mb-4">
+              <ul className="text-sm text-black space-y-1 mb-4">
                 <li>• Completely free to use</li>
                 <li>• Google Workspace integration</li>
                 <li>• Real-time information access</li>
