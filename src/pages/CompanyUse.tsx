@@ -12,11 +12,11 @@ const CompanyUse = () => {
       <div className="mb-8">
         <div className="flex items-center gap-3 mb-4">
           <div className="p-2 rounded-lg bg-gradient-to-br from-blue-500/10 to-indigo-500/10">
-            <Building className="h-6 w-6 text-blue-600" />
+            <Building className="h-6 w-6 text-amber-700" />
           </div>
-          <h1 className="text-3xl font-bold">AI Chatbots for Business Use</h1>
+          <h1 className="text-3xl font-bold text-white">AI Chatbots for Business Use</h1>
         </div>
-        <p className="text-lg text-muted-foreground max-w-3xl">
+        <p className="text-lg text-amber-100 max-w-3xl">
           Enterprise-grade AI chatbot solutions for businesses of all sizes. Compare features, security, 
           scalability, and integration capabilities to transform your organization's productivity.
         </p>

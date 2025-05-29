@@ -48,7 +48,7 @@ const Performance = () => {
           </div>
           <h1 className="text-3xl font-bold text-white">Performance Comparison</h1>
         </div>
-        <p className="text-lg text-muted-foreground max-w-3xl">
+        <p className="text-lg text-amber-100 max-w-3xl">
           Compare AI chatbots across key performance metrics including response time, accuracy, 
           throughput, and reliability to find the fastest and most efficient solution.
         </p>
@@ -57,42 +57,42 @@ const Performance = () => {
       {/* Metrics Explanation */}
       <Card className="mb-8 bg-blue-50 border-blue-200">
         <CardHeader>
-          <CardTitle className="flex items-center gap-2 text-blue-900">
-            <Info className="h-5 w-5 text-blue-600" />
+          <CardTitle className="flex items-center gap-2 text-amber-900">
+            <Info className="h-5 w-5 text-amber-700" />
             Understanding the Metrics
           </CardTitle>
-          <CardDescription className="text-blue-700">
+          <CardDescription className="text-amber-800">
             Here's what each performance metric represents:
           </CardDescription>
         </CardHeader>
         <CardContent className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
           <div className="p-3 bg-white rounded-lg border border-blue-200">
             <div className="flex items-center gap-2 mb-2">
-              <Clock className="h-4 w-4 text-blue-600" />
-              <h4 className="font-semibold text-blue-900">Response Time</h4>
+              <Clock className="h-4 w-4 text-amber-700" />
+              <h4 className="font-semibold text-amber-900">Response Time</h4>
             </div>
-            <p className="text-sm text-blue-700">Average time from sending a message to receiving the first response token</p>
+            <p className="text-sm text-amber-800">Average time from sending a message to receiving the first response token</p>
           </div>
           <div className="p-3 bg-white rounded-lg border border-blue-200">
             <div className="flex items-center gap-2 mb-2">
-              <Target className="h-4 w-4 text-blue-600" />
-              <h4 className="font-semibold text-blue-900">Accuracy</h4>
+              <Target className="h-4 w-4 text-amber-700" />
+              <h4 className="font-semibold text-amber-900">Accuracy</h4>
             </div>
-            <p className="text-sm text-blue-700">Percentage of correct responses on standardized test questions across various topics</p>
+            <p className="text-sm text-amber-800">Percentage of correct responses on standardized test questions across various topics</p>
           </div>
           <div className="p-3 bg-white rounded-lg border border-blue-200">
             <div className="flex items-center gap-2 mb-2">
-              <Zap className="h-4 w-4 text-blue-600" />
-              <h4 className="font-semibold text-blue-900">Throughput</h4>
+              <Zap className="h-4 w-4 text-amber-700" />
+              <h4 className="font-semibold text-amber-900">Throughput</h4>
             </div>
-            <p className="text-sm text-blue-700">Maximum number of concurrent requests the system can handle effectively</p>
+            <p className="text-sm text-amber-800">Maximum number of concurrent requests the system can handle effectively</p>
           </div>
           <div className="p-3 bg-white rounded-lg border border-blue-200">
             <div className="flex items-center gap-2 mb-2">
-              <BarChart3 className="h-4 w-4 text-blue-600" />
-              <h4 className="font-semibold text-blue-900">Uptime</h4>
+              <BarChart3 className="h-4 w-4 text-amber-700" />
+              <h4 className="font-semibold text-amber-900">Uptime</h4>
             </div>
-            <p className="text-sm text-blue-700">Percentage of time the service is available and functioning properly over 30 days</p>
+            <p className="text-sm text-amber-800">Percentage of time the service is available and functioning properly over 30 days</p>
           </div>
         </CardContent>
       </Card>
@@ -103,8 +103,8 @@ const Performance = () => {
             <CardHeader>
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <CardTitle className="text-xl">{metric.chatbot}</CardTitle>
-                  <Badge variant="secondary" className="bg-blue-100 text-blue-700">
+                  <CardTitle className="text-xl text-amber-900">{metric.chatbot}</CardTitle>
+                  <Badge variant="secondary" className="bg-amber-100 text-amber-800">
                     Overall Score: {metric.score}/10
                   </Badge>
                 </div>
@@ -113,31 +113,31 @@ const Performance = () => {
             <CardContent>
               <div className="grid md:grid-cols-4 gap-6">
                 <div className="flex items-center gap-3">
-                  <Clock className="h-5 w-5 text-blue-600" />
+                  <Clock className="h-5 w-5 text-amber-700" />
                   <div>
-                    <p className="font-semibold">{metric.responseTime}</p>
-                    <p className="text-sm text-muted-foreground">Response Time</p>
+                    <p className="font-semibold text-amber-900">{metric.responseTime}</p>
+                    <p className="text-sm text-amber-700">Response Time</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Target className="h-5 w-5 text-blue-600" />
+                  <Target className="h-5 w-5 text-amber-700" />
                   <div>
-                    <p className="font-semibold">{metric.accuracy}</p>
-                    <p className="text-sm text-muted-foreground">Accuracy</p>
+                    <p className="font-semibold text-amber-900">{metric.accuracy}</p>
+                    <p className="text-sm text-amber-700">Accuracy</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Zap className="h-5 w-5 text-blue-600" />
+                  <Zap className="h-5 w-5 text-amber-700" />
                   <div>
-                    <p className="font-semibold">{metric.throughput}</p>
-                    <p className="text-sm text-muted-foreground">Throughput</p>
+                    <p className="font-semibold text-amber-900">{metric.throughput}</p>
+                    <p className="text-sm text-amber-700">Throughput</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <BarChart3 className="h-5 w-5 text-blue-600" />
+                  <BarChart3 className="h-5 w-5 text-amber-700" />
                   <div>
-                    <p className="font-semibold">{metric.reliability}</p>
-                    <p className="text-sm text-muted-foreground">Uptime</p>
+                    <p className="font-semibold text-amber-900">{metric.reliability}</p>
+                    <p className="text-sm text-amber-700">Uptime</p>
                   </div>
                 </div>
               </div>
@@ -149,46 +149,46 @@ const Performance = () => {
       <div className="grid md:grid-cols-2 gap-6">
         <Card>
           <CardHeader>
-            <CardTitle>Performance Insights</CardTitle>
-            <CardDescription>Key findings from our analysis</CardDescription>
+            <CardTitle className="text-amber-900">Performance Insights</CardTitle>
+            <CardDescription className="text-amber-700">Key findings from our analysis</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="p-4 bg-blue-50 rounded-lg">
-              <p className="font-semibold text-blue-900">Fastest Response</p>
-              <p className="text-blue-700">ChatGPT-3.5 leads with 1.5s average response time</p>
+              <p className="font-semibold text-amber-900">Fastest Response</p>
+              <p className="text-amber-800">ChatGPT-3.5 leads with 1.5s average response time</p>
             </div>
             <div className="p-4 bg-green-50 rounded-lg">
-              <p className="font-semibold text-green-900">Highest Accuracy</p>
-              <p className="text-green-700">GPT-4 achieves 94% accuracy in complex tasks</p>
+              <p className="font-semibold text-amber-900">Highest Accuracy</p>
+              <p className="text-amber-800">GPT-4 achieves 94% accuracy in complex tasks</p>
             </div>
             <div className="p-4 bg-purple-50 rounded-lg">
-              <p className="font-semibold text-purple-900">Best Reliability</p>
-              <p className="text-purple-700">GPT-4 maintains 99.9% uptime consistency</p>
+              <p className="font-semibold text-amber-900">Best Reliability</p>
+              <p className="text-amber-800">GPT-4 maintains 99.9% uptime consistency</p>
             </div>
           </CardContent>
         </Card>
 
         <Card>
           <CardHeader>
-            <CardTitle>Benchmarking Methodology</CardTitle>
-            <CardDescription>How we measure performance</CardDescription>
+            <CardTitle className="text-amber-900">Benchmarking Methodology</CardTitle>
+            <CardDescription className="text-amber-700">How we measure performance</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <div>
-              <h4 className="font-semibold mb-2 text-foreground">Response Time</h4>
-              <p className="text-foreground">Average time from query to first response token</p>
+              <h4 className="font-semibold mb-2 text-amber-900">Response Time</h4>
+              <p className="text-amber-800">Average time from query to first response token</p>
             </div>
             <div>
-              <h4 className="font-semibold mb-2 text-foreground">Accuracy</h4>
-              <p className="text-foreground">Correctness on standardized question sets</p>
+              <h4 className="font-semibold mb-2 text-amber-900">Accuracy</h4>
+              <p className="text-amber-800">Correctness on standardized question sets</p>
             </div>
             <div>
-              <h4 className="font-semibold mb-2 text-foreground">Throughput</h4>
-              <p className="text-foreground">Maximum concurrent requests handling</p>
+              <h4 className="font-semibold mb-2 text-amber-900">Throughput</h4>
+              <p className="text-amber-800">Maximum concurrent requests handling</p>
             </div>
             <div>
-              <h4 className="font-semibold mb-2 text-foreground">Reliability</h4>
-              <p className="text-foreground">Service availability over 30-day periods</p>
+              <h4 className="font-semibold mb-2 text-amber-900">Reliability</h4>
+              <p className="text-amber-800">Service availability over 30-day periods</p>
             </div>
           </CardContent>
         </Card>

@@ -57,7 +57,7 @@ const Index = () => {
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4 text-white px-2">
           Find Your Perfect AI Chatbot
         </h1>
-        <p className="text-base sm:text-lg lg:text-xl text-muted-foreground mb-6 sm:mb-4 max-w-3xl mx-auto leading-relaxed px-2">
+        <p className="text-base sm:text-lg lg:text-xl text-amber-100 mb-6 sm:mb-4 max-w-3xl mx-auto leading-relaxed px-2">
           Navigate the complex world of AI assistants with comprehensive comparisons across performance, 
           security, pricing, and features. Make informed decisions with data-driven insights.
         </p>
@@ -79,19 +79,19 @@ const Index = () => {
             <CardHeader className="pb-4">
               <div className="flex items-center gap-3 mb-2">
                 <div className="p-2 sm:p-3 rounded-lg bg-gradient-to-br from-blue-500/15 to-purple-500/15 group-hover:from-blue-500/25 group-hover:to-purple-500/25 transition-colors border border-blue-200">
-                  <feature.icon className="h-5 w-5 sm:h-6 sm:w-6 text-blue-600" />
+                  <feature.icon className="h-5 w-5 sm:h-6 sm:w-6 text-amber-700" />
                 </div>
-                <CardTitle className="text-base sm:text-lg text-gray-900">{feature.title}</CardTitle>
+                <CardTitle className="text-base sm:text-lg text-amber-900">{feature.title}</CardTitle>
               </div>
-              <CardDescription className="text-sm sm:text-base leading-relaxed text-gray-700">
+              <CardDescription className="text-sm sm:text-base leading-relaxed text-amber-800">
                 {feature.description}
               </CardDescription>
             </CardHeader>
             <CardContent className="pt-0">
               <Button asChild variant="ghost" className="group/btn w-full justify-between hover:bg-blue-50 transition-colors border border-gray-200 hover:border-blue-300 text-sm sm:text-base">
                 <Link to={feature.link}>
-                  <span className="text-gray-800">Explore</span>
-                  <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform text-blue-600" />
+                  <span className="text-amber-800">Explore</span>
+                  <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform text-amber-700" />
                 </Link>
               </Button>
             </CardContent>
@@ -101,8 +101,8 @@ const Index = () => {
 
       {/* CTA Section */}
       <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-6 sm:p-12 text-center mb-8 sm:mb-12 mx-2 sm:mx-0">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-4">Ready to Find Your Perfect AI Assistant?</h2>
-        <p className="text-base sm:text-lg text-black mb-6 sm:mb-8 max-w-2xl mx-auto px-2">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-amber-900">Ready to Find Your Perfect AI Assistant?</h2>
+        <p className="text-base sm:text-lg text-amber-800 mb-6 sm:mb-8 max-w-2xl mx-auto px-2">
           Use our intelligent matching tool to get personalized recommendations based on your specific needs and requirements.
         </p>
         <Button asChild size="lg" className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white text-sm sm:text-base">

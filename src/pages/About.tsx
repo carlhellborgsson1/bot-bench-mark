@@ -11,16 +11,16 @@ const About = () => {
       <div className="mb-6">
         <Button asChild variant="ghost" className="hover:bg-blue-50">
           <Link to="/" className="flex items-center gap-2">
-            <ArrowLeft className="h-4 w-4 text-gray-600" />
-            Back to Home
+            <ArrowLeft className="h-4 w-4 text-amber-700" />
+            <span className="text-amber-800">Back to Home</span>
           </Link>
         </Button>
       </div>
 
       {/* Header */}
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold tracking-tight mb-4">About ChatBot Compass</h1>
-        <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+        <h1 className="text-4xl font-bold tracking-tight mb-4 text-white">About ChatBot Compass</h1>
+        <p className="text-xl text-amber-100 max-w-3xl mx-auto leading-relaxed">
           Your trusted guide in the complex world of AI chatbots and virtual assistants.
         </p>
       </div>
@@ -28,12 +28,12 @@ const About = () => {
       {/* What We Do */}
       <Card className="mb-8 border-2 border-gray-200 shadow-md">
         <CardHeader>
-          <CardTitle className="flex items-center gap-2 text-2xl">
-            <Target className="h-6 w-6 text-blue-600" />
+          <CardTitle className="flex items-center gap-2 text-2xl text-amber-900">
+            <Target className="h-6 w-6 text-amber-700" />
             What We Do
           </CardTitle>
         </CardHeader>
-        <CardContent className="text-gray-700 leading-relaxed space-y-4">
+        <CardContent className="text-amber-800 leading-relaxed space-y-4">
           <p>
             ChatBot Compass is a comprehensive AI comparison platform designed to help individuals and businesses 
             navigate the rapidly evolving landscape of artificial intelligence chatbots and virtual assistants.
@@ -50,12 +50,12 @@ const About = () => {
       <div className="grid md:grid-cols-2 gap-6 mb-8">
         <Card className="border-2 border-gray-200 shadow-md">
           <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <BarChart3 className="h-5 w-5 text-blue-600" />
+            <CardTitle className="flex items-center gap-2 text-amber-900">
+              <BarChart3 className="h-5 w-5 text-amber-700" />
               Comprehensive Analysis
             </CardTitle>
           </CardHeader>
-          <CardContent className="text-gray-700">
+          <CardContent className="text-amber-800">
             We evaluate AI chatbots across performance, security, pricing, features, availability, 
             and API capabilities to give you a complete picture.
           </CardContent>
@@ -63,12 +63,12 @@ const About = () => {
 
         <Card className="border-2 border-gray-200 shadow-md">
           <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Users className="h-5 w-5 text-blue-600" />
+            <CardTitle className="flex items-center gap-2 text-amber-900">
+              <Users className="h-5 w-5 text-amber-700" />
               Tailored Recommendations
             </CardTitle>
           </CardHeader>
-          <CardContent className="text-gray-700">
+          <CardContent className="text-amber-800">
             Our intelligent matching tool provides personalized recommendations based on your 
             specific needs, whether for personal or business use.
           </CardContent>
@@ -76,12 +76,12 @@ const About = () => {
 
         <Card className="border-2 border-gray-200 shadow-md">
           <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Shield className="h-5 w-5 text-blue-600" />
+            <CardTitle className="flex items-center gap-2 text-amber-900">
+              <Shield className="h-5 w-5 text-amber-700" />
               Unbiased Information
             </CardTitle>
           </CardHeader>
-          <CardContent className="text-gray-700">
+          <CardContent className="text-amber-800">
             We provide objective, fact-based comparisons without favoring any particular platform, 
             ensuring you get honest insights to make informed decisions.
           </CardContent>
@@ -89,12 +89,12 @@ const About = () => {
 
         <Card className="border-2 border-gray-200 shadow-md">
           <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Target className="h-5 w-5 text-blue-600" />
+            <CardTitle className="flex items-center gap-2 text-amber-900">
+              <Target className="h-5 w-5 text-amber-700" />
               Easy Navigation
             </CardTitle>
           </CardHeader>
-          <CardContent className="text-gray-700">
+          <CardContent className="text-amber-800">
             Our intuitive interface makes it simple to explore different aspects of AI chatbots 
             and find exactly what you're looking for.
           </CardContent>
@@ -104,9 +104,9 @@ const About = () => {
       {/* Mission */}
       <Card className="bg-gradient-to-r from-blue-50 to-purple-50 border-2 border-blue-200">
         <CardHeader>
-          <CardTitle className="text-2xl">Our Mission</CardTitle>
+          <CardTitle className="text-2xl text-amber-900">Our Mission</CardTitle>
         </CardHeader>
-        <CardContent className="text-gray-700 leading-relaxed">
+        <CardContent className="text-amber-800 leading-relaxed">
           <p>
             To democratize access to AI technology by providing clear, comprehensive, and unbiased 
             information that empowers everyone—from curious individuals to enterprise decision-makers—
