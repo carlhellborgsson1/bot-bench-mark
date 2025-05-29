@@ -17,7 +17,7 @@ const AINews = () => {
       trending: true,
       icon: Brain,
       color: "bg-blue-500",
-      url: "https://openai.com/gpt-5"
+      url: "https://techcrunch.com/2024/12/09/openai-announces-o3-its-next-simulated-reasoning-model/"
     },
     {
       id: 2,
@@ -29,7 +29,7 @@ const AINews = () => {
       trending: true,
       icon: TrendingUp,
       color: "bg-green-500",
-      url: "https://blog.google/technology/ai/google-gemini-ultra-ai/"
+      url: "https://blog.google/technology/ai/google-gemini-ai/"
     },
     {
       id: 3,
@@ -41,7 +41,7 @@ const AINews = () => {
       trending: false,
       icon: Cpu,
       color: "bg-purple-500",
-      url: "https://www.anthropic.com/claude-3-5"
+      url: "https://www.anthropic.com/news/claude-3-5-sonnet"
     },
     {
       id: 4,
@@ -53,7 +53,7 @@ const AINews = () => {
       trending: false,
       icon: Zap,
       color: "bg-orange-500",
-      url: "https://www.europarl.europa.eu/news/en/press-room/20240308IPR19015/artificial-intelligence-act-meps-adopt-landmark-law"
+      url: "https://www.reuters.com/technology/artificial-intelligence/eu-ai-act-2024-06-12/"
     },
     {
       id: 5,
@@ -65,7 +65,7 @@ const AINews = () => {
       trending: false,
       icon: Brain,
       color: "bg-indigo-500",
-      url: "https://blogs.microsoft.com/blog/2024/03/21/new-microsoft-copilot-experiences/"
+      url: "https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/"
     },
     {
       id: 6,
@@ -77,7 +77,7 @@ const AINews = () => {
       trending: false,
       icon: Zap,
       color: "bg-emerald-500",
-      url: "https://ai.stanford.edu/blog/energy-efficient-ai/"
+      url: "https://www.nature.com/articles/s41586-023-06747-5"
     },
     {
       id: 7,
@@ -101,7 +101,7 @@ const AINews = () => {
       trending: false,
       icon: Cpu,
       color: "bg-yellow-500",
-      url: "https://www.semiconductors.org/ai-chip-market-growth/"
+      url: "https://www.cnbc.com/2024/08/28/nvidia-earnings-q2-2025.html"
     },
     {
       id: 9,
@@ -113,7 +113,7 @@ const AINews = () => {
       trending: false,
       icon: Brain,
       color: "bg-teal-500",
-      url: "https://robotics.stanford.edu/breakthrough-dexterity/"
+      url: "https://www.science.org/doi/10.1126/scirobotics.adi2856"
     },
     {
       id: 10,
@@ -125,7 +125,7 @@ const AINews = () => {
       trending: false,
       icon: Zap,
       color: "bg-pink-500",
-      url: "https://www.aisi.gov.uk/work/evaluations-of-ai-systems"
+      url: "https://www.aisi.gov.uk/"
     },
     {
       id: 11,
@@ -137,7 +137,7 @@ const AINews = () => {
       trending: false,
       icon: Cpu,
       color: "bg-cyan-500",
-      url: "https://quantum-computing.ibm.com/quantum-ai-hybrid/"
+      url: "https://research.ibm.com/blog/quantum-ai-foundation-models"
     },
     {
       id: 12,
@@ -149,7 +149,7 @@ const AINews = () => {
       trending: false,
       icon: Brain,
       color: "bg-violet-500",
-      url: "https://www.nature.com/articles/ai-drug-discovery-breakthrough"
+      url: "https://www.nature.com/articles/s41586-023-06221-2"
     }
   ];
 
