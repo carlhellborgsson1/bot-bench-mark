@@ -9,7 +9,7 @@ export const getAffiliateLink = (chatbotName: string): string => {
     "Claude 3": "https://claude.ai/",
     "GPT-4 Enterprise": "https://openai.com/enterprise",
     "Claude for Work": "https://claude.ai/",
-    "Google Workspace AI": "https://workspace.google.com/",
+    "Google Workspace AI": "https://workspace.google.com/pricing.html?source=gafb-ai-plan-en&hl=en&ga_region=noram&ga_country=us&ga_lang=en",
     "GPT-4": "https://chat.openai.com/"
   };
   
