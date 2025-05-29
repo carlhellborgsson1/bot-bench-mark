@@ -47,7 +47,7 @@ export const PerformanceMetrics = () => {
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
                 <CardTitle className="text-xl text-black">{metric.chatbot}</CardTitle>
-                <Badge variant="secondary" className="bg-amber-100 text-black">
+                <Badge variant="secondary" className="bg-blue-100 text-black">
                   Overall Score: {metric.score}/10
                 </Badge>
               </div>

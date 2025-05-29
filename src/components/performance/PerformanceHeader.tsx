@@ -10,7 +10,7 @@ export const PerformanceHeader = () => {
         </div>
         <h1 className="text-3xl font-bold text-white">Performance Comparison</h1>
       </div>
-      <p className="text-lg text-amber-100 max-w-3xl">
+      <p className="text-lg text-blue-100 max-w-3xl">
         Compare AI chatbots across key performance metrics including response time, accuracy, 
         throughput, and reliability to find the fastest and most efficient solution.
       </p>
