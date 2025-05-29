@@ -58,17 +58,17 @@ const ChatbotMatcher = () => {
 
   const getAffiliateLink = (chatbotName: string) => {
     const affiliateLinks: Record<string, string> = {
-      "Gemini Pro": "https://gemini.google.com/?ref=affiliate",
-      "ChatGPT Plus (GPT-4)": "https://chat.openai.com/auth/login?ref=affiliate",
-      "ChatGPT Plus": "https://chat.openai.com/auth/login?ref=affiliate",
-      "Claude 3": "https://claude.ai/?ref=affiliate",
-      "GPT-4 Enterprise": "https://openai.com/enterprise?ref=affiliate",
-      "Claude for Work": "https://claude.ai/for-work?ref=affiliate",
-      "Google Workspace AI": "https://workspace.google.com/products/ai/?ref=affiliate",
-      "GPT-4": "https://chat.openai.com/auth/login?ref=affiliate"
+      "Gemini Pro": "https://gemini.google.com/",
+      "ChatGPT Plus (GPT-4)": "https://chat.openai.com/",
+      "ChatGPT Plus": "https://chat.openai.com/",
+      "Claude 3": "https://claude.ai/",
+      "GPT-4 Enterprise": "https://openai.com/enterprise",
+      "Claude for Work": "https://claude.ai/",
+      "Google Workspace AI": "https://workspace.google.com/",
+      "GPT-4": "https://chat.openai.com/"
     };
     
-    return affiliateLinks[chatbotName] || "https://chat.openai.com/?ref=affiliate";
+    return affiliateLinks[chatbotName] || "https://chat.openai.com/";
   };
 
   const getRecommendation = (answers: Record<string, string>) => {
