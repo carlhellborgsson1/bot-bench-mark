@@ -1,7 +1,8 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { User, Shield, Heart, BookOpen, Coffee } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { User, Shield, Heart, BookOpen, Coffee, ExternalLink } from "lucide-react";
+import { getAffiliateLink } from "@/utils/recommendations";
 
 const PrivateUse = () => {
   return (
@@ -247,7 +248,7 @@ const PrivateUse = () => {
         </Card>
       </div>
 
-      <Card>
+      <Card className="mb-8">
         <CardHeader>
           <CardTitle>Cost Comparison for Personal Use</CardTitle>
           <CardDescription>Monthly costs and free tier options</CardDescription>
@@ -294,6 +295,88 @@ const PrivateUse = () => {
                 <li>• Advanced integrations</li>
                 <li>• Professional workflows</li>
               </ul>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <Heart className="h-5 w-5 text-pink-600" />
+            Get Started with Your Perfect AI Chatbot
+          </CardTitle>
+          <CardDescription>Click below to start using the recommended AI chatbots for personal use</CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="p-4 border rounded-lg bg-gradient-to-r from-blue-50 to-purple-50">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-semibold text-lg">ChatGPT Plus (GPT-4)</h4>
+                <Badge className="bg-blue-500 text-white">Most Versatile</Badge>
+              </div>
+              <p className="text-muted-foreground mb-4">
+                Perfect for creative writing, learning, and daily assistance with advanced capabilities.
+              </p>
+              <ul className="text-sm text-gray-600 space-y-1 mb-4">
+                <li>• $20/month for GPT-4 access</li>
+                <li>• Image analysis & generation</li>
+                <li>• Web browsing capability</li>
+                <li>• Plugin ecosystem</li>
+              </ul>
+              <Button 
+                onClick={() => window.open(getAffiliateLink("ChatGPT Plus (GPT-4)"), '_blank')}
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+              >
+                <ExternalLink className="h-4 w-4 mr-2" />
+                Get ChatGPT Plus
+              </Button>
+            </div>
+
+            <div className="p-4 border rounded-lg bg-gradient-to-r from-purple-50 to-pink-50">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-semibold text-lg">Claude 3</h4>
+                <Badge className="bg-purple-500 text-white">Best for Writing</Badge>
+              </div>
+              <p className="text-muted-foreground mb-4">
+                Exceptional for long-form content, analysis, and thoughtful conversations with privacy focus.
+              </p>
+              <ul className="text-sm text-gray-600 space-y-1 mb-4">
+                <li>• $20/month for Pro access</li>
+                <li>• 200K token context window</li>
+                <li>• No data retention policy</li>
+                <li>• Constitutional AI safety</li>
+              </ul>
+              <Button 
+                onClick={() => window.open(getAffiliateLink("Claude 3"), '_blank')}
+                className="w-full bg-purple-600 hover:bg-purple-700 text-white"
+              >
+                <ExternalLink className="h-4 w-4 mr-2" />
+                Get Claude 3
+              </Button>
+            </div>
+
+            <div className="p-4 border rounded-lg bg-gradient-to-r from-green-50 to-teal-50">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-semibold text-lg">Gemini Pro</h4>
+                <Badge className="bg-green-500 text-white">Free & Powerful</Badge>
+              </div>
+              <p className="text-muted-foreground mb-4">
+                Completely free option with Google integration and multimodal capabilities.
+              </p>
+              <ul className="text-sm text-gray-600 space-y-1 mb-4">
+                <li>• Completely free to use</li>
+                <li>• Google Workspace integration</li>
+                <li>• Real-time information access</li>
+                <li>• Multiple language support</li>
+              </ul>
+              <Button 
+                onClick={() => window.open(getAffiliateLink("Gemini Pro"), '_blank')}
+                className="w-full bg-green-600 hover:bg-green-700 text-white"
+              >
+                <ExternalLink className="h-4 w-4 mr-2" />
+                Get Gemini Pro
+              </Button>
             </div>
           </div>
         </CardContent>
