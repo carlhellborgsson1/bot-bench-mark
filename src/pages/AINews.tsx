@@ -194,9 +194,13 @@ const AINews = () => {
         {categories.map((category) => (
           <Button
             key={category}
-            variant={selectedCategory === category ? "default" : "outline"}
+            variant="outline"
             onClick={() => handleCategoryChange(category)}
-            className="text-sm"
+            className={`text-sm transition-all duration-200 ${
+              selectedCategory === category 
+                ? "bg-transparent border-white border-2 text-white shadow-lg" 
+                : "bg-transparent border-white/30 text-white/80 hover:border-white hover:text-white hover:shadow-md"
+            }`}
           >
             {category}
           </Button>
