@@ -1,12 +1,13 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
 import {
   BarChart3,
   Shield,
@@ -127,75 +128,81 @@ const TopNavigation = () => {
   }
 
   return (
-    <nav className="flex items-center gap-8">
-      {/* Comparison Features Dropdown */}
-      <DropdownMenu>
-        <DropdownMenuTrigger className="text-white text-lg font-medium hover:text-white/80 transition-colors cursor-pointer bg-transparent border-none">
-          Comparison Features
-        </DropdownMenuTrigger>
-        <DropdownMenuContent className="w-56 bg-white border border-gray-200 shadow-lg z-50">
-          {comparisonFeatures.map((item) => (
-            <DropdownMenuItem key={item.title} asChild>
-              <Link
-                to={item.url}
-                className="flex items-center gap-3 px-4 py-2 hover:bg-gray-50 cursor-pointer"
-              >
-                <item.icon className="h-4 w-4 text-blue-600" />
-                <span className="text-gray-800">{item.title}</span>
-              </Link>
-            </DropdownMenuItem>
-          ))}
-        </DropdownMenuContent>
-      </DropdownMenu>
+    <NavigationMenu>
+      <NavigationMenuList className="flex items-center gap-8">
+        {/* Comparison Features Dropdown */}
+        <NavigationMenuItem>
+          <NavigationMenuTrigger className="text-white text-lg font-medium hover:text-white/80 transition-colors bg-transparent border-none data-[state=open]:bg-transparent data-[active]:bg-transparent">
+            Comparison Features
+          </NavigationMenuTrigger>
+          <NavigationMenuContent className="w-56 bg-white border border-gray-200 shadow-lg z-50 p-2">
+            {comparisonFeatures.map((item) => (
+              <NavigationMenuLink key={item.title} asChild>
+                <Link
+                  to={item.url}
+                  className="flex items-center gap-3 px-4 py-2 hover:bg-gray-50 cursor-pointer rounded-md"
+                >
+                  <item.icon className="h-4 w-4 text-blue-600" />
+                  <span className="text-gray-800">{item.title}</span>
+                </Link>
+              </NavigationMenuLink>
+            ))}
+          </NavigationMenuContent>
+        </NavigationMenuItem>
 
-      {/* Use Cases Dropdown */}
-      <DropdownMenu>
-        <DropdownMenuTrigger className="text-white text-lg font-medium hover:text-white/80 transition-colors cursor-pointer bg-transparent border-none">
-          Use Cases
-        </DropdownMenuTrigger>
-        <DropdownMenuContent className="w-56 bg-white border border-gray-200 shadow-lg z-50">
-          {useCases.map((item) => (
-            <DropdownMenuItem key={item.title} asChild>
-              <Link
-                to={item.url}
-                className="flex items-center gap-3 px-4 py-2 hover:bg-gray-50 cursor-pointer"
-              >
-                <item.icon className="h-4 w-4 text-blue-600" />
-                <span className="text-gray-800">{item.title}</span>
-              </Link>
-            </DropdownMenuItem>
-          ))}
-        </DropdownMenuContent>
-      </DropdownMenu>
+        {/* Use Cases Dropdown */}
+        <NavigationMenuItem>
+          <NavigationMenuTrigger className="text-white text-lg font-medium hover:text-white/80 transition-colors bg-transparent border-none data-[state=open]:bg-transparent data-[active]:bg-transparent">
+            Use Cases
+          </NavigationMenuTrigger>
+          <NavigationMenuContent className="w-56 bg-white border border-gray-200 shadow-lg z-50 p-2">
+            {useCases.map((item) => (
+              <NavigationMenuLink key={item.title} asChild>
+                <Link
+                  to={item.url}
+                  className="flex items-center gap-3 px-4 py-2 hover:bg-gray-50 cursor-pointer rounded-md"
+                >
+                  <item.icon className="h-4 w-4 text-blue-600" />
+                  <span className="text-gray-800">{item.title}</span>
+                </Link>
+              </NavigationMenuLink>
+            ))}
+          </NavigationMenuContent>
+        </NavigationMenuItem>
 
-      {/* Tools Dropdown */}
-      <DropdownMenu>
-        <DropdownMenuTrigger className="text-white text-lg font-medium hover:text-white/80 transition-colors cursor-pointer bg-transparent border-none">
-          Tools
-        </DropdownMenuTrigger>
-        <DropdownMenuContent className="w-56 bg-white border border-gray-200 shadow-lg z-50">
-          {tools.map((item) => (
-            <DropdownMenuItem key={item.title} asChild>
-              <Link
-                to={item.url}
-                className="flex items-center gap-3 px-4 py-2 hover:bg-gray-50 cursor-pointer"
-              >
-                <item.icon className="h-4 w-4 text-blue-600" />
-                <span className="text-gray-800">{item.title}</span>
-              </Link>
-            </DropdownMenuItem>
-          ))}
-        </DropdownMenuContent>
-      </DropdownMenu>
+        {/* Tools Dropdown */}
+        <NavigationMenuItem>
+          <NavigationMenuTrigger className="text-white text-lg font-medium hover:text-white/80 transition-colors bg-transparent border-none data-[state=open]:bg-transparent data-[active]:bg-transparent">
+            Tools
+          </NavigationMenuTrigger>
+          <NavigationMenuContent className="w-56 bg-white border border-gray-200 shadow-lg z-50 p-2">
+            {tools.map((item) => (
+              <NavigationMenuLink key={item.title} asChild>
+                <Link
+                  to={item.url}
+                  className="flex items-center gap-3 px-4 py-2 hover:bg-gray-50 cursor-pointer rounded-md"
+                >
+                  <item.icon className="h-4 w-4 text-blue-600" />
+                  <span className="text-gray-800">{item.title}</span>
+                </Link>
+              </NavigationMenuLink>
+            ))}
+          </NavigationMenuContent>
+        </NavigationMenuItem>
 
-      {/* About Link */}
-      <Link
-        to="/about"
-        className="text-white text-lg font-medium hover:text-white/80 transition-colors"
-      >
-        About
-      </Link>
-    </nav>
+        {/* About Link */}
+        <NavigationMenuItem>
+          <NavigationMenuLink asChild>
+            <Link
+              to="/about"
+              className="text-white text-lg font-medium hover:text-white/80 transition-colors"
+            >
+              About
+            </Link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+      </NavigationMenuList>
+    </NavigationMenu>
   );
 };
 
