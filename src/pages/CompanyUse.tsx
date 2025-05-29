@@ -45,11 +45,11 @@ const CompanyUse = () => {
 
       <Card>
         <CardHeader>
-          <CardTitle className="flex items-center gap-2 text-white">
+          <CardTitle className="flex items-center gap-2 text-black">
             <Building className="h-5 w-5 text-blue-600" />
             Get Started with Enterprise AI Solutions
           </CardTitle>
-          <CardDescription className="text-white">Click below to start using the recommended AI chatbots for business use</CardDescription>
+          <CardDescription className="text-black">Click below to start using the recommended AI chatbots for business use</CardDescription>
         </CardHeader>
         <CardContent className="space-y-6">
           <div className="grid md:grid-cols-3 gap-6">
