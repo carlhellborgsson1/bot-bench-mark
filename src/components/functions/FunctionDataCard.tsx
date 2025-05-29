@@ -28,7 +28,7 @@ const FunctionDataCard = ({ data, index }: FunctionDataCardProps) => {
       <CardHeader>
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <CardTitle className="text-xl">{data.chatbot}</CardTitle>
+            <CardTitle className="text-xl text-black">{data.chatbot}</CardTitle>
             <Badge variant="secondary" className="bg-purple-100 text-purple-700">
               Feature Score: {data.score}/10
             </Badge>
@@ -38,7 +38,7 @@ const FunctionDataCard = ({ data, index }: FunctionDataCardProps) => {
               <Badge className="bg-green-500 text-white">Multimodal</Badge>
             )}
             {data.imageAnalysis === "Yes" && (
-              <Badge variant="outline">Image Analysis</Badge>
+              <Badge variant="outline" className="text-black border-black">Image Analysis</Badge>
             )}
           </div>
         </div>
@@ -46,45 +46,45 @@ const FunctionDataCard = ({ data, index }: FunctionDataCardProps) => {
       <CardContent>
         <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-4">
           <div className="flex items-center gap-2">
-            <MessageSquare className="h-4 w-4 text-muted-foreground" />
+            <MessageSquare className="h-4 w-4 text-black" />
             <div>
-              <p className="font-semibold text-sm">{data.textGeneration}</p>
-              <p className="text-xs text-muted-foreground">Text Quality</p>
+              <p className="font-semibold text-sm text-black">{data.textGeneration}</p>
+              <p className="text-xs text-black">Text Quality</p>
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <Code className="h-4 w-4 text-muted-foreground" />
+            <Code className="h-4 w-4 text-black" />
             <div>
-              <p className="font-semibold text-sm">{data.codeGeneration}</p>
-              <p className="text-xs text-muted-foreground">Code Quality</p>
+              <p className="font-semibold text-sm text-black">{data.codeGeneration}</p>
+              <p className="text-xs text-black">Code Quality</p>
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <Image className="h-4 w-4 text-muted-foreground" />
+            <Image className="h-4 w-4 text-black" />
             <div>
-              <p className="font-semibold text-sm">{data.imageAnalysis}</p>
-              <p className="text-xs text-muted-foreground">Image Support</p>
+              <p className="font-semibold text-sm text-black">{data.imageAnalysis}</p>
+              <p className="text-xs text-black">Image Support</p>
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <Brain className="h-4 w-4 text-muted-foreground" />
+            <Brain className="h-4 w-4 text-black" />
             <div>
-              <p className="font-semibold text-sm">{data.multimodal}</p>
-              <p className="text-xs text-muted-foreground">Multimodal</p>
+              <p className="font-semibold text-sm text-black">{data.multimodal}</p>
+              <p className="text-xs text-black">Multimodal</p>
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <FileText className="h-4 w-4 text-muted-foreground" />
+            <FileText className="h-4 w-4 text-black" />
             <div>
-              <p className="font-semibold text-sm">{data.languages}</p>
-              <p className="text-xs text-muted-foreground">Languages</p>
+              <p className="font-semibold text-sm text-black">{data.languages}</p>
+              <p className="text-xs text-black">Languages</p>
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <Zap className="h-4 w-4 text-muted-foreground" />
+            <Zap className="h-4 w-4 text-black" />
             <div>
-              <p className="font-semibold text-sm">{data.integrations}+</p>
-              <p className="text-xs text-muted-foreground">Integrations</p>
+              <p className="font-semibold text-sm text-black">{data.integrations}+</p>
+              <p className="text-xs text-black">Integrations</p>
             </div>
           </div>
         </div>
