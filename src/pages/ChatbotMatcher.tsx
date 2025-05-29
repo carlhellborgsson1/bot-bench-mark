@@ -167,40 +167,40 @@ const ChatbotMatcher = () => {
               <CheckCircle className="h-8 w-8 text-white" />
             </div>
           </div>
-          <h1 className="text-3xl font-bold mb-4">Your Perfect AI Chatbot Match!</h1>
-          <p className="text-lg text-muted-foreground">
+          <h1 className="text-3xl font-bold mb-4 text-white">Your Perfect AI Chatbot Match!</h1>
+          <p className="text-lg text-blue-100">
             Based on your preferences, here's our personalized recommendation
           </p>
         </div>
 
-        <Card className="mb-8 bg-gradient-to-r from-blue-50 to-purple-50 border-2 border-blue-200">
+        <Card className="mb-8 bg-white border-gray-200 shadow-lg">
           <CardHeader className="text-center">
             <div className="flex items-center justify-center gap-2 mb-2">
               <Badge className="bg-blue-500 text-white px-4 py-2 text-lg">Recommended</Badge>
             </div>
-            <CardTitle className="text-2xl text-blue-700">{recommendation.primary}</CardTitle>
-            <CardDescription className="text-lg text-blue-600">
+            <CardTitle className="text-2xl text-black">{recommendation.primary}</CardTitle>
+            <CardDescription className="text-lg text-gray-700">
               {recommendation.reason}
             </CardDescription>
           </CardHeader>
           <CardContent>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <h4 className="font-semibold mb-3">Key Features:</h4>
+                <h4 className="font-semibold mb-3 text-black">Key Features:</h4>
                 <ul className="space-y-2">
                   {recommendation.features.map((feature: string, index: number) => (
                     <li key={index} className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-white" />
-                      <span className="text-sm">{feature}</span>
+                      <CheckCircle className="h-4 w-4 text-green-500" />
+                      <span className="text-sm text-black">{feature}</span>
                     </li>
                   ))}
                 </ul>
               </div>
               <div>
-                <h4 className="font-semibold mb-3">Alternative Options:</h4>
+                <h4 className="font-semibold mb-3 text-black">Alternative Options:</h4>
                 <div className="space-y-2">
                   {recommendation.alternatives.map((alt: string, index: number) => (
-                    <Badge key={index} variant="outline" className="mr-2 mb-2">
+                    <Badge key={index} variant="outline" className="mr-2 mb-2 text-black border-gray-300">
                       {alt}
                     </Badge>
                   ))}
@@ -211,10 +211,10 @@ const ChatbotMatcher = () => {
         </Card>
 
         <div className="text-center space-y-4">
-          <Button onClick={resetQuiz} variant="outline" size="lg">
+          <Button onClick={resetQuiz} variant="outline" size="lg" className="bg-white text-black border-gray-300 hover:bg-gray-50">
             Try Again
           </Button>
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-blue-100">
             Want to explore more options? Check out our detailed comparison pages.
           </p>
         </div>
@@ -231,17 +231,17 @@ const ChatbotMatcher = () => {
           </div>
           <h1 className="text-3xl font-bold text-white">Find Your Perfect AI Chatbot</h1>
         </div>
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+        <p className="text-lg text-blue-100 max-w-2xl mx-auto">
           Answer a few quick questions and we'll recommend the best AI chatbot for your specific needs
         </p>
       </div>
 
       <div className="mb-8">
         <div className="flex items-center justify-between mb-4">
-          <span className="text-sm text-muted-foreground">
+          <span className="text-sm text-blue-100">
             Question {currentStep + 1} of {questions.length}
           </span>
-          <span className="text-sm text-muted-foreground">
+          <span className="text-sm text-blue-100">
             {Math.round(((currentStep + 1) / questions.length) * 100)}% Complete
           </span>
         </div>
@@ -253,10 +253,10 @@ const ChatbotMatcher = () => {
         </div>
       </div>
 
-      <Card className="mb-8">
+      <Card className="mb-8 bg-white border-gray-200 shadow-lg">
         <CardHeader className="text-center">
-          <CardTitle className="text-xl">{questions[currentStep].title}</CardTitle>
-          <CardDescription>{questions[currentStep].description}</CardDescription>
+          <CardTitle className="text-xl text-black">{questions[currentStep].title}</CardTitle>
+          <CardDescription className="text-gray-700">{questions[currentStep].description}</CardDescription>
         </CardHeader>
         <CardContent>
           <div className="grid md:grid-cols-2 gap-4">
@@ -264,18 +264,18 @@ const ChatbotMatcher = () => {
               <Button
                 key={option.value}
                 variant="outline"
-                className="h-auto p-6 flex flex-col items-center gap-3 hover:bg-blue-50 hover:border-blue-300 transition-all duration-200"
+                className="h-auto p-6 flex flex-col items-center gap-3 bg-white text-black border-gray-300 hover:bg-gray-50 hover:border-blue-300 transition-all duration-200"
                 onClick={() => handleAnswer(option.value)}
               >
                 <div className="text-2xl">
                   {typeof option.icon === "string" ? (
                     option.icon
                   ) : (
-                    <option.icon className="h-6 w-6 text-white" />
+                    <option.icon className="h-6 w-6 text-gray-600" />
                   )}
                 </div>
-                <span className="font-medium">{option.label}</span>
-                <ArrowRight className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity text-white" />
+                <span className="font-medium text-black">{option.label}</span>
+                <ArrowRight className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity text-gray-600" />
               </Button>
             ))}
           </div>
@@ -287,7 +287,7 @@ const ChatbotMatcher = () => {
           <Button 
             variant="ghost" 
             onClick={() => setCurrentStep(currentStep - 1)}
-            className="text-muted-foreground"
+            className="text-blue-100 hover:text-white hover:bg-blue-500/20"
           >
             ← Back to Previous Question
           </Button>
