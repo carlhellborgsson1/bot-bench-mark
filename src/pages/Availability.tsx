@@ -9,11 +9,11 @@ const Availability = () => {
       <div className="mb-8">
         <div className="flex items-center gap-3 mb-4">
           <div className="p-2 rounded-lg bg-gradient-to-br from-blue-500/10 to-cyan-500/10">
-            <Globe className="h-6 w-6 text-blue-600" />
+            <Globe className="h-6 w-6 text-white" />
           </div>
-          <h1 className="text-3xl font-bold">Availability & Access</h1>
+          <h1 className="text-3xl font-bold text-white">Availability & Access</h1>
         </div>
-        <p className="text-lg text-muted-foreground max-w-3xl">
+        <p className="text-lg text-white max-w-3xl">
           Explore global availability, regional restrictions, language support, and access methods 
           for different AI chatbot platforms worldwide.
         </p>
@@ -22,11 +22,11 @@ const Availability = () => {
       {/* Availability Metrics Explanation */}
       <Card className="mb-8 bg-blue-50 border-blue-200">
         <CardHeader>
-          <CardTitle className="flex items-center gap-2 text-blue-900">
+          <CardTitle className="flex items-center gap-2 text-black">
             <Info className="h-5 w-5" />
             Understanding Availability Metrics
           </CardTitle>
-          <CardDescription className="text-blue-700">
+          <CardDescription className="text-black">
             Here's what each availability metric means for global users:
           </CardDescription>
         </CardHeader>
@@ -34,30 +34,30 @@ const Availability = () => {
           <div className="p-3 bg-white rounded-lg border border-blue-200">
             <div className="flex items-center gap-2 mb-2">
               <MapPin className="h-4 w-4 text-blue-600" />
-              <h4 className="font-semibold text-blue-900">Regional Access</h4>
+              <h4 className="font-semibold text-black">Regional Access</h4>
             </div>
-            <p className="text-sm text-blue-700">Countries and regions where the service is officially available and supported</p>
+            <p className="text-sm text-black">Countries and regions where the service is officially available and supported</p>
           </div>
           <div className="p-3 bg-white rounded-lg border border-blue-200">
             <div className="flex items-center gap-2 mb-2">
               <Globe className="h-4 w-4 text-blue-600" />
-              <h4 className="font-semibold text-blue-900">Language Count</h4>
+              <h4 className="font-semibold text-black">Language Count</h4>
             </div>
-            <p className="text-sm text-blue-700">Number of human languages the AI can understand and respond in effectively</p>
+            <p className="text-sm text-black">Number of human languages the AI can understand and respond in effectively</p>
           </div>
           <div className="p-3 bg-white rounded-lg border border-blue-200">
             <div className="flex items-center gap-2 mb-2">
               <Clock className="h-4 w-4 text-blue-600" />
-              <h4 className="font-semibold text-blue-900">Uptime %</h4>
+              <h4 className="font-semibold text-black">Uptime %</h4>
             </div>
-            <p className="text-sm text-blue-700">Percentage of time the service is operational and accessible over a 30-day period</p>
+            <p className="text-sm text-black">Percentage of time the service is operational and accessible over a 30-day period</p>
           </div>
           <div className="p-3 bg-white rounded-lg border border-blue-200">
             <div className="flex items-center gap-2 mb-2">
               <Wifi className="h-4 w-4 text-blue-600" />
-              <h4 className="font-semibold text-blue-900">Access Methods</h4>
+              <h4 className="font-semibold text-black">Access Methods</h4>
             </div>
-            <p className="text-sm text-blue-700">Different ways to use the service (web browser, mobile app, API, desktop app)</p>
+            <p className="text-sm text-black">Different ways to use the service (web browser, mobile app, API, desktop app)</p>
           </div>
         </CardContent>
       </Card>
@@ -65,20 +65,20 @@ const Availability = () => {
       <div className="grid lg:grid-cols-2 gap-6 mb-8">
         <Card className="hover:shadow-lg transition-all duration-300">
           <CardHeader>
-            <CardTitle className="flex items-center gap-2">
+            <CardTitle className="flex items-center gap-2 text-black">
               <MapPin className="h-5 w-5 text-red-500" />
               Regional Availability
             </CardTitle>
-            <CardDescription>Geographic access and restrictions by country/region</CardDescription>
+            <CardDescription className="text-black">Geographic access and restrictions by country/region</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="space-y-3">
               <div className="p-4 border rounded-lg">
                 <div className="flex items-center justify-between mb-2">
-                  <h4 className="font-semibold">GPT-4 / ChatGPT</h4>
+                  <h4 className="font-semibold text-black">GPT-4 / ChatGPT</h4>
                   <Badge className="bg-green-100 text-green-700">Global</Badge>
                 </div>
-                <p className="text-sm text-muted-foreground mb-2">Available in 160+ countries with full feature access</p>
+                <p className="text-sm text-black mb-2">Available in 160+ countries with full feature access</p>
                 <div className="flex flex-wrap gap-1">
                   <Badge variant="outline" className="text-xs">US</Badge>
                   <Badge variant="outline" className="text-xs">EU</Badge>
@@ -89,10 +89,10 @@ const Availability = () => {
               
               <div className="p-4 border rounded-lg">
                 <div className="flex items-center justify-between mb-2">
-                  <h4 className="font-semibold">Claude 3</h4>
+                  <h4 className="font-semibold text-black">Claude 3</h4>
                   <Badge className="bg-yellow-100 text-yellow-700">Limited</Badge>
                 </div>
-                <p className="text-sm text-muted-foreground mb-2">Available in select regions, expanding gradually</p>
+                <p className="text-sm text-black mb-2">Available in select regions, expanding gradually</p>
                 <div className="flex flex-wrap gap-1">
                   <Badge variant="outline" className="text-xs">US</Badge>
                   <Badge variant="outline" className="text-xs">UK</Badge>
@@ -102,10 +102,10 @@ const Availability = () => {
 
               <div className="p-4 border rounded-lg">
                 <div className="flex items-center justify-between mb-2">
-                  <h4 className="font-semibold">Gemini Pro</h4>
+                  <h4 className="font-semibold text-black">Gemini Pro</h4>
                   <Badge className="bg-green-100 text-green-700">Expanding</Badge>
                 </div>
-                <p className="text-sm text-muted-foreground mb-2">Rapidly expanding globally with Google integration</p>
+                <p className="text-sm text-black mb-2">Rapidly expanding globally with Google integration</p>
                 <div className="flex flex-wrap gap-1">
                   <Badge variant="outline" className="text-xs">US</Badge>
                   <Badge variant="outline" className="text-xs">EU</Badge>
@@ -119,11 +119,11 @@ const Availability = () => {
 
         <Card className="hover:shadow-lg transition-all duration-300">
           <CardHeader>
-            <CardTitle className="flex items-center gap-2">
+            <CardTitle className="flex items-center gap-2 text-black">
               <Globe className="h-5 w-5 text-blue-500" />
               Language Support
             </CardTitle>
-            <CardDescription>Number of languages supported for conversation</CardDescription>
+            <CardDescription className="text-black">Number of languages supported for conversation</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="grid grid-cols-2 gap-4">
@@ -146,7 +146,7 @@ const Availability = () => {
             </div>
             
             <div className="space-y-2">
-              <h4 className="font-semibold">Most Supported Languages:</h4>
+              <h4 className="font-semibold text-black">Most Supported Languages:</h4>
               <div className="flex flex-wrap gap-1">
                 <Badge variant="outline">English</Badge>
                 <Badge variant="outline">Spanish</Badge>
@@ -165,28 +165,28 @@ const Availability = () => {
       <div className="grid md:grid-cols-3 gap-6 mb-8">
         <Card>
           <CardHeader>
-            <CardTitle className="flex items-center gap-2">
+            <CardTitle className="flex items-center gap-2 text-black">
               <Clock className="h-5 w-5 text-orange-500" />
               Uptime & Reliability
             </CardTitle>
-            <CardDescription>Service availability metrics</CardDescription>
+            <CardDescription className="text-black">Service availability metrics</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="space-y-3">
               <div className="flex justify-between items-center">
-                <span className="text-sm">GPT-4</span>
+                <span className="text-sm text-black">GPT-4</span>
                 <Badge className="bg-green-100 text-green-700">99.9%</Badge>
               </div>
               <div className="flex justify-between items-center">
-                <span className="text-sm">Claude 3</span>
+                <span className="text-sm text-black">Claude 3</span>
                 <Badge className="bg-green-100 text-green-700">99.7%</Badge>
               </div>
               <div className="flex justify-between items-center">
-                <span className="text-sm">Gemini Pro</span>
+                <span className="text-sm text-black">Gemini Pro</span>
                 <Badge className="bg-green-100 text-green-700">99.5%</Badge>
               </div>
             </div>
-            <p className="text-xs text-muted-foreground">
+            <p className="text-xs text-black">
               Based on 30-day rolling average
             </p>
           </CardContent>
@@ -194,28 +194,28 @@ const Availability = () => {
 
         <Card>
           <CardHeader>
-            <CardTitle className="flex items-center gap-2">
+            <CardTitle className="flex items-center gap-2 text-black">
               <Wifi className="h-5 w-5 text-green-500" />
               Access Methods
             </CardTitle>
-            <CardDescription>How to use each platform</CardDescription>
+            <CardDescription className="text-black">How to use each platform</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="space-y-2">
               <div className="flex items-center justify-between">
-                <span className="text-sm">Web Interface</span>
+                <span className="text-sm text-black">Web Interface</span>
                 <Badge variant="outline">All</Badge>
               </div>
               <div className="flex items-center justify-between">
-                <span className="text-sm">Mobile Apps</span>
+                <span className="text-sm text-black">Mobile Apps</span>
                 <Badge variant="outline">Most</Badge>
               </div>
               <div className="flex items-center justify-between">
-                <span className="text-sm">API Access</span>
+                <span className="text-sm text-black">API Access</span>
                 <Badge variant="outline">All</Badge>
               </div>
               <div className="flex items-center justify-between">
-                <span className="text-sm">Desktop Apps</span>
+                <span className="text-sm text-black">Desktop Apps</span>
                 <Badge variant="outline">Limited</Badge>
               </div>
             </div>
@@ -224,27 +224,27 @@ const Availability = () => {
 
         <Card>
           <CardHeader>
-            <CardTitle>Mobile Availability</CardTitle>
-            <CardDescription>iOS and Android apps</CardDescription>
+            <CardTitle className="text-black">Mobile Availability</CardTitle>
+            <CardDescription className="text-black">iOS and Android apps</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="space-y-3">
               <div className="p-3 border rounded-lg">
-                <p className="font-medium text-sm">ChatGPT</p>
+                <p className="font-medium text-sm text-black">ChatGPT</p>
                 <div className="flex gap-2 mt-1">
                   <Badge variant="outline" className="text-xs">iOS</Badge>
                   <Badge variant="outline" className="text-xs">Android</Badge>
                 </div>
               </div>
               <div className="p-3 border rounded-lg">
-                <p className="font-medium text-sm">Claude</p>
+                <p className="font-medium text-sm text-black">Claude</p>
                 <div className="flex gap-2 mt-1">
                   <Badge variant="outline" className="text-xs">iOS</Badge>
                   <Badge variant="outline" className="text-xs">Android</Badge>
                 </div>
               </div>
               <div className="p-3 border rounded-lg">
-                <p className="font-medium text-sm">Gemini</p>
+                <p className="font-medium text-sm text-black">Gemini</p>
                 <div className="flex gap-2 mt-1">
                   <Badge variant="outline" className="text-xs">iOS</Badge>
                   <Badge variant="outline" className="text-xs">Android</Badge>
@@ -257,8 +257,8 @@ const Availability = () => {
 
       <Card>
         <CardHeader>
-          <CardTitle>Regional Considerations</CardTitle>
-          <CardDescription>Important factors for different regions</CardDescription>
+          <CardTitle className="text-black">Regional Considerations</CardTitle>
+          <CardDescription className="text-black">Important factors for different regions</CardDescription>
         </CardHeader>
         <CardContent>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
