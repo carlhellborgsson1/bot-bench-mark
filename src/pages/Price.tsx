@@ -1,7 +1,8 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { DollarSign, TrendingUp, Users, Zap, Info } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { DollarSign, TrendingUp, Users, Zap, Info, ExternalLink } from "lucide-react";
 
 const Price = () => {
   return (
@@ -71,6 +72,12 @@ const Price = () => {
               <li className="text-black">• Plugin access</li>
               <li className="text-black">• Priority access</li>
             </ul>
+            <Button 
+              className="w-full bg-blue-600 hover:bg-blue-700"
+              onClick={() => window.open('https://chat.openai.com/auth/login?next=%2F%3Fmodel%3Dgpt-4', '_blank')}
+            >
+              Get ChatGPT Plus <ExternalLink className="w-4 h-4 ml-2" />
+            </Button>
           </CardContent>
         </Card>
 
@@ -92,6 +99,12 @@ const Price = () => {
               <li className="text-black">• Longer conversations</li>
               <li className="text-black">• Image uploads</li>
             </ul>
+            <Button 
+              className="w-full bg-purple-600 hover:bg-purple-700"
+              onClick={() => window.open('https://claude.ai/upgrade', '_blank')}
+            >
+              Get Claude Pro <ExternalLink className="w-4 h-4 ml-2" />
+            </Button>
           </CardContent>
         </Card>
 
@@ -113,6 +126,12 @@ const Price = () => {
               <li className="text-black">• Docs collaboration</li>
               <li className="text-black">• Priority support</li>
             </ul>
+            <Button 
+              className="w-full bg-green-600 hover:bg-green-700"
+              onClick={() => window.open('https://one.google.com/about/plans', '_blank')}
+            >
+              Get Gemini Advanced <ExternalLink className="w-4 h-4 ml-2" />
+            </Button>
           </CardContent>
         </Card>
 
@@ -134,6 +153,13 @@ const Price = () => {
               <li className="text-black">• Usage limits apply</li>
               <li className="text-black">• Standard support</li>
             </ul>
+            <Button 
+              variant="outline" 
+              className="w-full border-gray-400 text-gray-700 hover:bg-gray-50"
+              onClick={() => window.open('https://chat.openai.com/', '_blank')}
+            >
+              Try Free Versions <ExternalLink className="w-4 h-4 ml-2" />
+            </Button>
           </CardContent>
         </Card>
       </div>
@@ -165,6 +191,12 @@ const Price = () => {
             <p className="text-sm text-black">
               Prices vary by model version and usage volume. Enterprise discounts available.
             </p>
+            <Button 
+              className="w-full bg-blue-600 hover:bg-blue-700"
+              onClick={() => window.open('https://platform.openai.com/pricing', '_blank')}
+            >
+              View API Pricing <ExternalLink className="w-4 h-4 ml-2" />
+            </Button>
           </CardContent>
         </Card>
 
@@ -191,6 +223,12 @@ const Price = () => {
                 <p className="text-sm text-black">SSO, admin controls, priority support</p>
               </div>
             </div>
+            <Button 
+              className="w-full bg-green-600 hover:bg-green-700"
+              onClick={() => window.open('https://openai.com/enterprise', '_blank')}
+            >
+              Contact Sales <ExternalLink className="w-4 h-4 ml-2" />
+            </Button>
           </CardContent>
         </Card>
       </div>
