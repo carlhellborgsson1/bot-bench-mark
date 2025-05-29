@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Compass, ArrowRight, CheckCircle, Users, Building, DollarSign, Shield } from "lucide-react";
+import { Compass, ArrowRight, CheckCircle, Users, Building, DollarSign, Shield, Palette, BookOpen, User, UsersIcon, Home, Globe } from "lucide-react";
 
 const ChatbotMatcher = () => {
   const [currentStep, setCurrentStep] = useState(0);
@@ -17,8 +17,8 @@ const ChatbotMatcher = () => {
       options: [
         { value: "personal", label: "Personal Use", icon: Users },
         { value: "business", label: "Business/Enterprise", icon: Building },
-        { value: "creative", label: "Creative Projects", icon: "🎨" },
-        { value: "research", label: "Research & Learning", icon: "📚" }
+        { value: "creative", label: "Creative Projects", icon: Palette },
+        { value: "research", label: "Research & Learning", icon: BookOpen }
       ]
     },
     {
@@ -26,7 +26,7 @@ const ChatbotMatcher = () => {
       title: "What's your budget preference?",
       description: "Choose your preferred pricing tier",
       options: [
-        { value: "free", label: "Free Only", icon: "💸" },
+        { value: "free", label: "Free Only", icon: DollarSign },
         { value: "low", label: "$1-20/month", icon: DollarSign },
         { value: "medium", label: "$20-60/month", icon: DollarSign },
         { value: "enterprise", label: "Enterprise (Custom)", icon: DollarSign }
@@ -37,10 +37,10 @@ const ChatbotMatcher = () => {
       title: "What's most important to you?",
       description: "Select your top priority",
       options: [
-        { value: "performance", label: "Best Performance", icon: "⚡" },
+        { value: "performance", label: "Best Performance", icon: CheckCircle },
         { value: "privacy", label: "Privacy & Security", icon: Shield },
-        { value: "features", label: "Advanced Features", icon: "🚀" },
-        { value: "ease", label: "Ease of Use", icon: "👌" }
+        { value: "features", label: "Advanced Features", icon: Compass },
+        { value: "ease", label: "Ease of Use", icon: CheckCircle }
       ]
     },
     {
@@ -48,10 +48,10 @@ const ChatbotMatcher = () => {
       title: "How many people will use it?",
       description: "Choose your team size",
       options: [
-        { value: "individual", label: "Just Me", icon: "👤" },
-        { value: "small", label: "2-10 People", icon: "👥" },
-        { value: "medium", label: "11-100 People", icon: "🏢" },
-        { value: "large", label: "100+ People", icon: "🏛️" }
+        { value: "individual", label: "Just Me", icon: User },
+        { value: "small", label: "2-10 People", icon: Users },
+        { value: "medium", label: "11-100 People", icon: Building },
+        { value: "large", label: "100+ People", icon: Globe }
       ]
     }
   ];
@@ -267,13 +267,7 @@ const ChatbotMatcher = () => {
                 className="h-auto p-6 flex flex-col items-center gap-3 bg-white text-black border-gray-300 hover:bg-gray-50 hover:border-blue-300 transition-all duration-200"
                 onClick={() => handleAnswer(option.value)}
               >
-                <div className="text-2xl">
-                  {typeof option.icon === "string" ? (
-                    option.icon
-                  ) : (
-                    <option.icon className="h-6 w-6 text-gray-600" />
-                  )}
-                </div>
+                <option.icon className="h-6 w-6 text-gray-600" />
                 <span className="font-medium text-black">{option.label}</span>
                 <ArrowRight className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity text-gray-600" />
               </Button>
