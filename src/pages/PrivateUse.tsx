@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -28,7 +27,7 @@ const PrivateUse = () => {
               <Heart className="h-5 w-5 text-red-500" />
               Best for Personal Use
             </CardTitle>
-            <CardDescription>Top recommendations for individual users</CardDescription>
+            <CardDescription className="text-black">Top recommendations for individual users</CardDescription>
           </CardHeader>
           <CardContent className="space-y-6">
             <div className="space-y-4">
