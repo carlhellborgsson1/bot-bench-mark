@@ -1,3 +1,4 @@
+
 import { Answers, Recommendation } from "@/types/chatbot";
 
 export const getAffiliateLink = (chatbotName: string): string => {
@@ -6,7 +7,7 @@ export const getAffiliateLink = (chatbotName: string): string => {
     "ChatGPT Plus (GPT-4)": "https://openai.com/chatgpt/pricing/",
     "ChatGPT Plus": "https://openai.com/chatgpt/pricing/",
     "Claude 3": "https://www.anthropic.com/pricing",
-    "GPT-4 Enterprise": "https://openai.com/enterprise",
+    "GPT-4 Enterprise": "https://openai.com/chatgpt/pricing/#enterprise",
     "Claude for Work": "https://www.anthropic.com/pricing",
     "Google Workspace AI": "https://workspace.google.com/pricing.html?source=gafb-ai-plan-en&hl=en&ga_region=noram&ga_country=us&ga_lang=en",
     "GPT-4": "https://openai.com/chatgpt/pricing/"
