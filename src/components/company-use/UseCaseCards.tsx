@@ -8,7 +8,7 @@ const UseCaseCards = () => {
     <div className="grid md:grid-cols-4 gap-6">
       <Card className="hover:shadow-lg transition-all duration-300">
         <CardHeader className="text-center">
-          <Users className="h-8 w-8 text-white mx-auto mb-2" />
+          <Users className="h-8 w-8 text-blue-600 mx-auto mb-2" />
           <CardTitle className="text-lg text-black">Customer Support</CardTitle>
           <CardDescription className="text-sm text-black">AI-powered help desk solutions</CardDescription>
         </CardHeader>
@@ -28,7 +28,7 @@ const UseCaseCards = () => {
 
       <Card className="hover:shadow-lg transition-all duration-300">
         <CardHeader className="text-center">
-          <TrendingUp className="h-8 w-8 text-white mx-auto mb-2" />
+          <TrendingUp className="h-8 w-8 text-green-600 mx-auto mb-2" />
           <CardTitle className="text-lg text-black">Sales & Marketing</CardTitle>
           <CardDescription className="text-sm text-black">Revenue generation and lead nurturing</CardDescription>
         </CardHeader>
@@ -48,7 +48,7 @@ const UseCaseCards = () => {
 
       <Card className="hover:shadow-lg transition-all duration-300">
         <CardHeader className="text-center">
-          <Cog className="h-8 w-8 text-white mx-auto mb-2" />
+          <Cog className="h-8 w-8 text-purple-600 mx-auto mb-2" />
           <CardTitle className="text-lg text-black">Operations</CardTitle>
           <CardDescription className="text-sm text-black">Process automation and efficiency</CardDescription>
         </CardHeader>
@@ -68,7 +68,7 @@ const UseCaseCards = () => {
 
       <Card className="hover:shadow-lg transition-all duration-300">
         <CardHeader className="text-center">
-          <Building className="h-8 w-8 text-white mx-auto mb-2" />
+          <Building className="h-8 w-8 text-orange-600 mx-auto mb-2" />
           <CardTitle className="text-lg text-black">HR & Training</CardTitle>
           <CardDescription className="text-sm text-black">Human resources and development</CardDescription>
         </CardHeader>

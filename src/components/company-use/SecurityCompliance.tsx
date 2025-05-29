@@ -8,7 +8,7 @@ const SecurityCompliance = () => {
     <Card className="hover:shadow-lg transition-all duration-300">
       <CardHeader>
         <CardTitle className="flex items-center gap-2 text-black">
-          <Shield className="h-5 w-5 text-white" />
+          <Shield className="h-5 w-5 text-blue-600" />
           Enterprise Security & Compliance
         </CardTitle>
         <CardDescription className="text-black">Security features for business environments</CardDescription>

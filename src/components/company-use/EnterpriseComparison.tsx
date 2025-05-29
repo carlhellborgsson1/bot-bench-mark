@@ -8,7 +8,7 @@ const EnterpriseComparison = () => {
     <Card className="hover:shadow-lg transition-all duration-300">
       <CardHeader>
         <CardTitle className="flex items-center gap-2 text-black">
-          <Briefcase className="h-5 w-5 text-white" />
+          <Briefcase className="h-5 w-5 text-blue-600" />
           Enterprise Solutions Comparison
         </CardTitle>
         <CardDescription className="text-black">Professional-grade AI for business environments</CardDescription>
