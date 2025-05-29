@@ -12,7 +12,7 @@ const CompanyUse = () => {
       <div className="mb-8">
         <div className="flex items-center gap-3 mb-4">
           <div className="p-2 rounded-lg bg-gradient-to-br from-blue-500/10 to-indigo-500/10">
-            <Building className="h-6 w-6 text-blue-600" />
+            <Building className="h-6 w-6 text-white" />
           </div>
           <h1 className="text-3xl font-bold">AI Chatbots for Business Use</h1>
         </div>

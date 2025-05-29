@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { BarChart3, Shield, Zap, DollarSign, Globe, Code, ArrowRight, Sparkles, Compass } from "lucide-react";
@@ -63,9 +64,9 @@ const Index = () => {
         <div className="flex justify-center px-4">
           <Button asChild size="lg" className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 text-sm sm:text-base">
             <Link to="/chatbot-matcher" className="flex items-center gap-2">
-              <Sparkles className="h-4 w-4" />
+              <Sparkles className="h-4 w-4 text-white" />
               Find My Chatbot
-              <ArrowRight className="h-4 w-4" />
+              <ArrowRight className="h-4 w-4 text-white" />
             </Link>
           </Button>
         </div>
@@ -78,7 +79,7 @@ const Index = () => {
             <CardHeader className="pb-4">
               <div className="flex items-center gap-3 mb-2">
                 <div className="p-2 sm:p-3 rounded-lg bg-gradient-to-br from-blue-500/15 to-purple-500/15 group-hover:from-blue-500/25 group-hover:to-purple-500/25 transition-colors border border-blue-200">
-                  <feature.icon className="h-5 w-5 sm:h-6 sm:w-6 text-blue-700" />
+                  <feature.icon className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
                 </div>
                 <CardTitle className="text-base sm:text-lg text-gray-900">{feature.title}</CardTitle>
               </div>
@@ -90,7 +91,7 @@ const Index = () => {
               <Button asChild variant="ghost" className="group/btn w-full justify-between hover:bg-blue-50 transition-colors border border-gray-200 hover:border-blue-300 text-sm sm:text-base">
                 <Link to={feature.link}>
                   <span className="text-gray-800">Explore</span>
-                  <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform text-blue-600" />
+                  <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform text-white" />
                 </Link>
               </Button>
             </CardContent>
@@ -106,7 +107,7 @@ const Index = () => {
         </p>
         <Button asChild size="lg" className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white text-sm sm:text-base">
           <Link to="/chatbot-matcher" className="flex items-center gap-2">
-            <Compass className="h-4 w-4" />
+            <Compass className="h-4 w-4 text-white" />
             Start Matching Process
           </Link>
         </Button>

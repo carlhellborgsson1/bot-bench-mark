@@ -44,7 +44,7 @@ const Performance = () => {
       <div className="mb-8">
         <div className="flex items-center gap-3 mb-4">
           <div className="p-2 rounded-lg bg-gradient-to-br from-blue-500/10 to-purple-500/10">
-            <BarChart3 className="h-6 w-6 text-blue-600" />
+            <BarChart3 className="h-6 w-6 text-white" />
           </div>
           <h1 className="text-3xl font-bold text-white">Performance Comparison</h1>
         </div>
@@ -58,7 +58,7 @@ const Performance = () => {
       <Card className="mb-8 bg-blue-50 border-blue-200">
         <CardHeader>
           <CardTitle className="flex items-center gap-2 text-blue-900">
-            <Info className="h-5 w-5" />
+            <Info className="h-5 w-5 text-white" />
             Understanding the Metrics
           </CardTitle>
           <CardDescription className="text-blue-700">
@@ -68,28 +68,28 @@ const Performance = () => {
         <CardContent className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
           <div className="p-3 bg-white rounded-lg border border-blue-200">
             <div className="flex items-center gap-2 mb-2">
-              <Clock className="h-4 w-4 text-blue-600" />
+              <Clock className="h-4 w-4 text-white" />
               <h4 className="font-semibold text-blue-900">Response Time</h4>
             </div>
             <p className="text-sm text-blue-700">Average time from sending a message to receiving the first response token</p>
           </div>
           <div className="p-3 bg-white rounded-lg border border-blue-200">
             <div className="flex items-center gap-2 mb-2">
-              <Target className="h-4 w-4 text-blue-600" />
+              <Target className="h-4 w-4 text-white" />
               <h4 className="font-semibold text-blue-900">Accuracy</h4>
             </div>
             <p className="text-sm text-blue-700">Percentage of correct responses on standardized test questions across various topics</p>
           </div>
           <div className="p-3 bg-white rounded-lg border border-blue-200">
             <div className="flex items-center gap-2 mb-2">
-              <Zap className="h-4 w-4 text-blue-600" />
+              <Zap className="h-4 w-4 text-white" />
               <h4 className="font-semibold text-blue-900">Throughput</h4>
             </div>
             <p className="text-sm text-blue-700">Maximum number of concurrent requests the system can handle effectively</p>
           </div>
           <div className="p-3 bg-white rounded-lg border border-blue-200">
             <div className="flex items-center gap-2 mb-2">
-              <BarChart3 className="h-4 w-4 text-blue-600" />
+              <BarChart3 className="h-4 w-4 text-white" />
               <h4 className="font-semibold text-blue-900">Uptime</h4>
             </div>
             <p className="text-sm text-blue-700">Percentage of time the service is available and functioning properly over 30 days</p>
@@ -113,28 +113,28 @@ const Performance = () => {
             <CardContent>
               <div className="grid md:grid-cols-4 gap-6">
                 <div className="flex items-center gap-3">
-                  <Clock className="h-5 w-5 text-muted-foreground" />
+                  <Clock className="h-5 w-5 text-white" />
                   <div>
                     <p className="font-semibold">{metric.responseTime}</p>
                     <p className="text-sm text-muted-foreground">Response Time</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Target className="h-5 w-5 text-muted-foreground" />
+                  <Target className="h-5 w-5 text-white" />
                   <div>
                     <p className="font-semibold">{metric.accuracy}</p>
                     <p className="text-sm text-muted-foreground">Accuracy</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Zap className="h-5 w-5 text-muted-foreground" />
+                  <Zap className="h-5 w-5 text-white" />
                   <div>
                     <p className="font-semibold">{metric.throughput}</p>
                     <p className="text-sm text-muted-foreground">Throughput</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <BarChart3 className="h-5 w-5 text-muted-foreground" />
+                  <BarChart3 className="h-5 w-5 text-white" />
                   <div>
                     <p className="font-semibold">{metric.reliability}</p>
                     <p className="text-sm text-muted-foreground">Uptime</p>

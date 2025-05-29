@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -191,7 +190,7 @@ const ChatbotMatcher = () => {
                 <ul className="space-y-2">
                   {recommendation.features.map((feature: string, index: number) => (
                     <li key={index} className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-500" />
+                      <CheckCircle className="h-4 w-4 text-white" />
                       <span className="text-sm">{feature}</span>
                     </li>
                   ))}
@@ -272,11 +271,11 @@ const ChatbotMatcher = () => {
                   {typeof option.icon === "string" ? (
                     option.icon
                   ) : (
-                    <option.icon className="h-6 w-6" />
+                    <option.icon className="h-6 w-6 text-white" />
                   )}
                 </div>
                 <span className="font-medium">{option.label}</span>
-                <ArrowRight className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                <ArrowRight className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity text-white" />
               </Button>
             ))}
           </div>
