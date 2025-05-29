@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Compass, ArrowRight, CheckCircle, Users, Building, DollarSign, Shield, Palette, BookOpen, User, UsersIcon, Home, Globe } from "lucide-react";
+import { Compass, ArrowRight, CheckCircle, Users, Building, DollarSign, Shield, Palette, BookOpen, User, UsersIcon, Home, Globe, ExternalLink } from "lucide-react";
 
 const ChatbotMatcher = () => {
   const [currentStep, setCurrentStep] = useState(0);
@@ -55,6 +55,21 @@ const ChatbotMatcher = () => {
       ]
     }
   ];
+
+  const getAffiliateLink = (chatbotName: string) => {
+    const affiliateLinks: Record<string, string> = {
+      "Gemini Pro": "https://gemini.google.com/?ref=affiliate",
+      "ChatGPT Plus (GPT-4)": "https://chat.openai.com/auth/login?ref=affiliate",
+      "ChatGPT Plus": "https://chat.openai.com/auth/login?ref=affiliate",
+      "Claude 3": "https://claude.ai/?ref=affiliate",
+      "GPT-4 Enterprise": "https://openai.com/enterprise?ref=affiliate",
+      "Claude for Work": "https://claude.ai/for-work?ref=affiliate",
+      "Google Workspace AI": "https://workspace.google.com/products/ai/?ref=affiliate",
+      "GPT-4": "https://chat.openai.com/auth/login?ref=affiliate"
+    };
+    
+    return affiliateLinks[chatbotName] || "https://chat.openai.com/?ref=affiliate";
+  };
 
   const getRecommendation = (answers: Record<string, string>) => {
     const { useCase, budget, priority, teamSize } = answers;
@@ -184,7 +199,7 @@ const ChatbotMatcher = () => {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
               <div>
                 <h4 className="font-semibold mb-3 text-black">Key Features:</h4>
                 <ul className="space-y-2">
@@ -205,6 +220,22 @@ const ChatbotMatcher = () => {
                     </Badge>
                   ))}
                 </div>
+              </div>
+            </div>
+            
+            <div className="border-t pt-6">
+              <div className="text-center space-y-4">
+                <Button 
+                  onClick={() => window.open(getAffiliateLink(recommendation.primary), '_blank')}
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg"
+                  size="lg"
+                >
+                  Get Started with {recommendation.primary}
+                  <ExternalLink className="w-5 h-5 ml-2" />
+                </Button>
+                <p className="text-sm text-gray-600">
+                  Start your AI journey with our top recommendation
+                </p>
               </div>
             </div>
           </CardContent>
