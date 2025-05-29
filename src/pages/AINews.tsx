@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -90,9 +89,9 @@ const AINews = () => {
           <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
             <TrendingUp className="h-6 w-6 text-white" />
           </div>
-          <h1 className="text-4xl font-bold text-gray-900">AI News Hub</h1>
+          <h1 className="text-4xl font-bold text-white">AI News Hub</h1>
         </div>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        <p className="text-xl text-white max-w-3xl mx-auto">
           Stay updated with the latest developments in artificial intelligence, from breakthrough research to industry updates.
         </p>
       </div>
@@ -167,7 +166,7 @@ const AINews = () => {
         <Button variant="outline" size="lg" className="px-8">
           Load More Articles
         </Button>
-        <p className="text-sm text-gray-500 mt-4">
+        <p className="text-sm text-white mt-4">
           Showing {filteredArticles.length} of 50+ articles
         </p>
       </div>
