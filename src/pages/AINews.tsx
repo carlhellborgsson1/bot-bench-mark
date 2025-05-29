@@ -196,10 +196,10 @@ const AINews = () => {
             key={category}
             variant="outline"
             onClick={() => handleCategoryChange(category)}
-            className={`text-sm transition-all duration-200 ${
+            className={`text-sm transition-all duration-300 ${
               selectedCategory === category 
-                ? "bg-transparent border-white border-2 text-white shadow-lg" 
-                : "bg-transparent border-white/30 text-white/80 hover:border-white hover:text-white hover:shadow-md"
+                ? "bg-white text-black border-white shadow-lg shadow-white/30" 
+                : "bg-white text-black border-white hover:shadow-lg hover:shadow-white/50 hover:scale-105"
             }`}
           >
             {category}
