@@ -1,9 +1,7 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Briefcase, ExternalLink } from "lucide-react";
-import { getAffiliateLink } from "@/utils/recommendations";
+import { Briefcase } from "lucide-react";
 
 const EnterpriseComparison = () => {
   return (
@@ -25,7 +23,7 @@ const EnterpriseComparison = () => {
             <p className="text-black mb-3">
               Comprehensive enterprise solution with advanced security and admin controls.
             </p>
-            <div className="grid md:grid-cols-2 gap-3 mb-4">
+            <div className="grid md:grid-cols-2 gap-3">
               <div>
                 <p className="font-medium text-sm text-black">Key Features:</p>
                 <ul className="text-sm text-black space-y-1">
@@ -45,13 +43,6 @@ const EnterpriseComparison = () => {
                 </ul>
               </div>
             </div>
-            <Button 
-              onClick={() => window.open(getAffiliateLink("GPT-4 Enterprise"), '_blank')}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white"
-            >
-              <ExternalLink className="h-4 w-4 mr-2" />
-              Get GPT-4 Enterprise
-            </Button>
           </div>
 
           <div className="p-4 border rounded-lg bg-gradient-to-r from-purple-50 to-pink-50">
@@ -62,7 +53,7 @@ const EnterpriseComparison = () => {
             <p className="text-black mb-3">
               Privacy-focused enterprise AI with constitutional safety guarantees.
             </p>
-            <div className="grid md:grid-cols-2 gap-3 mb-4">
+            <div className="grid md:grid-cols-2 gap-3">
               <div>
                 <p className="font-medium text-sm text-black">Key Features:</p>
                 <ul className="text-sm text-black space-y-1">
@@ -82,13 +73,6 @@ const EnterpriseComparison = () => {
                 </ul>
               </div>
             </div>
-            <Button 
-              onClick={() => window.open(getAffiliateLink("Claude for Work"), '_blank')}
-              className="w-full bg-purple-600 hover:bg-purple-700 text-white"
-            >
-              <ExternalLink className="h-4 w-4 mr-2" />
-              Get Claude for Work
-            </Button>
           </div>
 
           <div className="p-4 border rounded-lg bg-gradient-to-r from-green-50 to-teal-50">
@@ -99,7 +83,7 @@ const EnterpriseComparison = () => {
             <p className="text-black mb-3">
               Seamlessly integrated with Google Workspace for enhanced productivity.
             </p>
-            <div className="grid md:grid-cols-2 gap-3 mb-4">
+            <div className="grid md:grid-cols-2 gap-3">
               <div>
                 <p className="font-medium text-sm text-black">Key Features:</p>
                 <ul className="text-sm text-black space-y-1">
@@ -119,13 +103,6 @@ const EnterpriseComparison = () => {
                 </ul>
               </div>
             </div>
-            <Button 
-              onClick={() => window.open(getAffiliateLink("Google Workspace AI"), '_blank')}
-              className="w-full bg-green-600 hover:bg-green-700 text-white"
-            >
-              <ExternalLink className="h-4 w-4 mr-2" />
-              Get Google Workspace AI
-            </Button>
           </div>
         </div>
       </CardContent>
