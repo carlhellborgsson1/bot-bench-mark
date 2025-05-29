@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import {
@@ -21,6 +22,7 @@ import {
   Compass,
   Menu,
   X,
+  Newspaper,
 } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -45,6 +47,10 @@ const TopNavigation = () => {
 
   const tools = [
     { title: "What AI Chatbot Suits Me", url: "/chatbot-matcher", icon: Compass },
+  ];
+
+  const news = [
+    { title: "AI News", url: "/ai-news", icon: Newspaper },
   ];
 
   if (isMobile) {
@@ -98,6 +104,23 @@ const TopNavigation = () => {
                 <h3 className="font-semibold text-gray-800 mb-2">Tools</h3>
                 <div className="space-y-1">
                   {tools.map((item) => (
+                    <Link
+                      key={item.title}
+                      to={item.url}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="flex items-center gap-3 px-2 py-2 hover:bg-gray-50 rounded cursor-pointer"
+                    >
+                      <item.icon className="h-4 w-4 text-blue-600" />
+                      <span className="text-gray-800 text-sm">{item.title}</span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              <div className="mb-4">
+                <h3 className="font-semibold text-gray-800 mb-2">News</h3>
+                <div className="space-y-1">
+                  {news.map((item) => (
                     <Link
                       key={item.title}
                       to={item.url}
@@ -186,6 +209,30 @@ const TopNavigation = () => {
             </NavigationMenuTrigger>
             <NavigationMenuContent className="w-56 bg-white border border-gray-200 shadow-lg z-50 p-2">
               {tools.map((item) => (
+                <NavigationMenuLink key={item.title} asChild>
+                  <Link
+                    to={item.url}
+                    className="flex items-center gap-3 px-4 py-2 hover:bg-gray-50 cursor-pointer rounded-md"
+                  >
+                    <item.icon className="h-4 w-4 text-blue-600" />
+                    <span className="text-gray-800">{item.title}</span>
+                  </Link>
+                </NavigationMenuLink>
+              ))}
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+        </NavigationMenuList>
+      </NavigationMenu>
+
+      {/* News Dropdown */}
+      <NavigationMenu>
+        <NavigationMenuList>
+          <NavigationMenuItem>
+            <NavigationMenuTrigger className="text-white text-lg font-medium hover:text-white/80 transition-colors bg-transparent border-none data-[state=open]:bg-transparent data-[active]:bg-transparent">
+              News
+            </NavigationMenuTrigger>
+            <NavigationMenuContent className="w-56 bg-white border border-gray-200 shadow-lg z-50 p-2">
+              {news.map((item) => (
                 <NavigationMenuLink key={item.title} asChild>
                   <Link
                     to={item.url}

@@ -11,7 +11,8 @@ import {
   Building,
   Compass,
   Home,
-  Info
+  Info,
+  Newspaper
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -91,6 +92,14 @@ const toolItems = [
   },
 ];
 
+const newsItems = [
+  {
+    title: "AI News",
+    url: "/ai-news",
+    icon: Newspaper,
+  },
+];
+
 const aboutItems = [
   {
     title: "Learn more about us",
@@ -156,6 +165,24 @@ export function AppSidebar() {
           <SidebarGroupContent>
             <SidebarMenu>
               {toolItems.map((item) => (
+                <SidebarMenuItem key={item.title}>
+                  <SidebarMenuButton asChild className="hover:bg-sidebar-accent hover:text-black transition-all duration-200 text-black">
+                    <Link to={item.url} className="flex items-center gap-3">
+                      <item.icon className="h-4 w-4 text-white" />
+                      <span>{item.title}</span>
+                    </Link>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+              ))}
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
+
+        <SidebarGroup>
+          <SidebarGroupLabel className="text-black/70">News</SidebarGroupLabel>
+          <SidebarGroupContent>
+            <SidebarMenu>
+              {newsItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild className="hover:bg-sidebar-accent hover:text-black transition-all duration-200 text-black">
                     <Link to={item.url} className="flex items-center gap-3">
