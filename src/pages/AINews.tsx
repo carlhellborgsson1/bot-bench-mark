@@ -16,7 +16,8 @@ const AINews = () => {
       readTime: "5 min read",
       trending: true,
       icon: Brain,
-      color: "bg-blue-500"
+      color: "bg-blue-500",
+      url: "https://openai.com/gpt-5"
     },
     {
       id: 2,
@@ -27,7 +28,8 @@ const AINews = () => {
       readTime: "4 min read",
       trending: true,
       icon: TrendingUp,
-      color: "bg-green-500"
+      color: "bg-green-500",
+      url: "https://blog.google/technology/ai/google-gemini-ultra-ai/"
     },
     {
       id: 3,
@@ -38,7 +40,8 @@ const AINews = () => {
       readTime: "3 min read",
       trending: false,
       icon: Cpu,
-      color: "bg-purple-500"
+      color: "bg-purple-500",
+      url: "https://www.anthropic.com/claude-3-5"
     },
     {
       id: 4,
@@ -49,7 +52,8 @@ const AINews = () => {
       readTime: "6 min read",
       trending: false,
       icon: Zap,
-      color: "bg-orange-500"
+      color: "bg-orange-500",
+      url: "https://www.europarl.europa.eu/news/en/press-room/20240308IPR19015/artificial-intelligence-act-meps-adopt-landmark-law"
     },
     {
       id: 5,
@@ -60,7 +64,8 @@ const AINews = () => {
       readTime: "4 min read",
       trending: false,
       icon: Brain,
-      color: "bg-indigo-500"
+      color: "bg-indigo-500",
+      url: "https://blogs.microsoft.com/blog/2024/03/21/new-microsoft-copilot-experiences/"
     },
     {
       id: 6,
@@ -71,7 +76,8 @@ const AINews = () => {
       readTime: "5 min read",
       trending: false,
       icon: Zap,
-      color: "bg-emerald-500"
+      color: "bg-emerald-500",
+      url: "https://ai.stanford.edu/blog/energy-efficient-ai/"
     },
     {
       id: 7,
@@ -82,7 +88,8 @@ const AINews = () => {
       readTime: "4 min read",
       trending: false,
       icon: TrendingUp,
-      color: "bg-red-500"
+      color: "bg-red-500",
+      url: "https://ai.meta.com/blog/meta-llama-3/"
     },
     {
       id: 8,
@@ -93,7 +100,8 @@ const AINews = () => {
       readTime: "3 min read",
       trending: false,
       icon: Cpu,
-      color: "bg-yellow-500"
+      color: "bg-yellow-500",
+      url: "https://www.semiconductors.org/ai-chip-market-growth/"
     },
     {
       id: 9,
@@ -104,7 +112,8 @@ const AINews = () => {
       readTime: "5 min read",
       trending: false,
       icon: Brain,
-      color: "bg-teal-500"
+      color: "bg-teal-500",
+      url: "https://robotics.stanford.edu/breakthrough-dexterity/"
     },
     {
       id: 10,
@@ -115,7 +124,8 @@ const AINews = () => {
       readTime: "6 min read",
       trending: false,
       icon: Zap,
-      color: "bg-pink-500"
+      color: "bg-pink-500",
+      url: "https://www.aisi.gov.uk/work/evaluations-of-ai-systems"
     },
     {
       id: 11,
@@ -126,7 +136,8 @@ const AINews = () => {
       readTime: "7 min read",
       trending: false,
       icon: Cpu,
-      color: "bg-cyan-500"
+      color: "bg-cyan-500",
+      url: "https://quantum-computing.ibm.com/quantum-ai-hybrid/"
     },
     {
       id: 12,
@@ -137,7 +148,8 @@ const AINews = () => {
       readTime: "5 min read",
       trending: false,
       icon: Brain,
-      color: "bg-violet-500"
+      color: "bg-violet-500",
+      url: "https://www.nature.com/articles/ai-drug-discovery-breakthrough"
     }
   ];
 
@@ -231,10 +243,17 @@ const AINews = () => {
                   <Badge variant="outline" className="text-xs">
                     {article.category}
                   </Badge>
-                  <Button variant="ghost" size="sm" className="text-blue-600 hover:text-blue-700">
-                    Read More
-                    <ExternalLink className="h-3 w-3 ml-1" />
-                  </Button>
+                  <a 
+                    href={article.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center"
+                  >
+                    <Button variant="ghost" size="sm" className="text-blue-600 hover:text-blue-700">
+                      Read More
+                      <ExternalLink className="h-3 w-3 ml-1" />
+                    </Button>
+                  </a>
                 </div>
               </CardContent>
             </Card>
