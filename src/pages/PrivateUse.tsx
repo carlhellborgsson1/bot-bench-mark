@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -23,7 +24,7 @@ const PrivateUse = () => {
       <div className="grid lg:grid-cols-3 gap-6 mb-8">
         <Card className="lg:col-span-2 hover:shadow-lg transition-all duration-300">
           <CardHeader>
-            <CardTitle className="flex items-center gap-2">
+            <CardTitle className="flex items-center gap-2 text-black">
               <Heart className="h-5 w-5 text-red-500" />
               Best for Personal Use
             </CardTitle>
@@ -33,10 +34,10 @@ const PrivateUse = () => {
             <div className="space-y-4">
               <div className="p-4 border rounded-lg bg-gradient-to-r from-blue-50 to-purple-50">
                 <div className="flex items-center justify-between mb-3">
-                  <h4 className="font-semibold text-lg">ChatGPT (GPT-4)</h4>
+                  <h4 className="font-semibold text-lg text-black">ChatGPT (GPT-4)</h4>
                   <Badge className="bg-blue-500 text-white">Best Overall</Badge>
                 </div>
-                <p className="text-muted-foreground mb-3">
+                <p className="text-black mb-3">
                   Most versatile AI assistant for creative writing, problem-solving, and daily tasks.
                 </p>
                 <div className="grid md:grid-cols-2 gap-3">
@@ -63,10 +64,10 @@ const PrivateUse = () => {
 
               <div className="p-4 border rounded-lg bg-gradient-to-r from-purple-50 to-pink-50">
                 <div className="flex items-center justify-between mb-3">
-                  <h4 className="font-semibold text-lg">Claude 3</h4>
+                  <h4 className="font-semibold text-lg text-black">Claude 3</h4>
                   <Badge className="bg-purple-500 text-white">Best for Writing</Badge>
                 </div>
-                <p className="text-muted-foreground mb-3">
+                <p className="text-black mb-3">
                   Exceptional for long-form content, analysis, and thoughtful conversations.
                 </p>
                 <div className="grid md:grid-cols-2 gap-3">
@@ -93,10 +94,10 @@ const PrivateUse = () => {
 
               <div className="p-4 border rounded-lg bg-gradient-to-r from-green-50 to-teal-50">
                 <div className="flex items-center justify-between mb-3">
-                  <h4 className="font-semibold text-lg">Gemini Pro</h4>
+                  <h4 className="font-semibold text-lg text-black">Gemini Pro</h4>
                   <Badge className="bg-green-500 text-white">Free & Powerful</Badge>
                 </div>
-                <p className="text-muted-foreground mb-3">
+                <p className="text-black mb-3">
                   Excellent free option with Google integration and multimodal capabilities.
                 </p>
                 <div className="grid md:grid-cols-2 gap-3">
@@ -126,11 +127,11 @@ const PrivateUse = () => {
 
         <Card className="hover:shadow-lg transition-all duration-300">
           <CardHeader>
-            <CardTitle className="flex items-center gap-2">
+            <CardTitle className="flex items-center gap-2 text-black">
               <Shield className="h-5 w-5 text-green-600" />
               Privacy for Personal Use
             </CardTitle>
-            <CardDescription>Protecting your personal data</CardDescription>
+            <CardDescription className="text-black">Protecting your personal data</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="space-y-3">
@@ -154,8 +155,8 @@ const PrivateUse = () => {
             </div>
 
             <div className="mt-4">
-              <h4 className="font-semibold text-sm mb-2">Privacy Tips:</h4>
-              <ul className="text-xs text-muted-foreground space-y-1">
+              <h4 className="font-semibold text-sm mb-2 text-black">Privacy Tips:</h4>
+              <ul className="text-xs text-black space-y-1">
                 <li>• Avoid sharing personal identifiers</li>
                 <li>• Use incognito/private browsing</li>
                 <li>• Check data retention settings</li>
@@ -170,14 +171,14 @@ const PrivateUse = () => {
         <Card className="hover:shadow-lg transition-all duration-300">
           <CardHeader className="text-center">
             <BookOpen className="h-8 w-8 text-blue-500 mx-auto mb-2" />
-            <CardTitle className="text-lg">Learning & Education</CardTitle>
-            <CardDescription className="text-sm">Study assistance and knowledge</CardDescription>
+            <CardTitle className="text-lg text-black">Learning & Education</CardTitle>
+            <CardDescription className="text-sm text-black">Study assistance and knowledge</CardDescription>
           </CardHeader>
           <CardContent className="space-y-3">
             <div className="text-center mb-4">
               <Badge className="bg-blue-100 text-blue-700">Recommended: Claude 3</Badge>
             </div>
-            <ul className="text-sm space-y-2">
+            <ul className="text-sm space-y-2 text-black">
               <li>• Explain complex concepts</li>
               <li>• Language learning practice</li>
               <li>• Homework help</li>
@@ -190,14 +191,14 @@ const PrivateUse = () => {
         <Card className="hover:shadow-lg transition-all duration-300">
           <CardHeader className="text-center">
             <Coffee className="h-8 w-8 text-amber-500 mx-auto mb-2" />
-            <CardTitle className="text-lg">Daily Assistant</CardTitle>
-            <CardDescription className="text-sm">Everyday task automation</CardDescription>
+            <CardTitle className="text-lg text-black">Daily Assistant</CardTitle>
+            <CardDescription className="text-sm text-black">Everyday task automation</CardDescription>
           </CardHeader>
           <CardContent className="space-y-3">
             <div className="text-center mb-4">
               <Badge className="bg-amber-100 text-amber-700">Recommended: ChatGPT</Badge>
             </div>
-            <ul className="text-sm space-y-2">
+            <ul className="text-sm space-y-2 text-black">
               <li>• Schedule planning</li>
               <li>• Email drafting</li>
               <li>• Recipe suggestions</li>
@@ -210,14 +211,14 @@ const PrivateUse = () => {
         <Card className="hover:shadow-lg transition-all duration-300">
           <CardHeader className="text-center">
             <Heart className="h-8 w-8 text-pink-500 mx-auto mb-2" />
-            <CardTitle className="text-lg">Creative Projects</CardTitle>
-            <CardDescription className="text-sm">Art, writing, and creativity</CardDescription>
+            <CardTitle className="text-lg text-black">Creative Projects</CardTitle>
+            <CardDescription className="text-sm text-black">Art, writing, and creativity</CardDescription>
           </CardHeader>
           <CardContent className="space-y-3">
             <div className="text-center mb-4">
               <Badge className="bg-pink-100 text-pink-700">Recommended: GPT-4</Badge>
             </div>
-            <ul className="text-sm space-y-2">
+            <ul className="text-sm space-y-2 text-black">
               <li>• Story and poem writing</li>
               <li>• Image generation ideas</li>
               <li>• Brainstorming sessions</li>
@@ -230,14 +231,14 @@ const PrivateUse = () => {
         <Card className="hover:shadow-lg transition-all duration-300">
           <CardHeader className="text-center">
             <User className="h-8 w-8 text-purple-500 mx-auto mb-2" />
-            <CardTitle className="text-lg">Personal Growth</CardTitle>
-            <CardDescription className="text-sm">Self-improvement and wellness</CardDescription>
+            <CardTitle className="text-lg text-black">Personal Growth</CardTitle>
+            <CardDescription className="text-sm text-black">Self-improvement and wellness</CardDescription>
           </CardHeader>
           <CardContent className="space-y-3">
             <div className="text-center mb-4">
               <Badge className="bg-purple-100 text-purple-700">Recommended: Claude 3</Badge>
             </div>
-            <ul className="text-sm space-y-2">
+            <ul className="text-sm space-y-2 text-black">
               <li>• Goal setting guidance</li>
               <li>• Habit tracking ideas</li>
               <li>• Mindfulness exercises</li>
@@ -250,8 +251,8 @@ const PrivateUse = () => {
 
       <Card className="mb-8">
         <CardHeader>
-          <CardTitle>Cost Comparison for Personal Use</CardTitle>
-          <CardDescription>Monthly costs and free tier options</CardDescription>
+          <CardTitle className="text-black">Cost Comparison for Personal Use</CardTitle>
+          <CardDescription className="text-black">Monthly costs and free tier options</CardDescription>
         </CardHeader>
         <CardContent>
           <div className="grid md:grid-cols-3 gap-6">
@@ -302,11 +303,11 @@ const PrivateUse = () => {
 
       <Card>
         <CardHeader>
-          <CardTitle className="flex items-center gap-2">
+          <CardTitle className="flex items-center gap-2 text-black">
             <Heart className="h-5 w-5 text-pink-600" />
             Get Started with Your Perfect AI Chatbot
           </CardTitle>
-          <CardDescription>Click below to start using the recommended AI chatbots for personal use</CardDescription>
+          <CardDescription className="text-black">Click below to start using the recommended AI chatbots for personal use</CardDescription>
         </CardHeader>
         <CardContent className="space-y-6">
           <div className="grid md:grid-cols-3 gap-6">
