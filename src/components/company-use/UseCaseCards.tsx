@@ -16,7 +16,7 @@ const UseCaseCards = () => {
           <div className="text-center mb-4">
             <Badge className="bg-blue-100 text-blue-700">Recommended: GPT-4</Badge>
           </div>
-          <ul className="text-sm space-y-2">
+          <ul className="text-sm space-y-2 text-gray-700">
             <li>• 24/7 customer assistance</li>
             <li>• Multi-language support</li>
             <li>• Ticket routing automation</li>
@@ -36,7 +36,7 @@ const UseCaseCards = () => {
           <div className="text-center mb-4">
             <Badge className="bg-green-100 text-green-700">Recommended: Claude</Badge>
           </div>
-          <ul className="text-sm space-y-2">
+          <ul className="text-sm space-y-2 text-gray-700">
             <li>• Lead qualification</li>
             <li>• Content generation</li>
             <li>• Email automation</li>
@@ -56,7 +56,7 @@ const UseCaseCards = () => {
           <div className="text-center mb-4">
             <Badge className="bg-purple-100 text-purple-700">Recommended: Gemini</Badge>
           </div>
-          <ul className="text-sm space-y-2">
+          <ul className="text-sm space-y-2 text-gray-700">
             <li>• Workflow automation</li>
             <li>• Document processing</li>
             <li>• Inventory management</li>
@@ -76,7 +76,7 @@ const UseCaseCards = () => {
           <div className="text-center mb-4">
             <Badge className="bg-orange-100 text-orange-700">Recommended: Claude</Badge>
           </div>
-          <ul className="text-sm space-y-2">
+          <ul className="text-sm space-y-2 text-gray-700">
             <li>• Employee onboarding</li>
             <li>• Training content creation</li>
             <li>• Policy Q&A assistance</li>

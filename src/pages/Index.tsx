@@ -79,7 +79,7 @@ const Index = () => {
             <CardHeader className="pb-4">
               <div className="flex items-center gap-3 mb-2">
                 <div className="p-2 sm:p-3 rounded-lg bg-gradient-to-br from-blue-500/15 to-purple-500/15 group-hover:from-blue-500/25 group-hover:to-purple-500/25 transition-colors border border-blue-200">
-                  <feature.icon className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
+                  <feature.icon className="h-5 w-5 sm:h-6 sm:w-6 text-blue-600" />
                 </div>
                 <CardTitle className="text-base sm:text-lg text-gray-900">{feature.title}</CardTitle>
               </div>
@@ -91,7 +91,7 @@ const Index = () => {
               <Button asChild variant="ghost" className="group/btn w-full justify-between hover:bg-blue-50 transition-colors border border-gray-200 hover:border-blue-300 text-sm sm:text-base">
                 <Link to={feature.link}>
                   <span className="text-gray-800">Explore</span>
-                  <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform text-white" />
+                  <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform text-blue-600" />
                 </Link>
               </Button>
             </CardContent>

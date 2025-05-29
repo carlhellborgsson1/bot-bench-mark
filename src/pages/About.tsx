@@ -11,7 +11,7 @@ const About = () => {
       <div className="mb-6">
         <Button asChild variant="ghost" className="hover:bg-blue-50">
           <Link to="/" className="flex items-center gap-2">
-            <ArrowLeft className="h-4 w-4 text-white" />
+            <ArrowLeft className="h-4 w-4 text-gray-600" />
             Back to Home
           </Link>
         </Button>
@@ -29,7 +29,7 @@ const About = () => {
       <Card className="mb-8 border-2 border-gray-200 shadow-md">
         <CardHeader>
           <CardTitle className="flex items-center gap-2 text-2xl">
-            <Target className="h-6 w-6 text-white" />
+            <Target className="h-6 w-6 text-blue-600" />
             What We Do
           </CardTitle>
         </CardHeader>
@@ -51,7 +51,7 @@ const About = () => {
         <Card className="border-2 border-gray-200 shadow-md">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <BarChart3 className="h-5 w-5 text-white" />
+              <BarChart3 className="h-5 w-5 text-blue-600" />
               Comprehensive Analysis
             </CardTitle>
           </CardHeader>
@@ -64,7 +64,7 @@ const About = () => {
         <Card className="border-2 border-gray-200 shadow-md">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <Users className="h-5 w-5 text-white" />
+              <Users className="h-5 w-5 text-blue-600" />
               Tailored Recommendations
             </CardTitle>
           </CardHeader>
@@ -77,7 +77,7 @@ const About = () => {
         <Card className="border-2 border-gray-200 shadow-md">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <Shield className="h-5 w-5 text-white" />
+              <Shield className="h-5 w-5 text-blue-600" />
               Unbiased Information
             </CardTitle>
           </CardHeader>
@@ -90,7 +90,7 @@ const About = () => {
         <Card className="border-2 border-gray-200 shadow-md">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <Target className="h-5 w-5 text-white" />
+              <Target className="h-5 w-5 text-blue-600" />
               Easy Navigation
             </CardTitle>
           </CardHeader>
