@@ -10,7 +10,10 @@ export const getAffiliateLink = (chatbotName: string): string => {
     "GPT-4 Enterprise": "https://openai.com/chatgpt/pricing/#enterprise",
     "Claude for Work": "https://www.anthropic.com/pricing",
     "Google Workspace AI": "https://workspace.google.com/pricing.html?source=gafb-ai-plan-en&hl=en&ga_region=noram&ga_country=us&ga_lang=en",
-    "GPT-4": "https://openai.com/chatgpt/pricing/"
+    "GPT-4": "https://openai.com/chatgpt/pricing/",
+    "ChatGPT Free": "https://chat.openai.com/",
+    "Claude Free": "https://claude.ai/",
+    "Perplexity Free": "https://perplexity.ai/"
   };
   
   return affiliateLinks[chatbotName] || "https://openai.com/chatgpt/pricing/";
@@ -19,16 +22,45 @@ export const getAffiliateLink = (chatbotName: string): string => {
 export const getRecommendation = (answers: Answers): Recommendation => {
   const { useCase, budget, priority, teamSize } = answers;
 
-  // Personal use recommendations
-  if (useCase === "personal") {
-    if (budget === "free") {
+  // BUDGET CONSTRAINTS - Always respect "free only" selections
+  if (budget === "free") {
+    if (useCase === "research") {
       return {
-        primary: "Gemini Pro",
-        reason: "Free tier with excellent capabilities",
-        alternatives: ["ChatGPT-3.5", "Claude (basic)"],
-        features: ["Completely free", "Google integration", "Multimodal", "Fast responses"]
+        primary: "Perplexity Free",
+        reason: "Excellent free research tool with web search capabilities",
+        alternatives: ["ChatGPT Free", "Gemini Pro", "Claude Free"],
+        features: ["Web search integration", "Source citations", "Research-focused", "Completely free"]
       };
     }
+    if (priority === "privacy") {
+      return {
+        primary: "Claude Free",
+        reason: "Best privacy protection in the free tier with constitutional AI",
+        alternatives: ["Local AI models", "Gemini Pro"],
+        features: ["No data training", "Constitutional AI", "Privacy-focused", "Completely free"]
+      };
+    }
+    if (useCase === "creative") {
+      return {
+        primary: "ChatGPT Free",
+        reason: "Best free option for creative tasks and brainstorming",
+        alternatives: ["Gemini Pro", "Claude Free"],
+        features: ["Creative writing", "Brainstorming", "Versatile", "Completely free"]
+      };
+    }
+    // Default free recommendation
+    return {
+      primary: "Gemini Pro",
+      reason: "Best overall free AI with Google integration and no usage limits",
+      alternatives: ["ChatGPT Free", "Claude Free", "Perplexity Free"],
+      features: ["Completely free", "Google integration", "Multimodal", "No usage limits"]
+    };
+  }
+
+  // For non-free budgets, proceed with original logic
+  
+  // Personal use recommendations
+  if (useCase === "personal") {
     if (priority === "privacy") {
       return {
         primary: "Claude 3",
