@@ -92,14 +92,12 @@
 
   html {
     background: linear-gradient(
-      to bottom,
-      #3b82f6 0%,
-      #6366f1 25%,
-      #8b5cf6 40%,
-      #c084fc 55%,
-      #8b5cf6 70%,
-      #6366f1 85%,
-      #3b82f6 100%
+      135deg,
+      #667eea 0%,
+      #764ba2 25%,
+      #f093fb 50%,
+      #f5576c 75%,
+      #4facfe 100%
     );
     background-attachment: fixed;
     background-repeat: no-repeat;
