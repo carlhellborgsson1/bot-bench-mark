@@ -146,7 +146,7 @@ const TopNavigation = () => {
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="text-white text-lg font-medium hover:text-white/80 transition-colors bg-transparent border-none data-[state=open]:bg-transparent data-[active]:bg-transparent">
+            <NavigationMenuTrigger className="text-white text-lg font-medium hover:text-white/80 transition-colors bg-transparent border-none hover:bg-transparent data-[state=open]:bg-transparent data-[active]:bg-transparent focus:bg-transparent">
               Comparison Features
             </NavigationMenuTrigger>
             <NavigationMenuContent className="w-56 bg-white border border-gray-200 shadow-lg z-50 p-2">
@@ -170,7 +170,7 @@ const TopNavigation = () => {
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="text-white text-lg font-medium hover:text-white/80 transition-colors bg-transparent border-none data-[state=open]:bg-transparent data-[active]:bg-transparent">
+            <NavigationMenuTrigger className="text-white text-lg font-medium hover:text-white/80 transition-colors bg-transparent border-none hover:bg-transparent data-[state=open]:bg-transparent data-[active]:bg-transparent focus:bg-transparent">
               Use Cases
             </NavigationMenuTrigger>
             <NavigationMenuContent className="w-56 bg-white border border-gray-200 shadow-lg z-50 p-2">
@@ -194,7 +194,7 @@ const TopNavigation = () => {
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="text-white text-lg font-medium hover:text-white/80 transition-colors bg-transparent border-none data-[state=open]:bg-transparent data-[active]:bg-transparent">
+            <NavigationMenuTrigger className="text-white text-lg font-medium hover:text-white/80 transition-colors bg-transparent border-none hover:bg-transparent data-[state=open]:bg-transparent data-[active]:bg-transparent focus:bg-transparent">
               Tools
             </NavigationMenuTrigger>
             <NavigationMenuContent className="w-56 bg-white border border-gray-200 shadow-lg z-50 p-2">
