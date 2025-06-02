@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 animate-fade-in">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 animate-fade-in bg-transparent">
       {/* Back Button */}
       <div className="mb-8">
         <Button asChild variant="ghost" className="hover:bg-white/10 transition-all duration-300">
@@ -32,7 +32,7 @@ const About = () => {
       </div>
 
       {/* Mission Statement - Featured */}
-      <Card className="mb-16 border-0 bg-gradient-to-br from-white via-blue-50/80 to-purple-50/80 shadow-2xl backdrop-blur-sm hover:shadow-3xl transition-all duration-500 hover:scale-[1.02]">
+      <Card className="mb-16 border-0 bg-white/95 backdrop-blur-sm shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-[1.02]">
         <CardHeader className="text-center pb-4">
           <div className="mx-auto w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mb-4 shadow-lg">
             <Heart className="h-8 w-8 text-white" />
