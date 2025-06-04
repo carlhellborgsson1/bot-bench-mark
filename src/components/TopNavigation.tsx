@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import {
@@ -123,16 +124,6 @@ const TopNavigation = () => {
                   </Link>
                 </div>
               </div>
-
-              <div className="pt-2 border-t border-gray-200">
-                <Link
-                  to="/about"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="block px-2 py-2 text-gray-800 hover:bg-gray-50 rounded text-sm font-medium"
-                >
-                  About
-                </Link>
-              </div>
             </div>
           </div>
         )}
@@ -220,14 +211,6 @@ const TopNavigation = () => {
         className="text-white text-lg font-medium hover:text-white/80 transition-colors outline-none focus:outline-none"
       >
         News
-      </Link>
-
-      {/* About Link */}
-      <Link
-        to="/about"
-        className="text-white text-lg font-medium hover:text-white/80 transition-colors outline-none focus:outline-none"
-      >
-        About
       </Link>
     </div>
   );
