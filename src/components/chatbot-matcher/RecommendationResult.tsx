@@ -51,9 +51,9 @@ const RecommendationResult = ({ recommendation, onReset }: RecommendationResultP
             </div>
             <div>
               <h4 className="font-semibold mb-3 text-black">Alternative Options:</h4>
-              <div className="space-y-2">
+              <div className="grid grid-cols-2 gap-2">
                 {recommendation.alternatives.map((alt: string, index: number) => (
-                  <Badge key={index} variant="outline" className="mr-2 mb-2 text-black border-gray-300">
+                  <Badge key={index} variant="outline" className="p-2 text-black border-gray-300 flex items-center justify-center">
                     {alt}
                   </Badge>
                 ))}

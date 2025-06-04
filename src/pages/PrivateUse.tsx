@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -117,6 +116,66 @@ const PrivateUse = () => {
                       <li>• Image understanding</li>
                       <li>• Gmail and Docs integration</li>
                       <li>• Fast response times</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div className="p-4 border rounded-lg bg-gradient-to-r from-orange-50 to-red-50">
+                <div className="flex items-center justify-between mb-3">
+                  <h4 className="font-semibold text-lg text-black">Perplexity AI</h4>
+                  <Badge className="bg-orange-500 text-white">Best for Research</Badge>
+                </div>
+                <p className="text-black mb-3">
+                  Specialized for research with real-time web search and citation capabilities.
+                </p>
+                <div className="grid md:grid-cols-2 gap-3">
+                  <div>
+                    <p className="font-medium text-sm text-green-700">Best For:</p>
+                    <ul className="text-sm text-green-600 space-y-1">
+                      <li>• Academic research</li>
+                      <li>• Current events</li>
+                      <li>• Fact-checking</li>
+                      <li>• Source verification</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="font-medium text-sm text-orange-700">Features:</p>
+                    <ul className="text-sm text-orange-600 space-y-1">
+                      <li>• Real-time web search</li>
+                      <li>• Source citations</li>
+                      <li>• Academic focus</li>
+                      <li>• Free tier available</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div className="p-4 border rounded-lg bg-gradient-to-r from-indigo-50 to-blue-50">
+                <div className="flex items-center justify-between mb-3">
+                  <h4 className="font-semibold text-lg text-black">Microsoft Copilot</h4>
+                  <Badge className="bg-indigo-500 text-white">Best Integration</Badge>
+                </div>
+                <p className="text-black mb-3">
+                  Seamlessly integrated with Microsoft Office and Windows for productivity.
+                </p>
+                <div className="grid md:grid-cols-2 gap-3">
+                  <div>
+                    <p className="font-medium text-sm text-green-700">Best For:</p>
+                    <ul className="text-sm text-green-600 space-y-1">
+                      <li>• Office document editing</li>
+                      <li>• Windows integration</li>
+                      <li>• Email assistance</li>
+                      <li>• Productivity tasks</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="font-medium text-sm text-indigo-700">Features:</p>
+                    <ul className="text-sm text-indigo-600 space-y-1">
+                      <li>• Office 365 integration</li>
+                      <li>• Image generation (DALL-E)</li>
+                      <li>• Web browsing</li>
+                      <li>• Free tier available</li>
                     </ul>
                   </div>
                 </div>
@@ -266,6 +325,8 @@ const PrivateUse = () => {
                 <li>• Gemini Pro (unlimited)</li>
                 <li>• ChatGPT-3.5 (limited)</li>
                 <li>• Claude (basic tier)</li>
+                <li>• Perplexity AI (limited)</li>
+                <li>• Microsoft Copilot (basic)</li>
                 <li>• Perfect for casual use</li>
               </ul>
             </div>
@@ -279,6 +340,7 @@ const PrivateUse = () => {
               <ul className="space-y-2 text-sm text-blue-700">
                 <li>• ChatGPT Plus (GPT-4 access)</li>
                 <li>• Claude Pro (5x usage)</li>
+                <li>• Perplexity Pro (unlimited)</li>
                 <li>• All premium features</li>
                 <li>• Best for regular use</li>
               </ul>
@@ -294,6 +356,7 @@ const PrivateUse = () => {
                 <li>• Multiple subscriptions</li>
                 <li>• API access for automation</li>
                 <li>• Advanced integrations</li>
+                <li>• Open-source models</li>
                 <li>• Professional workflows</li>
               </ul>
             </div>
@@ -310,7 +373,7 @@ const PrivateUse = () => {
           <CardDescription className="text-black">Click below to start using the recommended AI chatbots for personal use</CardDescription>
         </CardHeader>
         <CardContent className="space-y-6">
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-6 mb-6">
             <div className="p-4 border rounded-lg bg-gradient-to-r from-blue-50 to-purple-50">
               <div className="flex items-center justify-between mb-3">
                 <h4 className="font-semibold text-lg text-black">ChatGPT Plus (GPT-4)</h4>
@@ -377,6 +440,54 @@ const PrivateUse = () => {
               >
                 <ExternalLink className="h-4 w-4 mr-2" />
                 Get Gemini Pro
+              </Button>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="p-4 border rounded-lg bg-gradient-to-r from-orange-50 to-red-50">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-semibold text-lg text-black">Perplexity AI</h4>
+                <Badge className="bg-orange-500 text-white">Best for Research</Badge>
+              </div>
+              <p className="text-black mb-4">
+                Specialized research AI with real-time web search and citation capabilities.
+              </p>
+              <ul className="text-sm text-black space-y-1 mb-4">
+                <li>• $20/month for Pro access</li>
+                <li>• Real-time web search</li>
+                <li>• Source citations</li>
+                <li>• Academic focus</li>
+              </ul>
+              <Button 
+                onClick={() => window.open(getAffiliateLink("Perplexity AI"), '_blank')}
+                className="w-full bg-orange-600 hover:bg-orange-700 text-white"
+              >
+                <ExternalLink className="h-4 w-4 mr-2" />
+                Get Perplexity AI
+              </Button>
+            </div>
+
+            <div className="p-4 border rounded-lg bg-gradient-to-r from-indigo-50 to-blue-50">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-semibold text-lg text-black">Microsoft Copilot</h4>
+                <Badge className="bg-indigo-500 text-white">Best Integration</Badge>
+              </div>
+              <p className="text-black mb-4">
+                Seamlessly integrated with Microsoft Office and Windows for productivity.
+              </p>
+              <ul className="text-sm text-black space-y-1 mb-4">
+                <li>• Free tier available</li>
+                <li>• Office 365 integration</li>
+                <li>• Image generation</li>
+                <li>• Windows integration</li>
+              </ul>
+              <Button 
+                onClick={() => window.open(getAffiliateLink("Microsoft Copilot"), '_blank')}
+                className="w-full bg-indigo-600 hover:bg-indigo-700 text-white"
+              >
+                <ExternalLink className="h-4 w-4 mr-2" />
+                Get Microsoft Copilot
               </Button>
             </div>
           </div>

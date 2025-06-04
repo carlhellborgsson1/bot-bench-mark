@@ -52,7 +52,7 @@ const CompanyUse = () => {
           <CardDescription className="text-black">Click below to start using the recommended AI chatbots for business use</CardDescription>
         </CardHeader>
         <CardContent className="space-y-6">
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-6 mb-6">
             <div className="p-4 border rounded-lg bg-gradient-to-r from-blue-50 to-indigo-50">
               <div className="flex items-center justify-between mb-3">
                 <h4 className="font-semibold text-lg text-black">GPT-4 Enterprise</h4>
@@ -119,6 +119,54 @@ const CompanyUse = () => {
               >
                 <ExternalLink className="h-4 w-4 mr-2" />
                 Get Google Workspace AI
+              </Button>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="p-4 border rounded-lg bg-gradient-to-r from-indigo-50 to-blue-50">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-semibold text-lg text-black">Microsoft Copilot</h4>
+                <Badge className="bg-indigo-500 text-white">Best Office Integration</Badge>
+              </div>
+              <p className="text-black mb-4">
+                Seamlessly integrated with Office 365 and Azure for enterprise productivity.
+              </p>
+              <ul className="text-sm text-black space-y-1 mb-4">
+                <li>• $30/user/month</li>
+                <li>• Full Office 365 integration</li>
+                <li>• Azure connectivity</li>
+                <li>• Enterprise security</li>
+              </ul>
+              <Button 
+                onClick={() => window.open(getAffiliateLink("Microsoft Copilot"), '_blank')}
+                className="w-full bg-indigo-600 hover:bg-indigo-700 text-white"
+              >
+                <ExternalLink className="h-4 w-4 mr-2" />
+                Get Microsoft Copilot
+              </Button>
+            </div>
+
+            <div className="p-4 border rounded-lg bg-gradient-to-r from-orange-50 to-red-50">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-semibold text-lg text-black">Perplexity for Teams</h4>
+                <Badge className="bg-orange-500 text-white">Best for Research</Badge>
+              </div>
+              <p className="text-black mb-4">
+                Enterprise research AI with real-time web search and team collaboration features.
+              </p>
+              <ul className="text-sm text-black space-y-1 mb-4">
+                <li>• Custom team pricing</li>
+                <li>• Real-time web search</li>
+                <li>• Team collaboration</li>
+                <li>• Source verification</li>
+              </ul>
+              <Button 
+                onClick={() => window.open(getAffiliateLink("Perplexity AI"), '_blank')}
+                className="w-full bg-orange-600 hover:bg-orange-700 text-white"
+              >
+                <ExternalLink className="h-4 w-4 mr-2" />
+                Get Perplexity for Teams
               </Button>
             </div>
           </div>
