@@ -35,6 +35,38 @@ const metrics = [
     throughput: "Very High",
     reliability: "99.8%",
     score: 8.5
+  },
+  {
+    chatbot: "Perplexity AI",
+    responseTime: "2.8s",
+    accuracy: "91%",
+    throughput: "Medium",
+    reliability: "99.2%",
+    score: 8.8
+  },
+  {
+    chatbot: "Microsoft Copilot",
+    responseTime: "2.5s",
+    accuracy: "89%",
+    throughput: "High",
+    reliability: "99.6%",
+    score: 8.6
+  },
+  {
+    chatbot: "Llama 2 70B",
+    responseTime: "3.2s",
+    accuracy: "85%",
+    throughput: "Medium",
+    reliability: "98.5%",
+    score: 8.0
+  },
+  {
+    chatbot: "Mistral 7B",
+    responseTime: "1.2s",
+    accuracy: "82%",
+    throughput: "Very High",
+    reliability: "98.8%",
+    score: 7.8
   }
 ];
 

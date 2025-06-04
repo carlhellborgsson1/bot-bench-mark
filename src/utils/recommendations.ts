@@ -13,7 +13,11 @@ export const getAffiliateLink = (chatbotName: string): string => {
     "GPT-4": "https://openai.com/chatgpt/pricing/",
     "ChatGPT Free": "https://chat.openai.com/",
     "Claude Free": "https://claude.ai/",
-    "Perplexity Free": "https://perplexity.ai/"
+    "Perplexity Free": "https://perplexity.ai/",
+    "Perplexity AI": "https://perplexity.ai/pro",
+    "Microsoft Copilot": "https://copilot.microsoft.com/",
+    "Llama 2 70B": "https://llama.meta.com/",
+    "Mistral 7B": "https://mistral.ai/"
   };
   
   return affiliateLinks[chatbotName] || "https://openai.com/chatgpt/pricing/";
@@ -57,7 +61,7 @@ export const getRecommendation = (answers: Answers): Recommendation => {
     };
   }
 
-  // For non-free budgets, proceed with original logic
+  // For non-free budgets, proceed with expanded recommendations
   
   // Personal use recommendations
   if (useCase === "personal") {
@@ -65,14 +69,14 @@ export const getRecommendation = (answers: Answers): Recommendation => {
       return {
         primary: "Claude 3",
         reason: "Best privacy protection with no data retention",
-        alternatives: ["ChatGPT (history off)", "Local models"],
+        alternatives: ["Mistral 7B", "ChatGPT (history off)", "Local models"],
         features: ["No data storage", "Constitutional AI", "Long context", "Excellent reasoning"]
       };
     }
     return {
       primary: "ChatGPT Plus (GPT-4)",
       reason: "Most versatile for personal use with plugin ecosystem",
-      alternatives: ["Claude 3 Pro", "Gemini Advanced"],
+      alternatives: ["Claude 3 Pro", "Gemini Advanced", "Perplexity Pro"],
       features: ["Plugin access", "Image analysis", "Web browsing", "Most capable"]
     };
   }
@@ -81,24 +85,24 @@ export const getRecommendation = (answers: Answers): Recommendation => {
   if (useCase === "business") {
     if (teamSize === "large" || budget === "enterprise") {
       return {
-        primary: "GPT-4 Enterprise",
-        reason: "Comprehensive enterprise solution with advanced security",
-        alternatives: ["Claude for Work", "Google Workspace AI"],
-        features: ["SSO integration", "Admin controls", "Data encryption", "Priority support"]
+        primary: "Microsoft Copilot",
+        reason: "Best enterprise integration with Office 365 and Azure",
+        alternatives: ["GPT-4 Enterprise", "Claude for Work", "Google Workspace AI"],
+        features: ["Office integration", "Enterprise security", "Azure connectivity", "Team collaboration"]
       };
     }
     if (priority === "privacy") {
       return {
         primary: "Claude for Work",
         reason: "Enterprise-grade privacy with constitutional AI safety",
-        alternatives: ["GPT-4 Enterprise", "On-premise solutions"],
+        alternatives: ["Mistral 7B", "GPT-4 Enterprise", "On-premise solutions"],
         features: ["No training data usage", "EU data centers", "Constitutional AI", "Long context"]
       };
     }
     return {
       primary: "Google Workspace AI",
       reason: "Seamless integration with existing business tools",
-      alternatives: ["GPT-4 Enterprise", "Claude for Work"],
+      alternatives: ["Microsoft Copilot", "GPT-4 Enterprise", "Claude for Work"],
       features: ["Native Workspace integration", "Competitive pricing", "Easy deployment", "Familiar interface"]
     };
   }
@@ -108,7 +112,7 @@ export const getRecommendation = (answers: Answers): Recommendation => {
     return {
       primary: "GPT-4",
       reason: "Best creative capabilities with multimodal features",
-      alternatives: ["Claude 3", "Midjourney integration"],
+      alternatives: ["Claude 3", "Gemini Pro", "Microsoft Copilot"],
       features: ["Image generation", "Creative writing", "Brainstorming", "Plugin ecosystem"]
     };
   }
@@ -116,10 +120,10 @@ export const getRecommendation = (answers: Answers): Recommendation => {
   // Research use recommendations
   if (useCase === "research") {
     return {
-      primary: "Claude 3",
-      reason: "Excellent for analysis with 200K token context window",
-      alternatives: ["GPT-4", "Perplexity AI"],
-      features: ["Long context analysis", "Excellent reasoning", "Academic writing", "Citation support"]
+      primary: "Perplexity AI",
+      reason: "Specialized research AI with web search and citations",
+      alternatives: ["Claude 3", "GPT-4", "Gemini Pro"],
+      features: ["Real-time web search", "Source citations", "Academic focus", "Research optimization"]
     };
   }
 
@@ -127,7 +131,7 @@ export const getRecommendation = (answers: Answers): Recommendation => {
   return {
     primary: "ChatGPT Plus",
     reason: "Most balanced option for general use",
-    alternatives: ["Claude 3", "Gemini Pro"],
+    alternatives: ["Claude 3", "Gemini Pro", "Perplexity AI"],
     features: ["Versatile capabilities", "Regular updates", "Large community", "Good documentation"]
   };
 };

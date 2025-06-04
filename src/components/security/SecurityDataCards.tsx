@@ -35,6 +35,38 @@ const securityData = [
     compliance: ["SOC 2", "GDPR"],
     privacy: "High",
     score: 8.8
+  },
+  {
+    chatbot: "Perplexity AI",
+    encryption: "AES-256",
+    dataRetention: "90 days",
+    compliance: ["GDPR", "CCPA"],
+    privacy: "High",
+    score: 8.5
+  },
+  {
+    chatbot: "Microsoft Copilot",
+    encryption: "AES-256",
+    dataRetention: "Variable",
+    compliance: ["SOC 2", "GDPR", "CCPA", "HIPAA"],
+    privacy: "High",
+    score: 9.0
+  },
+  {
+    chatbot: "Llama 2 70B",
+    encryption: "Depends on host",
+    dataRetention: "Variable",
+    compliance: ["Varies"],
+    privacy: "Variable",
+    score: 7.5
+  },
+  {
+    chatbot: "Mistral 7B",
+    encryption: "AES-256",
+    dataRetention: "7 days",
+    compliance: ["GDPR"],
+    privacy: "High",
+    score: 8.0
   }
 ];
 

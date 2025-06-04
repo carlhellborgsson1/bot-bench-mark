@@ -45,6 +45,46 @@ const Functions = () => {
       languages: 90,
       integrations: 45,
       score: 7.5
+    },
+    {
+      chatbot: "Perplexity AI",
+      textGeneration: "Very Good",
+      codeGeneration: "Fair",
+      imageAnalysis: "Limited",
+      multimodal: "Limited",
+      languages: 75,
+      integrations: 25,
+      score: 8.3
+    },
+    {
+      chatbot: "Microsoft Copilot",
+      textGeneration: "Very Good",
+      codeGeneration: "Excellent",
+      imageAnalysis: "Yes",
+      multimodal: "Yes",
+      languages: 80,
+      integrations: 60,
+      score: 8.7
+    },
+    {
+      chatbot: "Llama 2 70B",
+      textGeneration: "Good",
+      codeGeneration: "Good",
+      imageAnalysis: "No",
+      multimodal: "No",
+      languages: 70,
+      integrations: 20,
+      score: 7.8
+    },
+    {
+      chatbot: "Mistral 7B",
+      textGeneration: "Good",
+      codeGeneration: "Fair",
+      imageAnalysis: "No",
+      multimodal: "No",
+      languages: 65,
+      integrations: 15,
+      score: 7.2
     }
   ];
 
