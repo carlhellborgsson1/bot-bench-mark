@@ -17,35 +17,35 @@ const Index = () => {
       title: "Security Assessment",
       description: "Evaluate data protection, privacy policies, and enterprise-grade security measures",
       link: "/security",
-      gradient: "from-green-500 to-emerald-500"
+      gradient: "bg-white"
     },
     {
       icon: Zap,
       title: "Feature Comparison",
       description: "Analyze capabilities, integrations, and unique functionalities in depth",
       link: "/functions",
-      gradient: "from-yellow-500 to-orange-500"
+      gradient: "bg-white"
     },
     {
       icon: DollarSign,
       title: "Pricing Analysis",
       description: "Compare costs, plans, and value propositions across all major platforms",
       link: "/price",
-      gradient: "from-purple-500 to-pink-500"
+      gradient: "bg-white"
     },
     {
       icon: Globe,
       title: "Global Availability",
       description: "Check regional availability, supported languages, and local compliance",
       link: "/availability",
-      gradient: "from-indigo-500 to-blue-500"
+      gradient: "bg-white"
     },
     {
       icon: Code,
       title: "Developer Tools",
       description: "Explore APIs, SDKs, documentation quality, and integration options",
       link: "/api",
-      gradient: "from-red-500 to-rose-500"
+      gradient: "bg-white"
     }
   ];
 
@@ -137,8 +137,8 @@ const Index = () => {
               >
                 <CardHeader className="pb-4">
                   <div className="flex items-center gap-4 mb-4">
-                    <div className={`p-3 rounded-xl ${feature.gradient === 'bg-white' ? 'bg-white shadow-lg border border-gray-200' : `bg-gradient-to-br ${feature.gradient} shadow-lg`}`}>
-                      <feature.icon className={`h-6 w-6 ${feature.gradient === 'bg-white' ? 'text-gray-700' : 'text-white'}`} />
+                    <div className="p-3 rounded-xl bg-white shadow-lg border border-gray-200">
+                      <feature.icon className="h-6 w-6 text-gray-700" />
                     </div>
                     <CardTitle className="text-xl text-gray-900">{feature.title}</CardTitle>
                   </div>
