@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { BarChart3, Shield, Zap, DollarSign, Globe, Code, ArrowRight, Sparkles, Compass, Star } from "lucide-react";
@@ -133,7 +134,7 @@ const Index = () => {
             {features.map((feature, index) => (
               <Card 
                 key={feature.title} 
-                className="group bg-white/95 backdrop-blur-md border-0 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 animate-fade-in overflow-hidden" 
+                className="group bg-white/10 backdrop-blur-md border border-white/20 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 animate-fade-in overflow-hidden hover:bg-white/15" 
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 <CardHeader className="pb-4">
@@ -141,17 +142,17 @@ const Index = () => {
                     <div className={`p-3 rounded-xl bg-gradient-to-br ${feature.gradient} shadow-lg`}>
                       <feature.icon className="h-6 w-6 text-white" />
                     </div>
-                    <CardTitle className="text-xl text-gray-900">{feature.title}</CardTitle>
+                    <CardTitle className="text-xl text-white">{feature.title}</CardTitle>
                   </div>
-                  <CardDescription className="text-gray-600 leading-relaxed text-base">
+                  <CardDescription className="text-blue-100 leading-relaxed text-base">
                     {feature.description}
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="pt-0">
-                  <Button asChild variant="ghost" className="group/btn w-full justify-between hover:bg-gray-50 transition-all duration-300 border border-gray-100 hover:border-gray-200 rounded-lg p-4">
+                  <Button asChild variant="ghost" className="group/btn w-full justify-between hover:bg-white/10 transition-all duration-300 border border-white/20 hover:border-white/30 rounded-lg p-4 text-white">
                     <Link to={feature.link}>
-                      <span className="text-gray-700 font-medium">Explore Analysis</span>
-                      <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform text-gray-500" />
+                      <span className="text-white font-medium">Explore Analysis</span>
+                      <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform text-blue-200" />
                     </Link>
                   </Button>
                 </CardContent>
@@ -164,14 +165,14 @@ const Index = () => {
       {/* Final CTA Section */}
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Card className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/20 shadow-2xl overflow-hidden">
+          <Card className="bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl overflow-hidden">
             <CardContent className="p-12 sm:p-16 text-center">
               <div className="space-y-8">
                 <div className="space-y-4">
-                  <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
+                  <h2 className="text-3xl sm:text-4xl font-bold text-white">
                     Ready to Find Your Perfect AI Assistant?
                   </h2>
-                  <p className="text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed">
+                  <p className="text-xl text-blue-100 max-w-2xl mx-auto leading-relaxed">
                     Take our intelligent matching quiz and get personalized recommendations 
                     based on your specific needs, budget, and use cases.
                   </p>
@@ -185,7 +186,7 @@ const Index = () => {
                       <ArrowRight className="h-5 w-5" />
                     </Link>
                   </Button>
-                  <Button asChild variant="outline" size="lg" className="bg-white/10 backdrop-blur-md border-white/30 text-gray-700 hover:bg-white/20 px-8 py-4 text-lg rounded-xl">
+                  <Button asChild variant="outline" size="lg" className="bg-white/10 backdrop-blur-md border-white/30 text-white hover:bg-white/20 px-8 py-4 text-lg rounded-xl">
                     <Link to="/performance">
                       Browse All Comparisons
                     </Link>
