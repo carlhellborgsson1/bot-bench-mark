@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { BarChart3, Shield, Zap, DollarSign, Globe, Code, ArrowRight, Sparkles, Compass } from "lucide-react";
+import { BarChart3, Shield, Zap, DollarSign, Globe, Code, ArrowRight, Sparkles, Compass, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -9,109 +9,194 @@ const Index = () => {
     {
       icon: BarChart3,
       title: "Performance Analysis",
-      description: "Compare speed, accuracy, and reliability across different AI models",
-      link: "/performance"
+      description: "Compare speed, accuracy, and reliability across different AI models with detailed benchmarks",
+      link: "/performance",
+      gradient: "from-blue-500 to-cyan-500"
     },
     {
       icon: Shield,
       title: "Security Assessment",
-      description: "Evaluate data protection, privacy policies, and security measures",
-      link: "/security"
+      description: "Evaluate data protection, privacy policies, and enterprise-grade security measures",
+      link: "/security",
+      gradient: "from-green-500 to-emerald-500"
     },
     {
       icon: Zap,
       title: "Feature Comparison",
-      description: "Analyze capabilities, integrations, and unique functionalities",
-      link: "/functions"
+      description: "Analyze capabilities, integrations, and unique functionalities in depth",
+      link: "/functions",
+      gradient: "from-yellow-500 to-orange-500"
     },
     {
       icon: DollarSign,
       title: "Pricing Analysis",
-      description: "Compare costs, plans, and value propositions across platforms",
-      link: "/price"
+      description: "Compare costs, plans, and value propositions across all major platforms",
+      link: "/price",
+      gradient: "from-purple-500 to-pink-500"
     },
     {
       icon: Globe,
-      title: "Availability",
-      description: "Check regional availability and supported languages",
-      link: "/availability"
+      title: "Global Availability",
+      description: "Check regional availability, supported languages, and local compliance",
+      link: "/availability",
+      gradient: "from-indigo-500 to-blue-500"
     },
     {
       icon: Code,
-      title: "API Capabilities",
-      description: "Explore developer tools, SDKs, and integration options",
-      link: "/api"
+      title: "Developer Tools",
+      description: "Explore APIs, SDKs, documentation quality, and integration options",
+      link: "/api",
+      gradient: "from-red-500 to-rose-500"
     }
   ];
 
-  return (
-    <div className="max-w-7xl mx-auto p-4 animate-fade-in">
-      {/* Hero Section */}
-      <div className="text-center py-6 sm:py-8 px-4">
-        <div className="flex items-center justify-center gap-2 mb-4 sm:mb-6">
-          <Sparkles className="h-6 w-6 sm:h-8 sm:w-8 text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]" />
-          <Link to="/about" className="text-xs sm:text-sm font-medium text-white bg-transparent px-2 sm:px-3 py-1 rounded-full hover:bg-white/10 transition-colors cursor-pointer">
-            AI Comparison Platform
-          </Link>
-        </div>
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4 text-white px-2">
-          Find Your Perfect AI Chatbot
-        </h1>
-        <p className="text-base sm:text-lg lg:text-xl text-amber-100 mb-6 sm:mb-4 max-w-3xl mx-auto leading-relaxed px-2">
-          Navigate the complex world of AI assistants with comprehensive comparisons across performance, 
-          security, pricing, and features. Make informed decisions with data-driven insights.
-        </p>
-        <div className="flex justify-center px-4">
-          <Button asChild size="lg" className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 text-sm sm:text-base">
-            <Link to="/chatbot-matcher" className="flex items-center gap-2">
-              <Sparkles className="h-4 w-4 text-white" />
-              Find My Chatbot
-              <ArrowRight className="h-4 w-4 text-white" />
-            </Link>
-          </Button>
-        </div>
-      </div>
+  const stats = [
+    { number: "15+", label: "AI Models Compared" },
+    { number: "50+", label: "Features Analyzed" },
+    { number: "10K+", label: "Users Helped" },
+    { number: "99%", label: "Accuracy Rate" }
+  ];
 
-      {/* Features Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-12 sm:mb-20">
-        {features.map((feature, index) => (
-          <Card key={feature.title} className="group hover:shadow-xl transition-all duration-300 border-2 border-gray-200 shadow-md hover:shadow-blue-200 hover:border-blue-300 bg-white animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
-            <CardHeader className="pb-4">
-              <div className="flex items-center gap-3 mb-2">
-                <div className="p-2 sm:p-3 rounded-lg bg-gradient-to-br from-blue-500/15 to-purple-500/15 group-hover:from-blue-500/25 group-hover:to-purple-500/25 transition-colors border border-blue-200">
-                  <feature.icon className="h-5 w-5 sm:h-6 sm:w-6 text-black" />
-                </div>
-                <CardTitle className="text-base sm:text-lg text-black">{feature.title}</CardTitle>
-              </div>
-              <CardDescription className="text-sm sm:text-base leading-relaxed text-black">
-                {feature.description}
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="pt-0">
-              <Button asChild variant="ghost" className="group/btn w-full justify-between hover:bg-blue-50 transition-colors border border-gray-200 hover:border-blue-300 text-sm sm:text-base">
-                <Link to={feature.link}>
-                  <span className="text-black">Explore</span>
-                  <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform text-black" />
+  return (
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="relative py-20 sm:py-32 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-purple-600/20 to-cyan-600/20 backdrop-blur-3xl"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-8">
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-2 text-sm font-medium text-white">
+              <Star className="h-4 w-4 text-yellow-400" />
+              <span>Trusted AI Comparison Platform</span>
+            </div>
+
+            {/* Main Heading */}
+            <div className="space-y-6">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white">
+                Find Your Perfect
+                <span className="block bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
+                  AI Assistant
+                </span>
+              </h1>
+              <p className="max-w-3xl mx-auto text-xl sm:text-2xl text-blue-100 leading-relaxed">
+                Navigate the complex world of AI chatbots with comprehensive, data-driven comparisons. 
+                Make informed decisions backed by real performance metrics.
+              </p>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+              <Button asChild size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 px-8 py-4 text-lg rounded-xl">
+                <Link to="/chatbot-matcher" className="flex items-center gap-2">
+                  <Sparkles className="h-5 w-5" />
+                  Get My AI Match
+                  <ArrowRight className="h-5 w-5" />
                 </Link>
               </Button>
+              <Button asChild variant="outline" size="lg" className="bg-white/10 backdrop-blur-md border-white/30 text-white hover:bg-white/20 px-8 py-4 text-lg rounded-xl">
+                <Link to="/performance" className="flex items-center gap-2">
+                  <BarChart3 className="h-5 w-5" />
+                  View Comparisons
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-16 bg-white/5 backdrop-blur-md border-y border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            {stats.map((stat, index) => (
+              <div key={index} className="text-center">
+                <div className="text-3xl sm:text-4xl font-bold text-white mb-2">{stat.number}</div>
+                <div className="text-blue-200 text-sm sm:text-base">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Grid */}
+      <section className="py-24 sm:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
+              Everything You Need to Choose
+            </h2>
+            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+              Comprehensive analysis across all dimensions that matter for your AI assistant selection
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {features.map((feature, index) => (
+              <Card 
+                key={feature.title} 
+                className="group bg-white/95 backdrop-blur-md border-0 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 animate-fade-in overflow-hidden" 
+                style={{ animationDelay: `${index * 150}ms` }}
+              >
+                <CardHeader className="pb-4">
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className={`p-3 rounded-xl bg-gradient-to-br ${feature.gradient} shadow-lg`}>
+                      <feature.icon className="h-6 w-6 text-white" />
+                    </div>
+                    <CardTitle className="text-xl text-gray-900">{feature.title}</CardTitle>
+                  </div>
+                  <CardDescription className="text-gray-600 leading-relaxed text-base">
+                    {feature.description}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <Button asChild variant="ghost" className="group/btn w-full justify-between hover:bg-gray-50 transition-all duration-300 border border-gray-100 hover:border-gray-200 rounded-lg p-4">
+                    <Link to={feature.link}>
+                      <span className="text-gray-700 font-medium">Explore Analysis</span>
+                      <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform text-gray-500" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA Section */}
+      <section className="py-24 sm:py-32">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Card className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/20 shadow-2xl overflow-hidden">
+            <CardContent className="p-12 sm:p-16 text-center">
+              <div className="space-y-8">
+                <div className="space-y-4">
+                  <h2 className="text-3xl sm:text-4xl font-bold text-white">
+                    Ready to Find Your Perfect AI Assistant?
+                  </h2>
+                  <p className="text-xl text-blue-100 max-w-2xl mx-auto leading-relaxed">
+                    Take our intelligent matching quiz and get personalized recommendations 
+                    based on your specific needs, budget, and use cases.
+                  </p>
+                </div>
+                
+                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                  <Button asChild size="lg" className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white shadow-2xl hover:shadow-green-500/25 transition-all duration-300 px-8 py-4 text-lg rounded-xl">
+                    <Link to="/chatbot-matcher" className="flex items-center gap-2">
+                      <Compass className="h-5 w-5" />
+                      Start AI Matching
+                      <ArrowRight className="h-5 w-5" />
+                    </Link>
+                  </Button>
+                  <Button asChild variant="outline" size="lg" className="bg-white/10 backdrop-blur-md border-white/30 text-white hover:bg-white/20 px-8 py-4 text-lg rounded-xl">
+                    <Link to="/performance">
+                      Browse All Comparisons
+                    </Link>
+                  </Button>
+                </div>
+              </div>
             </CardContent>
           </Card>
-        ))}
-      </div>
-
-      {/* CTA Section */}
-      <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-6 sm:p-12 text-center mb-8 sm:mb-12 mx-2 sm:mx-0">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-black">Ready to Find Your Perfect AI Assistant?</h2>
-        <p className="text-base sm:text-lg text-black mb-6 sm:mb-8 max-w-2xl mx-auto px-2">
-          Use our intelligent matching tool to get personalized recommendations based on your specific needs and requirements.
-        </p>
-        <Button asChild size="lg" className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white text-sm sm:text-base">
-          <Link to="/chatbot-matcher" className="flex items-center gap-2">
-            <Compass className="h-4 w-4 text-white" />
-            Start Matching Process
-          </Link>
-        </Button>
-      </div>
+        </div>
+      </section>
     </div>
   );
 };
