@@ -93,11 +93,11 @@
   html {
     background: linear-gradient(
       135deg,
-      #6366f1 0%,
-      #8b5cf6 25%,
-      #06b6d4 50%,
-      #10b981 75%,
-      #3b82f6 100%
+      #ff6b6b 0%,
+      #feca57 25%,
+      #48dbfb 50%,
+      #ff9ff3 75%,
+      #54a0ff 100%
     );
     background-attachment: fixed;
     background-repeat: no-repeat;
