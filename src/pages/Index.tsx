@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { BarChart3, Shield, Zap, DollarSign, Globe, Code, ArrowRight, Sparkles, Compass, Star } from "lucide-react";
@@ -92,7 +93,7 @@ const Index = () => {
                   <ArrowRight className="h-5 w-5" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="bg-white/10 backdrop-blur-md text-white hover:bg-white/20 px-8 py-4 text-lg rounded-xl">
+              <Button asChild variant="outline" size="lg" className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-4 text-lg rounded-xl">
                 <Link to="/performance" className="flex items-center gap-2">
                   <BarChart3 className="h-5 w-5" />
                   View Comparisons
@@ -104,13 +105,13 @@ const Index = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-white/10 backdrop-blur-md">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-3xl sm:text-4xl font-bold text-white mb-2">{stat.number}</div>
-                <div className="text-blue-200 text-sm sm:text-base">{stat.label}</div>
+                <div className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">{stat.number}</div>
+                <div className="text-gray-600 text-sm sm:text-base">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -133,7 +134,7 @@ const Index = () => {
             {features.map((feature, index) => (
               <Card 
                 key={feature.title} 
-                className="group bg-white/10 backdrop-blur-md shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 animate-fade-in overflow-hidden hover:bg-white/15" 
+                className="group bg-white shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 animate-fade-in overflow-hidden" 
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 <CardHeader className="pb-4">
@@ -141,17 +142,17 @@ const Index = () => {
                     <div className={`p-3 rounded-xl bg-gradient-to-br ${feature.gradient} shadow-lg`}>
                       <feature.icon className="h-6 w-6 text-white" />
                     </div>
-                    <CardTitle className="text-xl text-white">{feature.title}</CardTitle>
+                    <CardTitle className="text-xl text-gray-900">{feature.title}</CardTitle>
                   </div>
-                  <CardDescription className="text-blue-100 leading-relaxed text-base">
+                  <CardDescription className="text-gray-600 leading-relaxed text-base">
                     {feature.description}
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="pt-0">
-                  <Button asChild variant="ghost" className="group/btn w-full justify-between hover:bg-white/10 transition-all duration-300 rounded-lg p-4 text-white">
+                  <Button asChild variant="ghost" className="group/btn w-full justify-between hover:bg-gray-100 transition-all duration-300 rounded-lg p-4 text-gray-900">
                     <Link to={feature.link}>
-                      <span className="text-white font-medium">Explore Analysis</span>
-                      <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform text-blue-200" />
+                      <span className="text-gray-900 font-medium">Explore Analysis</span>
+                      <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform text-gray-600" />
                     </Link>
                   </Button>
                 </CardContent>
@@ -164,14 +165,14 @@ const Index = () => {
       {/* Final CTA Section */}
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Card className="bg-white/10 backdrop-blur-md shadow-2xl overflow-hidden">
+          <Card className="bg-white shadow-2xl overflow-hidden">
             <CardContent className="p-12 sm:p-16 text-center">
               <div className="space-y-8">
                 <div className="space-y-4">
-                  <h2 className="text-3xl sm:text-4xl font-bold text-white">
+                  <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
                     Ready to Find Your Perfect AI Assistant?
                   </h2>
-                  <p className="text-xl text-blue-100 max-w-2xl mx-auto leading-relaxed">
+                  <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
                     Take our intelligent matching quiz and get personalized recommendations 
                     based on your specific needs, budget, and use cases.
                   </p>
@@ -185,7 +186,7 @@ const Index = () => {
                       <ArrowRight className="h-5 w-5" />
                     </Link>
                   </Button>
-                  <Button asChild variant="outline" size="lg" className="bg-white/10 backdrop-blur-md text-white hover:bg-white/20 px-8 py-4 text-lg rounded-xl">
+                  <Button asChild variant="outline" size="lg" className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-4 text-lg rounded-xl">
                     <Link to="/performance">
                       Browse All Comparisons
                     </Link>
