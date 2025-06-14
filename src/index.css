@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -92,8 +93,11 @@
   html {
     background: linear-gradient(
       135deg,
-      #6366f1 0%,
-      #8b5cf6 100%
+      #1a1a2e 0%,
+      #16213e 25%,
+      #0f3460 50%,
+      #533483 75%,
+      #e43f5a 100%
     );
     background-attachment: fixed;
     background-repeat: no-repeat;
