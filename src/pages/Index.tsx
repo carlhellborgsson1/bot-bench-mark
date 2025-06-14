@@ -73,7 +73,7 @@ const Index = () => {
             <div className="space-y-6">
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white">
                 Find Your Perfect
-                <span className="block bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
+                <span className="block text-white">
                   AI Assistant
                 </span>
               </h1>
