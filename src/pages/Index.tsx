@@ -60,11 +60,11 @@ const Index = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative py-20 sm:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-white/5 backdrop-blur-sm border-b border-white/10"></div>
+        <div className="absolute inset-0 bg-white/5 backdrop-blur-sm"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-8">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-2 text-sm font-medium text-white">
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-full px-4 py-2 text-sm font-medium text-white">
               <Star className="h-4 w-4 text-yellow-400" />
               <span>Trusted AI Comparison Platform</span>
             </div>
@@ -92,7 +92,7 @@ const Index = () => {
                   <ArrowRight className="h-5 w-5" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="bg-white/10 backdrop-blur-md border-white/30 text-white hover:bg-white/20 px-8 py-4 text-lg rounded-xl">
+              <Button asChild variant="outline" size="lg" className="bg-white/10 backdrop-blur-md text-white hover:bg-white/20 px-8 py-4 text-lg rounded-xl">
                 <Link to="/performance" className="flex items-center gap-2">
                   <BarChart3 className="h-5 w-5" />
                   View Comparisons
@@ -104,7 +104,7 @@ const Index = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-white/10 backdrop-blur-md border-y border-white/20">
+      <section className="py-16 bg-white/10 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
@@ -133,7 +133,7 @@ const Index = () => {
             {features.map((feature, index) => (
               <Card 
                 key={feature.title} 
-                className="group bg-white/10 backdrop-blur-md border border-white/20 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 animate-fade-in overflow-hidden hover:bg-white/15" 
+                className="group bg-white/10 backdrop-blur-md shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 animate-fade-in overflow-hidden hover:bg-white/15" 
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 <CardHeader className="pb-4">
@@ -148,7 +148,7 @@ const Index = () => {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="pt-0">
-                  <Button asChild variant="ghost" className="group/btn w-full justify-between hover:bg-white/10 transition-all duration-300 border border-white/20 hover:border-white/30 rounded-lg p-4 text-white">
+                  <Button asChild variant="ghost" className="group/btn w-full justify-between hover:bg-white/10 transition-all duration-300 rounded-lg p-4 text-white">
                     <Link to={feature.link}>
                       <span className="text-white font-medium">Explore Analysis</span>
                       <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform text-blue-200" />
@@ -164,7 +164,7 @@ const Index = () => {
       {/* Final CTA Section */}
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Card className="bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl overflow-hidden">
+          <Card className="bg-white/10 backdrop-blur-md shadow-2xl overflow-hidden">
             <CardContent className="p-12 sm:p-16 text-center">
               <div className="space-y-8">
                 <div className="space-y-4">
@@ -185,7 +185,7 @@ const Index = () => {
                       <ArrowRight className="h-5 w-5" />
                     </Link>
                   </Button>
-                  <Button asChild variant="outline" size="lg" className="bg-white/10 backdrop-blur-md border-white/30 text-white hover:bg-white/20 px-8 py-4 text-lg rounded-xl">
+                  <Button asChild variant="outline" size="lg" className="bg-white/10 backdrop-blur-md text-white hover:bg-white/20 px-8 py-4 text-lg rounded-xl">
                     <Link to="/performance">
                       Browse All Comparisons
                     </Link>
