@@ -6,7 +6,7 @@ export const PerformanceHeader = () => {
     <div className="mb-8">
       <div className="flex items-center gap-3 mb-4">
         <div className="p-2 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20">
-          <BarChart3 className="h-6 w-6 text-white" />
+          <BarChart3 className="h-6 w-6 text-white" stroke="white" />
         </div>
         <h1 className="text-3xl font-bold text-white">Performance Comparison</h1>
       </div>
