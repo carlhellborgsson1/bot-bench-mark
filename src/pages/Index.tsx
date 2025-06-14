@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { BarChart3, Shield, Zap, DollarSign, Globe, Code, ArrowRight, Sparkles, Compass, Star } from "lucide-react";
@@ -11,7 +10,7 @@ const Index = () => {
       title: "Performance Analysis",
       description: "Compare speed, accuracy, and reliability across different AI models with detailed benchmarks",
       link: "/performance",
-      gradient: "from-blue-500 to-cyan-500"
+      gradient: "bg-white"
     },
     {
       icon: Shield,
@@ -138,8 +137,8 @@ const Index = () => {
               >
                 <CardHeader className="pb-4">
                   <div className="flex items-center gap-4 mb-4">
-                    <div className={`p-3 rounded-xl bg-gradient-to-br ${feature.gradient} shadow-lg`}>
-                      <feature.icon className="h-6 w-6 text-white" />
+                    <div className={`p-3 rounded-xl ${feature.gradient === 'bg-white' ? 'bg-white shadow-lg border border-gray-200' : `bg-gradient-to-br ${feature.gradient} shadow-lg`}`}>
+                      <feature.icon className={`h-6 w-6 ${feature.gradient === 'bg-white' ? 'text-gray-700' : 'text-white'}`} />
                     </div>
                     <CardTitle className="text-xl text-gray-900">{feature.title}</CardTitle>
                   </div>
