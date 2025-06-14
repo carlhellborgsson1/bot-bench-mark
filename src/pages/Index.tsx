@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { BarChart3, Shield, Zap, DollarSign, Globe, Code, ArrowRight, Sparkles, Compass, Star } from "lucide-react";
@@ -169,10 +168,10 @@ const Index = () => {
             <CardContent className="p-12 sm:p-16 text-center">
               <div className="space-y-8">
                 <div className="space-y-4">
-                  <h2 className="text-3xl sm:text-4xl font-bold text-white">
+                  <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
                     Ready to Find Your Perfect AI Assistant?
                   </h2>
-                  <p className="text-xl text-blue-100 max-w-2xl mx-auto leading-relaxed">
+                  <p className="text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed">
                     Take our intelligent matching quiz and get personalized recommendations 
                     based on your specific needs, budget, and use cases.
                   </p>
@@ -186,7 +185,7 @@ const Index = () => {
                       <ArrowRight className="h-5 w-5" />
                     </Link>
                   </Button>
-                  <Button asChild variant="outline" size="lg" className="bg-white/10 backdrop-blur-md border-white/30 text-white hover:bg-white/20 px-8 py-4 text-lg rounded-xl">
+                  <Button asChild variant="outline" size="lg" className="bg-white/10 backdrop-blur-md border-white/30 text-gray-700 hover:bg-white/20 px-8 py-4 text-lg rounded-xl">
                     <Link to="/performance">
                       Browse All Comparisons
                     </Link>
