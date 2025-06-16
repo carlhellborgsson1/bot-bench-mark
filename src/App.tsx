@@ -18,6 +18,7 @@ import PrivateUse from "./pages/PrivateUse";
 import CompanyUse from "./pages/CompanyUse";
 import ChatbotMatcher from "./pages/ChatbotMatcher";
 import AINews from "./pages/AINews";
+import SearchResults from "./pages/SearchResults";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -43,6 +44,7 @@ const App = () => (
               <Route path="/company-use" element={<CompanyUse />} />
               <Route path="/chatbot-matcher" element={<ChatbotMatcher />} />
               <Route path="/ai-news" element={<AINews />} />
+              <Route path="/search" element={<SearchResults />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Layout>

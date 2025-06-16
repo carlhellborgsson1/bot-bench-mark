@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 interface SearchBarProps {
   onSearch: (query: string) => void;
@@ -11,9 +12,14 @@ interface SearchBarProps {
 
 export const SearchBar = ({ onSearch, placeholder = "Search AI chatbots..." }: SearchBarProps) => {
   const [query, setQuery] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (query.trim()) {
+      // Navigate to search results page with query parameter
+      navigate(`/search?q=${encodeURIComponent(query.trim())}`);
+    }
     onSearch(query);
   };
 
