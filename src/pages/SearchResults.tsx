@@ -1,10 +1,11 @@
 
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams, useNavigate } from "react-router-dom";
 import { SearchBar } from "@/components/search/SearchBar";
 import { SeoHead } from "@/components/seo/SeoHead";
 
 const SearchResults = () => {
   const [searchParams] = useSearchParams();
+  const navigate = useNavigate();
   const query = searchParams.get('q') || '';
 
   const handleSearch = (newQuery: string) => {
@@ -12,6 +13,11 @@ const SearchResults = () => {
     const newSearchParams = new URLSearchParams();
     newSearchParams.set('q', newQuery);
     window.location.href = `/search?${newSearchParams.toString()}`;
+  };
+
+  const handleChatbotClick = (chatbotName: string) => {
+    // Navigate to comparison page - using the home page as the comparison page
+    navigate('/');
   };
 
   // Mock search results - in a real app, this would come from an API
@@ -55,7 +61,11 @@ const SearchResults = () => {
           {/* Results Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredResults.map((result, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div 
+                key={index} 
+                className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+                onClick={() => handleChatbotClick(result.name)}
+              >
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">{result.name}</h3>
                 <p className="text-gray-600 mb-3">{result.description}</p>
                 <span className="inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">
