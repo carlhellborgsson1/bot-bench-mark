@@ -26,7 +26,7 @@ export const SearchBar = ({ onSearch, placeholder = "Search AI chatbots..." }: S
           placeholder={placeholder}
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          className="pl-10 bg-white"
+          className="pl-10 bg-white placeholder:text-gray-500"
         />
       </div>
       <Button type="submit" className="bg-blue-600 hover:bg-blue-700">
