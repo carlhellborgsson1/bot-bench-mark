@@ -48,13 +48,13 @@ const features = [
 
 export const FeaturesGrid = () => {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl mb-4">
+          <h2 className="text-3xl font-bold text-white sm:text-4xl mb-4">
             Comprehensive AI Chatbot Analysis
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
             Make informed decisions with our detailed comparison framework covering all aspects of AI chatbot performance
           </p>
         </div>
