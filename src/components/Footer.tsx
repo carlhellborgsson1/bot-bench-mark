@@ -11,8 +11,8 @@ const Footer = () => {
             <div>
               <h3 className="font-semibold mb-2 text-sm sm:text-base">Address</h3>
               <p className="text-xs sm:text-sm text-white/80">
-                Storgatan 12<br />
-                111 51 Stockholm<br />
+                Kulladalsgatan 18<br />
+                352 36 Växjö<br />
                 Sweden
               </p>
             </div>
