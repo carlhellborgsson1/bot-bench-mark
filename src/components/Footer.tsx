@@ -33,7 +33,7 @@ const Footer = () => {
             <div>
               <h3 className="font-semibold mb-2 text-sm sm:text-base">Email</h3>
               <p className="text-xs sm:text-sm text-white/80">
-                info@chatbotcompass.se
+                info@divideai.com
               </p>
             </div>
           </div>
