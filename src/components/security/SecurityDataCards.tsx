@@ -5,36 +5,36 @@ import { Lock, Eye, FileCheck, Shield } from "lucide-react";
 
 const securityData = [
   {
-    chatbot: "GPT-4",
+    chatbot: "GPT-5",
+    encryption: "AES-256",
+    dataRetention: "30 days",
+    compliance: ["SOC 2 Type II", "GDPR", "CCPA", "ISO 27001"],
+    privacy: "High",
+    score: 9.3
+  },
+  {
+    chatbot: "Claude 4.5",
+    encryption: "AES-256",
+    dataRetention: "No training storage",
+    compliance: ["SOC 2 Type II", "GDPR", "HIPAA"],
+    privacy: "Very High",
+    score: 9.7
+  },
+  {
+    chatbot: "Gemini 2.5",
+    encryption: "AES-256",
+    dataRetention: "18 months",
+    compliance: ["SOC 2", "GDPR", "ISO 27001"],
+    privacy: "Medium",
+    score: 8.5
+  },
+  {
+    chatbot: "GPT-5 mini",
     encryption: "AES-256",
     dataRetention: "30 days",
     compliance: ["SOC 2", "GDPR", "CCPA"],
     privacy: "High",
-    score: 9.1
-  },
-  {
-    chatbot: "Claude 3",
-    encryption: "AES-256",
-    dataRetention: "No storage",
-    compliance: ["SOC 2", "GDPR"],
-    privacy: "Very High",
-    score: 9.5
-  },
-  {
-    chatbot: "Gemini Pro",
-    encryption: "AES-256",
-    dataRetention: "18 months",
-    compliance: ["SOC 2", "GDPR"],
-    privacy: "Medium",
-    score: 8.2
-  },
-  {
-    chatbot: "ChatGPT-3.5",
-    encryption: "AES-256",
-    dataRetention: "30 days",
-    compliance: ["SOC 2", "GDPR"],
-    privacy: "High",
-    score: 8.8
+    score: 9.0
   },
   {
     chatbot: "Perplexity AI",
@@ -42,31 +42,31 @@ const securityData = [
     dataRetention: "90 days",
     compliance: ["GDPR", "CCPA"],
     privacy: "High",
-    score: 8.5
+    score: 8.6
   },
   {
     chatbot: "Microsoft Copilot",
     encryption: "AES-256",
     dataRetention: "Variable",
-    compliance: ["SOC 2", "GDPR", "CCPA", "HIPAA"],
+    compliance: ["SOC 2", "GDPR", "CCPA", "HIPAA", "ISO 27001"],
     privacy: "High",
-    score: 9.0
+    score: 9.2
   },
   {
-    chatbot: "Llama 2 70B",
+    chatbot: "Llama 3.3",
     encryption: "Depends on host",
     dataRetention: "Variable",
-    compliance: ["Varies"],
+    compliance: ["Varies by deployment"],
     privacy: "Variable",
-    score: 7.5
+    score: 7.8
   },
   {
-    chatbot: "Mistral 7B",
+    chatbot: "Mistral Large 2",
     encryption: "AES-256",
     dataRetention: "7 days",
-    compliance: ["GDPR"],
-    privacy: "High",
-    score: 8.0
+    compliance: ["GDPR", "EU AI Act Ready"],
+    privacy: "Very High",
+    score: 8.8
   }
 ];
 

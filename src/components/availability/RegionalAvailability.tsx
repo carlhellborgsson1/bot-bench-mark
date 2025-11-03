@@ -17,7 +17,7 @@ export const RegionalAvailability = () => {
         <div className="space-y-3">
           <div className="p-4 border rounded-lg">
             <div className="flex items-center justify-between mb-2">
-              <h4 className="font-semibold text-black">GPT-4 / ChatGPT</h4>
+              <h4 className="font-semibold text-black">GPT-5 / ChatGPT</h4>
               <Badge className="bg-green-100 text-green-700">Global</Badge>
             </div>
             <p className="text-sm text-black mb-2">Available in 160+ countries with full feature access</p>
@@ -26,26 +26,29 @@ export const RegionalAvailability = () => {
               <Badge variant="outline" className="text-xs">EU</Badge>
               <Badge variant="outline" className="text-xs">Asia</Badge>
               <Badge variant="outline" className="text-xs">Australia</Badge>
+              <Badge variant="outline" className="text-xs">Africa</Badge>
             </div>
           </div>
           
           <div className="p-4 border rounded-lg">
             <div className="flex items-center justify-between mb-2">
-              <h4 className="font-semibold text-black">Claude 3</h4>
-              <Badge className="bg-yellow-100 text-yellow-700">Limited</Badge>
+              <h4 className="font-semibold text-black">Claude 4.5</h4>
+              <Badge className="bg-green-100 text-green-700">Expanding</Badge>
             </div>
-            <p className="text-sm text-black mb-2">Available in select regions, expanding gradually</p>
+            <p className="text-sm text-black mb-2">Available globally, gradually expanding to all regions</p>
             <div className="flex flex-wrap gap-1">
               <Badge variant="outline" className="text-xs">US</Badge>
               <Badge variant="outline" className="text-xs">UK</Badge>
               <Badge variant="outline" className="text-xs">Canada</Badge>
+              <Badge variant="outline" className="text-xs">EU</Badge>
+              <Badge variant="outline" className="text-xs">Australia</Badge>
             </div>
           </div>
 
           <div className="p-4 border rounded-lg">
             <div className="flex items-center justify-between mb-2">
-              <h4 className="font-semibold text-black">Gemini Pro</h4>
-              <Badge className="bg-green-100 text-green-700">Expanding</Badge>
+              <h4 className="font-semibold text-black">Gemini 2.5</h4>
+              <Badge className="bg-green-100 text-green-700">Global</Badge>
             </div>
             <p className="text-sm text-black mb-2">Rapidly expanding globally with Google integration</p>
             <div className="flex flex-wrap gap-1">
@@ -53,6 +56,7 @@ export const RegionalAvailability = () => {
               <Badge variant="outline" className="text-xs">EU</Badge>
               <Badge variant="outline" className="text-xs">Japan</Badge>
               <Badge variant="outline" className="text-xs">India</Badge>
+              <Badge variant="outline" className="text-xs">Latin America</Badge>
             </div>
           </div>
         </div>

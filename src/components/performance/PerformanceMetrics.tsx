@@ -5,68 +5,68 @@ import { Clock, Target, Zap, BarChart3 } from "lucide-react";
 
 const metrics = [
   {
-    chatbot: "GPT-4",
-    responseTime: "2.3s",
-    accuracy: "94%",
-    throughput: "High",
+    chatbot: "GPT-5",
+    responseTime: "1.8s",
+    accuracy: "96%",
+    throughput: "Very High",
     reliability: "99.9%",
-    score: 9.2
+    score: 9.5
   },
   {
-    chatbot: "Claude 3",
-    responseTime: "1.8s",
-    accuracy: "92%",
+    chatbot: "Claude 4.5 Sonnet",
+    responseTime: "1.5s",
+    accuracy: "95%",
     throughput: "High",
-    reliability: "99.7%",
+    reliability: "99.8%",
+    score: 9.4
+  },
+  {
+    chatbot: "Gemini 2.5 Pro",
+    responseTime: "1.2s",
+    accuracy: "94%",
+    throughput: "Very High",
+    reliability: "99.9%",
+    score: 9.3
+  },
+  {
+    chatbot: "GPT-5 mini",
+    responseTime: "1.0s",
+    accuracy: "92%",
+    throughput: "Very High",
+    reliability: "99.9%",
     score: 9.0
   },
   {
-    chatbot: "Gemini Pro",
-    responseTime: "2.1s",
-    accuracy: "90%",
-    throughput: "Medium",
-    reliability: "99.5%",
-    score: 8.5
-  },
-  {
-    chatbot: "ChatGPT-3.5",
-    responseTime: "1.5s",
-    accuracy: "88%",
-    throughput: "Very High",
-    reliability: "99.8%",
-    score: 8.5
-  },
-  {
     chatbot: "Perplexity AI",
-    responseTime: "2.8s",
-    accuracy: "91%",
-    throughput: "Medium",
-    reliability: "99.2%",
-    score: 8.8
+    responseTime: "2.2s",
+    accuracy: "93%",
+    throughput: "High",
+    reliability: "99.5%",
+    score: 8.9
   },
   {
     chatbot: "Microsoft Copilot",
+    responseTime: "1.9s",
+    accuracy: "91%",
+    throughput: "High",
+    reliability: "99.7%",
+    score: 8.8
+  },
+  {
+    chatbot: "Llama 3.3 70B",
     responseTime: "2.5s",
     accuracy: "89%",
-    throughput: "High",
-    reliability: "99.6%",
-    score: 8.6
-  },
-  {
-    chatbot: "Llama 2 70B",
-    responseTime: "3.2s",
-    accuracy: "85%",
     throughput: "Medium",
-    reliability: "98.5%",
-    score: 8.0
+    reliability: "99.2%",
+    score: 8.4
   },
   {
-    chatbot: "Mistral 7B",
-    responseTime: "1.2s",
-    accuracy: "82%",
+    chatbot: "Mistral Large 2",
+    responseTime: "1.3s",
+    accuracy: "88%",
     throughput: "Very High",
-    reliability: "98.8%",
-    score: 7.8
+    reliability: "99.3%",
+    score: 8.5
   }
 ];
 

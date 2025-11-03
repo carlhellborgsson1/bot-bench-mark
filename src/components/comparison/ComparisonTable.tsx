@@ -20,8 +20,8 @@ const features: Feature[] = [
   },
   {
     name: "Web Search",
-    chatgpt: "Premium only",
-    claude: false,
+    chatgpt: true,
+    claude: "Limited",
     gemini: true,
     perplexity: true
   },
@@ -30,7 +30,7 @@ const features: Feature[] = [
     chatgpt: true,
     claude: true,
     gemini: true,
-    perplexity: "Premium only"
+    perplexity: true
   },
   {
     name: "Code Generation",
@@ -41,10 +41,17 @@ const features: Feature[] = [
   },
   {
     name: "File Upload",
-    chatgpt: "Premium only",
+    chatgpt: true,
     claude: true,
     gemini: true,
     perplexity: "Premium only"
+  },
+  {
+    name: "Video Generation",
+    chatgpt: "Coming soon",
+    claude: false,
+    gemini: true,
+    perplexity: false
   },
   {
     name: "API Access",
@@ -52,6 +59,13 @@ const features: Feature[] = [
     claude: true,
     gemini: true,
     perplexity: true
+  },
+  {
+    name: "Extended Context (200K+)",
+    chatgpt: true,
+    claude: true,
+    gemini: true,
+    perplexity: false
   }
 ];
 
@@ -82,9 +96,9 @@ export const ComparisonTable = () => {
                 <thead>
                   <tr className="border-b">
                     <th className="text-left py-3 px-4 font-semibold text-gray-900">Feature</th>
-                    <th className="text-center py-3 px-4 font-semibold text-gray-900">ChatGPT</th>
-                    <th className="text-center py-3 px-4 font-semibold text-gray-900">Claude</th>
-                    <th className="text-center py-3 px-4 font-semibold text-gray-900">Gemini</th>
+                    <th className="text-center py-3 px-4 font-semibold text-gray-900">GPT-5</th>
+                    <th className="text-center py-3 px-4 font-semibold text-gray-900">Claude 4.5</th>
+                    <th className="text-center py-3 px-4 font-semibold text-gray-900">Gemini 2.5</th>
                     <th className="text-center py-3 px-4 font-semibold text-gray-900">Perplexity</th>
                   </tr>
                 </thead>
