@@ -2,6 +2,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Clock, Target, Zap, BarChart3 } from "lucide-react";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { useState } from "react";
 
 const metrics = [
   {
@@ -71,9 +73,46 @@ const metrics = [
 ];
 
 export const PerformanceMetrics = () => {
+  const [sortBy, setSortBy] = useState<string>("score");
+  
+  const parseTime = (time: string) => parseFloat(time.replace('s', ''));
+  const parseAccuracy = (accuracy: string) => parseFloat(accuracy.replace('%', ''));
+  const parseReliability = (reliability: string) => parseFloat(reliability.replace('%', ''));
+  
+  const sortedMetrics = [...metrics].sort((a, b) => {
+    switch (sortBy) {
+      case "score":
+        return b.score - a.score;
+      case "responseTime":
+        return parseTime(a.responseTime) - parseTime(b.responseTime);
+      case "accuracy":
+        return parseAccuracy(b.accuracy) - parseAccuracy(a.accuracy);
+      case "reliability":
+        return parseReliability(b.reliability) - parseReliability(a.reliability);
+      default:
+        return 0;
+    }
+  });
+
   return (
-    <div className="grid gap-6 mb-8">
-      {metrics.map((metric, index) => (
+    <div className="space-y-6 mb-8">
+      <div className="flex justify-between items-center">
+        <h3 className="text-lg font-semibold text-white">Sort by:</h3>
+        <Select value={sortBy} onValueChange={setSortBy}>
+          <SelectTrigger className="w-[200px] bg-white text-black border-gray-300 z-50">
+            <SelectValue placeholder="Sort by..." />
+          </SelectTrigger>
+          <SelectContent className="bg-white border-gray-300 z-50">
+            <SelectItem value="score" className="text-black hover:bg-gray-100">Overall Score</SelectItem>
+            <SelectItem value="responseTime" className="text-black hover:bg-gray-100">Response Time (Fastest)</SelectItem>
+            <SelectItem value="accuracy" className="text-black hover:bg-gray-100">Accuracy (Highest)</SelectItem>
+            <SelectItem value="reliability" className="text-black hover:bg-gray-100">Reliability (Highest)</SelectItem>
+          </SelectContent>
+        </Select>
+      </div>
+      
+      <div className="grid gap-6">
+      {sortedMetrics.map((metric, index) => (
         <Card key={metric.chatbot} className="hover:shadow-lg transition-all duration-300 animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
           <CardHeader>
             <div className="flex items-center justify-between">
@@ -119,6 +158,7 @@ export const PerformanceMetrics = () => {
           </CardContent>
         </Card>
       ))}
+      </div>
     </div>
   );
 };
