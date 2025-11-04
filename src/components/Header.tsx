@@ -1,6 +1,7 @@
 
 import { Link } from "react-router-dom";
 import TopNavigation from "./TopNavigation";
+import { ThemeToggle } from "./ThemeToggle";
 
 const Header = () => {
   return (
@@ -10,7 +11,8 @@ const Header = () => {
           <span className="font-bold text-2xl sm:text-3xl text-white hover:text-white/80 transition-colors">DivideAI</span>
         </Link>
         
-        <div className="mr-2 sm:mr-8">
+        <div className="mr-2 sm:mr-8 flex items-center gap-4">
+          <ThemeToggle />
           <TopNavigation />
         </div>
       </div>

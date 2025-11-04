@@ -24,6 +24,7 @@ import {
   X,
 } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { ThemeToggle } from "./ThemeToggle";
 
 const TopNavigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -50,7 +51,8 @@ const TopNavigation = () => {
 
   if (isMobile) {
     return (
-      <div className="relative">
+      <div className="relative flex items-center gap-2">
+        <ThemeToggle />
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           className="text-white p-2 hover:text-white/80 transition-colors"
