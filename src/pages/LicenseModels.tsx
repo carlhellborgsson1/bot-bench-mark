@@ -8,8 +8,8 @@ const LicenseModels = () => {
     <div className="max-w-7xl mx-auto animate-fade-in">
       <div className="mb-8">
         <div className="flex items-center gap-3 mb-4">
-          <div className="p-2 rounded-lg bg-primary/10">
-            <FileText className="h-6 w-6 text-primary" />
+          <div className="p-2 rounded-lg bg-gradient-to-br from-amber-500/10 to-orange-500/10">
+            <FileText className="h-6 w-6 text-white" />
           </div>
           <h1 className="text-3xl font-bold text-white">License Models</h1>
         </div>
