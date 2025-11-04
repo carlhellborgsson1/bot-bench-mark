@@ -2,23 +2,13 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { User, Shield, Heart, BookOpen, Coffee, ExternalLink } from "lucide-react";
+import { PrivateUseHeader } from "@/components/private-use/PrivateUseHeader";
 import { getAffiliateLink } from "@/utils/recommendations";
 
 const PrivateUse = () => {
   return (
     <div className="max-w-7xl mx-auto animate-fade-in">
-      <div className="mb-8">
-        <div className="flex items-center gap-3 mb-4">
-          <div className="p-2 rounded-lg bg-gradient-to-br from-pink-500/10 to-rose-500/10">
-            <User className="h-6 w-6 text-white" />
-          </div>
-          <h1 className="text-3xl font-bold text-white">AI Chatbots for Private Use</h1>
-        </div>
-        <p className="text-lg text-muted-foreground max-w-3xl">
-          Discover the best AI chatbots for personal use, including creative writing, learning, 
-          daily assistance, and entertainment. Find the perfect AI companion for your individual needs.
-        </p>
-      </div>
+      <PrivateUseHeader />
 
       <div className="grid lg:grid-cols-3 gap-6 mb-8">
         <Card className="lg:col-span-2 hover:shadow-lg transition-all duration-300">

@@ -1,13 +1,13 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Compass } from "lucide-react";
 import { Answers, Recommendation } from "@/types/chatbot";
 import { getRecommendation } from "@/utils/recommendations";
 import { questions } from "@/data/questions";
 import ProgressBar from "@/components/chatbot-matcher/ProgressBar";
 import QuestionCard from "@/components/chatbot-matcher/QuestionCard";
 import RecommendationResult from "@/components/chatbot-matcher/RecommendationResult";
+import { ChatbotMatcherHeader } from "@/components/chatbot-matcher/ChatbotMatcherHeader";
 
 const ChatbotMatcher = () => {
   const [currentStep, setCurrentStep] = useState(0);
@@ -38,17 +38,7 @@ const ChatbotMatcher = () => {
 
   return (
     <div className="max-w-4xl mx-auto animate-fade-in">
-      <div className="text-center mb-8">
-        <div className="flex items-center justify-center gap-3 mb-4">
-          <div className="p-2 rounded-lg bg-gradient-to-br from-blue-500/10 to-purple-500/10">
-            <Compass className="h-6 w-6 text-white" />
-          </div>
-          <h1 className="text-3xl font-bold text-white">Find Your Perfect AI Chatbot</h1>
-        </div>
-        <p className="text-lg text-blue-100 max-w-2xl mx-auto">
-          Answer a few quick questions and we'll recommend the best AI chatbot for your specific needs
-        </p>
-      </div>
+      <ChatbotMatcherHeader />
 
       <ProgressBar currentStep={currentStep} totalSteps={questions.length} />
 

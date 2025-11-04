@@ -1,23 +1,13 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { FileText, Scale, AlertCircle, CheckCircle } from "lucide-react";
+import { Scale, AlertCircle, CheckCircle } from "lucide-react";
+import { LicenseHeader } from "@/components/license/LicenseHeader";
 
 const LicenseModels = () => {
   return (
     <div className="max-w-7xl mx-auto animate-fade-in">
-      <div className="mb-8">
-        <div className="flex items-center gap-3 mb-4">
-          <div className="p-2 rounded-lg bg-gradient-to-br from-amber-500/10 to-orange-500/10">
-            <FileText className="h-6 w-6 text-white" />
-          </div>
-          <h1 className="text-3xl font-bold text-white">License Models</h1>
-        </div>
-        <p className="text-lg text-muted-foreground max-w-3xl">
-          Understanding the legal frameworks, usage rights, and licensing terms for different AI chatbot platforms 
-          to ensure compliant deployment in your organization.
-        </p>
-      </div>
+      <LicenseHeader />
 
       <div className="grid lg:grid-cols-2 gap-6 mb-8">
         <Card className="hover:shadow-lg transition-all duration-300">

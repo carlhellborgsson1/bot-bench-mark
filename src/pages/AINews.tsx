@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Calendar, ExternalLink, TrendingUp, Zap, Brain, Cpu } from 'lucide-react';
+import { AINewsHeader } from '@/components/news/AINewsHeader';
 
 const AINews = () => {
   const allNewsArticles = [
@@ -176,18 +177,7 @@ const AINews = () => {
 
   return (
     <div className="container mx-auto px-4 py-8 max-w-7xl">
-      {/* Header Section */}
-      <div className="text-center mb-12">
-        <div className="flex items-center justify-center gap-3 mb-4">
-          <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
-            <TrendingUp className="h-6 w-6 text-white" />
-          </div>
-          <h1 className="text-4xl font-bold text-white">AI News Hub</h1>
-        </div>
-        <p className="text-xl text-white max-w-3xl mx-auto">
-          Stay updated with the latest developments in artificial intelligence, from breakthrough research to industry updates.
-        </p>
-      </div>
+      <AINewsHeader />
 
       {/* Category Filter */}
       <div className="flex flex-wrap gap-2 mb-8 justify-center">
