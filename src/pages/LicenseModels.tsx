@@ -11,7 +11,7 @@ const LicenseModels = () => {
           <div className="p-2 rounded-lg bg-primary/10">
             <FileText className="h-6 w-6 text-primary" />
           </div>
-          <h1 className="text-3xl font-bold">License Models</h1>
+          <h1 className="text-3xl font-bold text-white">License Models</h1>
         </div>
         <p className="text-lg text-muted-foreground max-w-3xl">
           Understanding the legal frameworks, usage rights, and licensing terms for different AI chatbot platforms 
