@@ -207,7 +207,7 @@ export const PricingCards = () => {
               ))}
             </ul>
             <Button 
-              className={`w-full ${item.buttonColor}`}
+              className={`w-full ${item.name === "Free Tiers" ? "text-white" : ""} ${item.buttonColor}`}
               variant={item.name === "Free Tiers" ? "outline" : "default"}
               onClick={() => window.open(item.url, '_blank')}
             >
