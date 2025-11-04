@@ -118,7 +118,7 @@ const LicenseModels = () => {
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="space-y-4">
-              <div className="p-4 bg-destructive/10 border border-destructive/20 rounded-lg">
+              <div className="p-4 bg-white border rounded-lg">
                 <h4 className="font-semibold text-black mb-2">Prohibited Uses</h4>
                 <ul className="space-y-1 text-sm text-black">
                   <li>• Illegal activities or fraud</li>
@@ -129,7 +129,7 @@ const LicenseModels = () => {
                 </ul>
               </div>
 
-              <div className="p-4 bg-muted border border-border rounded-lg">
+              <div className="p-4 bg-white border rounded-lg">
                 <h4 className="font-semibold text-black mb-2">Restricted Uses</h4>
                 <ul className="space-y-1 text-sm text-black">
                   <li>• Medical diagnosis (without supervision)</li>
@@ -140,7 +140,7 @@ const LicenseModels = () => {
                 </ul>
               </div>
 
-              <div className="p-4 bg-accent border border-border rounded-lg">
+              <div className="p-4 bg-white border rounded-lg">
                 <h4 className="font-semibold text-black mb-2">Data Restrictions</h4>
                 <ul className="space-y-1 text-sm text-black">
                   <li>• Cannot use output to train models</li>
@@ -190,19 +190,19 @@ const LicenseModels = () => {
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="space-y-3">
-              <div className="p-3 bg-primary/10 border border-primary/20 rounded-lg">
+              <div className="p-3 bg-white border rounded-lg">
                 <p className="font-medium text-black text-sm">Your Input Data</p>
                 <p className="text-xs text-black">You retain full ownership</p>
               </div>
-              <div className="p-3 bg-accent border border-border rounded-lg">
+              <div className="p-3 bg-white border rounded-lg">
                 <p className="font-medium text-black text-sm">Generated Output</p>
                 <p className="text-xs text-black">Typically assigned to you</p>
               </div>
-              <div className="p-3 bg-muted border border-border rounded-lg">
+              <div className="p-3 bg-white border rounded-lg">
                 <p className="font-medium text-black text-sm">Model Weights</p>
                 <p className="text-xs text-black">Remain with AI provider</p>
               </div>
-              <div className="p-3 bg-secondary border border-border rounded-lg">
+              <div className="p-3 bg-white border rounded-lg">
                 <p className="font-medium text-black text-sm">Usage Analytics</p>
                 <p className="text-xs text-black">Shared or provider-owned</p>
               </div>
@@ -249,28 +249,28 @@ const LicenseModels = () => {
         </CardHeader>
         <CardContent>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="p-4 bg-primary/10 rounded-lg">
+            <div className="p-4 bg-white border rounded-lg">
               <h4 className="font-semibold text-black mb-2">Most Permissive</h4>
               <p className="text-black mb-2">OpenAI GPT-4</p>
               <p className="text-sm text-black">
                 Flexible commercial use with minimal restrictions on output usage
               </p>
             </div>
-            <div className="p-4 bg-accent rounded-lg">
+            <div className="p-4 bg-white border rounded-lg">
               <h4 className="font-semibold text-black mb-2">Most Ethical</h4>
               <p className="text-black mb-2">Anthropic Claude</p>
               <p className="text-sm text-black">
                 Strong ethical guidelines and constitutional AI principles
               </p>
             </div>
-            <div className="p-4 bg-muted rounded-lg">
+            <div className="p-4 bg-white border rounded-lg">
               <h4 className="font-semibold text-black mb-2">Enterprise Focus</h4>
               <p className="text-black mb-2">Google Gemini</p>
               <p className="text-sm text-black">
                 Strong enterprise integration and cloud service alignment
               </p>
             </div>
-            <div className="p-4 bg-secondary rounded-lg">
+            <div className="p-4 bg-white border rounded-lg">
               <h4 className="font-semibold text-black mb-2">Open Alternative</h4>
               <p className="text-black mb-2">Open Source Models</p>
               <p className="text-sm text-black">
