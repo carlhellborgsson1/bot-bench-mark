@@ -219,15 +219,15 @@ const LicenseModels = () => {
             <div className="space-y-2">
               <div className="flex items-center justify-between">
                 <span className="text-sm text-black">GDPR</span>
-                <Badge className="bg-primary/10 text-primary">All</Badge>
+                <Badge className="bg-primary/10 text-black">All</Badge>
               </div>
               <div className="flex items-center justify-between">
                 <span className="text-sm text-black">CCPA</span>
-                <Badge className="bg-primary/10 text-primary">All</Badge>
+                <Badge className="bg-primary/10 text-black">All</Badge>
               </div>
               <div className="flex items-center justify-between">
                 <span className="text-sm text-black">SOC 2</span>
-                <Badge className="bg-primary/10 text-primary">Most</Badge>
+                <Badge className="bg-primary/10 text-black">Most</Badge>
               </div>
               <div className="flex items-center justify-between">
                 <span className="text-sm text-black">HIPAA</span>
@@ -235,7 +235,7 @@ const LicenseModels = () => {
               </div>
               <div className="flex items-center justify-between">
                 <span className="text-sm text-black">ISO 27001</span>
-                <Badge className="bg-primary/10 text-primary">Major</Badge>
+                <Badge className="bg-primary/10 text-black">Major</Badge>
               </div>
             </div>
           </CardContent>
