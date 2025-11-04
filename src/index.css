@@ -6,25 +6,25 @@
 @layer base {
   :root {
     --background: 255 255 255;
-    --foreground: 15 23 42;
+    --foreground: 0 0 0;
 
     --card: 255 255 255;
-    --card-foreground: 15 23 42;
+    --card-foreground: 0 0 0;
 
     --popover: 255 255 255;
-    --popover-foreground: 15 23 42;
+    --popover-foreground: 0 0 0;
 
     --primary: 59 130 246;
     --primary-foreground: 248 250 252;
 
     --secondary: 241 245 249;
-    --secondary-foreground: 15 23 42;
+    --secondary-foreground: 0 0 0;
 
     --muted: 248 250 252;
     --muted-foreground: 100 116 139;
 
     --accent: 241 245 249;
-    --accent-foreground: 15 23 42;
+    --accent-foreground: 0 0 0;
 
     --destructive: 239 68 68;
     --destructive-foreground: 248 250 252;
@@ -40,7 +40,7 @@
     --sidebar-primary: 59 130 246;
     --sidebar-primary-foreground: 248 250 252;
     --sidebar-accent: 241 245 249;
-    --sidebar-accent-foreground: 15 23 42;
+    --sidebar-accent-foreground: 0 0 0;
     --sidebar-border: 226 232 240;
     --sidebar-ring: 59 130 246;
   }
@@ -91,6 +91,10 @@
   }
 
   html {
+    @apply bg-background text-foreground;
+  }
+
+  html.dark {
     background: linear-gradient(
       135deg,
       #1e293b 0%,
@@ -98,17 +102,16 @@
     );
     background-attachment: fixed;
     background-repeat: no-repeat;
+  }
+
+  html, body {
     min-height: 100vh;
-    min-height: 100dvh; /* Better mobile support */
+    min-height: 100dvh;
     overscroll-behavior: none;
   }
 
   body {
-    @apply bg-transparent text-foreground font-sans;
-    background: transparent;
-    min-height: 100vh;
-    min-height: 100dvh; /* Better mobile support */
-    overscroll-behavior: none;
+    @apply bg-transparent font-sans;
     margin: 0;
     padding: 0;
   }

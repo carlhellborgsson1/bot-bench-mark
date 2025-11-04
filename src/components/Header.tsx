@@ -8,7 +8,7 @@ const Header = () => {
     <div className="bg-transparent">
       <div className="flex items-center justify-between px-4 sm:px-8 py-4">
         <Link to="/" className="ml-2 sm:ml-8">
-          <span className="font-bold text-2xl sm:text-3xl text-white hover:text-white/80 transition-colors">DivideAI</span>
+          <span className="font-bold text-2xl sm:text-3xl text-foreground hover:opacity-80 transition-opacity">DivideAI</span>
         </Link>
         
         <div className="mr-2 sm:mr-8 flex items-center gap-4">
