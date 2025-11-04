@@ -22,7 +22,7 @@ const LicenseModels = () => {
       <div className="grid lg:grid-cols-2 gap-6 mb-8">
         <Card className="hover:shadow-lg transition-all duration-300">
           <CardHeader>
-            <CardTitle className="flex items-center gap-2">
+            <CardTitle className="flex items-center gap-2 text-black">
               <Scale className="h-5 w-5 text-primary" />
               Commercial Usage Rights
             </CardTitle>
@@ -33,7 +33,7 @@ const LicenseModels = () => {
               <div className="p-4 border rounded-lg">
                 <div className="flex items-center justify-between mb-3">
                   <h4 className="font-semibold text-black">OpenAI (GPT-4)</h4>
-                  <Badge className="bg-primary/10 text-primary">Commercial OK</Badge>
+                  <Badge className="bg-primary/10 text-black">Commercial OK</Badge>
                 </div>
                 <ul className="space-y-2 text-sm text-black">
                   <li className="flex items-center gap-2">
@@ -58,7 +58,7 @@ const LicenseModels = () => {
               <div className="p-4 border rounded-lg">
                 <div className="flex items-center justify-between mb-3">
                   <h4 className="font-semibold text-black">Anthropic (Claude)</h4>
-                  <Badge className="bg-primary/10 text-primary">Commercial OK</Badge>
+                  <Badge className="bg-primary/10 text-black">Commercial OK</Badge>
                 </div>
                 <ul className="space-y-2 text-sm text-black">
                   <li className="flex items-center gap-2">
@@ -83,7 +83,7 @@ const LicenseModels = () => {
               <div className="p-4 border rounded-lg">
                 <div className="flex items-center justify-between mb-3">
                   <h4 className="font-semibold text-black">Google (Gemini)</h4>
-                  <Badge className="bg-primary/10 text-primary">Commercial OK</Badge>
+                  <Badge className="bg-primary/10 text-black">Commercial OK</Badge>
                 </div>
                 <ul className="space-y-2 text-sm text-black">
                   <li className="flex items-center gap-2">
@@ -110,7 +110,7 @@ const LicenseModels = () => {
 
         <Card className="hover:shadow-lg transition-all duration-300">
           <CardHeader>
-            <CardTitle className="flex items-center gap-2">
+            <CardTitle className="flex items-center gap-2 text-black">
               <AlertCircle className="h-5 w-5 text-destructive" />
               Usage Restrictions
             </CardTitle>
@@ -158,7 +158,7 @@ const LicenseModels = () => {
       <div className="grid md:grid-cols-3 gap-6 mb-8">
         <Card>
           <CardHeader>
-            <CardTitle>Enterprise Licensing</CardTitle>
+            <CardTitle className="text-black">Enterprise Licensing</CardTitle>
             <CardDescription>Business and organizational terms</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
@@ -185,7 +185,7 @@ const LicenseModels = () => {
 
         <Card>
           <CardHeader>
-            <CardTitle>Data Ownership</CardTitle>
+            <CardTitle className="text-black">Data Ownership</CardTitle>
             <CardDescription>Who owns what data</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
@@ -212,7 +212,7 @@ const LicenseModels = () => {
 
         <Card>
           <CardHeader>
-            <CardTitle>Compliance Standards</CardTitle>
+            <CardTitle className="text-black">Compliance Standards</CardTitle>
             <CardDescription>Regulatory adherence</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
@@ -244,7 +244,7 @@ const LicenseModels = () => {
 
       <Card>
         <CardHeader>
-          <CardTitle>License Comparison Summary</CardTitle>
+          <CardTitle className="text-black">License Comparison Summary</CardTitle>
           <CardDescription>Key differences in licensing terms</CardDescription>
         </CardHeader>
         <CardContent>
