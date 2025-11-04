@@ -13,29 +13,29 @@ const LicenseModels = () => {
           </div>
           <h1 className="text-3xl font-bold text-white">License Models</h1>
         </div>
-        <p className="text-lg text-white/80 max-w-3xl">
+        <p className="text-lg text-muted-foreground max-w-3xl">
           Understanding the legal frameworks, usage rights, and licensing terms for different AI chatbot platforms 
           to ensure compliant deployment in your organization.
         </p>
       </div>
 
       <div className="grid lg:grid-cols-2 gap-6 mb-8">
-        <Card className="hover:shadow-lg transition-all duration-300 bg-transparent border-2 border-white/30 shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+        <Card className="hover:shadow-lg transition-all duration-300">
           <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-white">
+            <CardTitle className="flex items-center gap-2 text-black">
               <Scale className="h-5 w-5 text-primary" />
               Commercial Usage Rights
             </CardTitle>
-            <CardDescription className="text-white/80">Rights and restrictions for business use</CardDescription>
+            <CardDescription>Rights and restrictions for business use</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="space-y-4">
-              <div className="p-4 border-2 rounded-lg bg-transparent border-white/30 shadow-[0_0_10px_rgba(255,255,255,0.1)]">
+              <div className="p-4 border rounded-lg">
                 <div className="flex items-center justify-between mb-3">
-                  <h4 className="font-semibold text-white">OpenAI (GPT-4)</h4>
-                  <Badge className="bg-primary/10 text-white">Commercial OK</Badge>
+                  <h4 className="font-semibold text-black">OpenAI (GPT-4)</h4>
+                  <Badge className="bg-primary/10 text-black">Commercial OK</Badge>
                 </div>
-                <ul className="space-y-2 text-sm text-white">
+                <ul className="space-y-2 text-sm text-black">
                   <li className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-primary" />
                     <span>Commercial applications allowed</span>
@@ -55,12 +55,12 @@ const LicenseModels = () => {
                 </ul>
               </div>
 
-              <div className="p-4 border-2 rounded-lg bg-transparent border-white/30 shadow-[0_0_10px_rgba(255,255,255,0.1)]">
+              <div className="p-4 border rounded-lg">
                 <div className="flex items-center justify-between mb-3">
-                  <h4 className="font-semibold text-white">Anthropic (Claude)</h4>
-                  <Badge className="bg-primary/10 text-white">Commercial OK</Badge>
+                  <h4 className="font-semibold text-black">Anthropic (Claude)</h4>
+                  <Badge className="bg-primary/10 text-black">Commercial OK</Badge>
                 </div>
-                <ul className="space-y-2 text-sm text-white">
+                <ul className="space-y-2 text-sm text-black">
                   <li className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-primary" />
                     <span>Business use permitted</span>
@@ -80,12 +80,12 @@ const LicenseModels = () => {
                 </ul>
               </div>
 
-              <div className="p-4 border-2 rounded-lg bg-transparent border-white/30 shadow-[0_0_10px_rgba(255,255,255,0.1)]">
+              <div className="p-4 border rounded-lg">
                 <div className="flex items-center justify-between mb-3">
-                  <h4 className="font-semibold text-white">Google (Gemini)</h4>
-                  <Badge className="bg-primary/10 text-white">Commercial OK</Badge>
+                  <h4 className="font-semibold text-black">Google (Gemini)</h4>
+                  <Badge className="bg-primary/10 text-black">Commercial OK</Badge>
                 </div>
-                <ul className="space-y-2 text-sm text-white">
+                <ul className="space-y-2 text-sm text-black">
                   <li className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-primary" />
                     <span>Commercial deployment allowed</span>
@@ -108,19 +108,19 @@ const LicenseModels = () => {
           </CardContent>
         </Card>
 
-        <Card className="hover:shadow-lg transition-all duration-300 bg-transparent border-2 border-white/30 shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+        <Card className="hover:shadow-lg transition-all duration-300">
           <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-white">
+            <CardTitle className="flex items-center gap-2 text-black">
               <AlertCircle className="h-5 w-5 text-destructive" />
               Usage Restrictions
             </CardTitle>
-            <CardDescription className="text-white/80">Important limitations and prohibitions</CardDescription>
+            <CardDescription>Important limitations and prohibitions</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="space-y-4">
-              <div className="p-4 bg-transparent border-2 rounded-lg border-white/30 shadow-[0_0_10px_rgba(255,255,255,0.1)]">
-                <h4 className="font-semibold text-white mb-2">Prohibited Uses</h4>
-                <ul className="space-y-1 text-sm text-white">
+              <div className="p-4 bg-white border rounded-lg">
+                <h4 className="font-semibold text-black mb-2">Prohibited Uses</h4>
+                <ul className="space-y-1 text-sm text-black">
                   <li>• Illegal activities or fraud</li>
                   <li>• Harassment or hate speech</li>
                   <li>• Misinformation generation</li>
@@ -129,9 +129,9 @@ const LicenseModels = () => {
                 </ul>
               </div>
 
-              <div className="p-4 bg-transparent border-2 rounded-lg border-white/30 shadow-[0_0_10px_rgba(255,255,255,0.1)]">
-                <h4 className="font-semibold text-white mb-2">Restricted Uses</h4>
-                <ul className="space-y-1 text-sm text-white">
+              <div className="p-4 bg-white border rounded-lg">
+                <h4 className="font-semibold text-black mb-2">Restricted Uses</h4>
+                <ul className="space-y-1 text-sm text-black">
                   <li>• Medical diagnosis (without supervision)</li>
                   <li>• Legal advice provision</li>
                   <li>• Financial recommendations</li>
@@ -140,9 +140,9 @@ const LicenseModels = () => {
                 </ul>
               </div>
 
-              <div className="p-4 bg-transparent border-2 rounded-lg border-white/30 shadow-[0_0_10px_rgba(255,255,255,0.1)]">
-                <h4 className="font-semibold text-white mb-2">Data Restrictions</h4>
-                <ul className="space-y-1 text-sm text-white">
+              <div className="p-4 bg-white border rounded-lg">
+                <h4 className="font-semibold text-black mb-2">Data Restrictions</h4>
+                <ul className="space-y-1 text-sm text-black">
                   <li>• Cannot use output to train models</li>
                   <li>• Personal data handling limits</li>
                   <li>• Reverse engineering prohibited</li>
@@ -156,124 +156,124 @@ const LicenseModels = () => {
       </div>
 
       <div className="grid md:grid-cols-3 gap-6 mb-8">
-        <Card className="bg-transparent border-2 border-white/30 shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+        <Card>
           <CardHeader>
-            <CardTitle className="text-white">Enterprise Licensing</CardTitle>
-            <CardDescription className="text-white/80">Business and organizational terms</CardDescription>
+            <CardTitle className="text-black">Enterprise Licensing</CardTitle>
+            <CardDescription>Business and organizational terms</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="space-y-3">
-              <div className="p-3 border-2 rounded-lg bg-transparent border-white/30 shadow-[0_0_10px_rgba(255,255,255,0.1)]">
-                <p className="font-medium text-sm text-white">Custom Agreements</p>
-                <p className="text-xs text-white/80">Available for large deployments</p>
+              <div className="p-3 border rounded-lg">
+                <p className="font-medium text-sm text-black">Custom Agreements</p>
+                <p className="text-xs text-black">Available for large deployments</p>
               </div>
-              <div className="p-3 border-2 rounded-lg bg-transparent border-white/30 shadow-[0_0_10px_rgba(255,255,255,0.1)]">
-                <p className="font-medium text-sm text-white">Volume Discounts</p>
-                <p className="text-xs text-white/80">Based on usage commitments</p>
+              <div className="p-3 border rounded-lg">
+                <p className="font-medium text-sm text-black">Volume Discounts</p>
+                <p className="text-xs text-black">Based on usage commitments</p>
               </div>
-              <div className="p-3 border-2 rounded-lg bg-transparent border-white/30 shadow-[0_0_10px_rgba(255,255,255,0.1)]">
-                <p className="font-medium text-sm text-white">SLA Guarantees</p>
-                <p className="text-xs text-white/80">Uptime and support commitments</p>
+              <div className="p-3 border rounded-lg">
+                <p className="font-medium text-sm text-black">SLA Guarantees</p>
+                <p className="text-xs text-black">Uptime and support commitments</p>
               </div>
-              <div className="p-3 border-2 rounded-lg bg-transparent border-white/30 shadow-[0_0_10px_rgba(255,255,255,0.1)]">
-                <p className="font-medium text-sm text-white">Indemnification</p>
-                <p className="text-xs text-white/80">IP protection clauses</p>
+              <div className="p-3 border rounded-lg">
+                <p className="font-medium text-sm text-black">Indemnification</p>
+                <p className="text-xs text-black">IP protection clauses</p>
               </div>
             </div>
           </CardContent>
         </Card>
 
-        <Card className="bg-transparent border-2 border-white/30 shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+        <Card>
           <CardHeader>
-            <CardTitle className="text-white">Data Ownership</CardTitle>
-            <CardDescription className="text-white/80">Who owns what data</CardDescription>
+            <CardTitle className="text-black">Data Ownership</CardTitle>
+            <CardDescription>Who owns what data</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="space-y-3">
-              <div className="p-3 bg-transparent border-2 rounded-lg border-white/30 shadow-[0_0_10px_rgba(255,255,255,0.1)]">
-                <p className="font-medium text-white text-sm">Your Input Data</p>
-                <p className="text-xs text-white/80">You retain full ownership</p>
+              <div className="p-3 bg-white border rounded-lg">
+                <p className="font-medium text-black text-sm">Your Input Data</p>
+                <p className="text-xs text-black">You retain full ownership</p>
               </div>
-              <div className="p-3 bg-transparent border-2 rounded-lg border-white/30 shadow-[0_0_10px_rgba(255,255,255,0.1)]">
-                <p className="font-medium text-white text-sm">Generated Output</p>
-                <p className="text-xs text-white/80">Typically assigned to you</p>
+              <div className="p-3 bg-white border rounded-lg">
+                <p className="font-medium text-black text-sm">Generated Output</p>
+                <p className="text-xs text-black">Typically assigned to you</p>
               </div>
-              <div className="p-3 bg-transparent border-2 rounded-lg border-white/30 shadow-[0_0_10px_rgba(255,255,255,0.1)]">
-                <p className="font-medium text-white text-sm">Model Weights</p>
-                <p className="text-xs text-white/80">Remain with AI provider</p>
+              <div className="p-3 bg-white border rounded-lg">
+                <p className="font-medium text-black text-sm">Model Weights</p>
+                <p className="text-xs text-black">Remain with AI provider</p>
               </div>
-              <div className="p-3 bg-transparent border-2 rounded-lg border-white/30 shadow-[0_0_10px_rgba(255,255,255,0.1)]">
-                <p className="font-medium text-white text-sm">Usage Analytics</p>
-                <p className="text-xs text-white/80">Shared or provider-owned</p>
+              <div className="p-3 bg-white border rounded-lg">
+                <p className="font-medium text-black text-sm">Usage Analytics</p>
+                <p className="text-xs text-black">Shared or provider-owned</p>
               </div>
             </div>
           </CardContent>
         </Card>
 
-        <Card className="bg-transparent border-2 border-white/30 shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+        <Card>
           <CardHeader>
-            <CardTitle className="text-white">Compliance Standards</CardTitle>
-            <CardDescription className="text-white/80">Regulatory adherence</CardDescription>
+            <CardTitle className="text-black">Compliance Standards</CardTitle>
+            <CardDescription>Regulatory adherence</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="space-y-2">
               <div className="flex items-center justify-between">
-                <span className="text-sm text-white">GDPR</span>
-                <Badge className="bg-primary/10 text-white">All</Badge>
+                <span className="text-sm text-black">GDPR</span>
+                <Badge className="bg-primary/10 text-black">All</Badge>
               </div>
               <div className="flex items-center justify-between">
-                <span className="text-sm text-white">CCPA</span>
-                <Badge className="bg-primary/10 text-white">All</Badge>
+                <span className="text-sm text-black">CCPA</span>
+                <Badge className="bg-primary/10 text-black">All</Badge>
               </div>
               <div className="flex items-center justify-between">
-                <span className="text-sm text-white">SOC 2</span>
-                <Badge className="bg-primary/10 text-white">Most</Badge>
+                <span className="text-sm text-black">SOC 2</span>
+                <Badge className="bg-primary/10 text-black">Most</Badge>
               </div>
               <div className="flex items-center justify-between">
-                <span className="text-sm text-white">HIPAA</span>
-                <Badge className="bg-muted text-white">Enterprise</Badge>
+                <span className="text-sm text-black">HIPAA</span>
+                <Badge className="bg-muted text-black">Enterprise</Badge>
               </div>
               <div className="flex items-center justify-between">
-                <span className="text-sm text-white">ISO 27001</span>
-                <Badge className="bg-primary/10 text-white">Major</Badge>
+                <span className="text-sm text-black">ISO 27001</span>
+                <Badge className="bg-primary/10 text-black">Major</Badge>
               </div>
             </div>
           </CardContent>
         </Card>
       </div>
 
-      <Card className="bg-transparent border-2 border-white/30 shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+      <Card>
         <CardHeader>
-          <CardTitle className="text-white">License Comparison Summary</CardTitle>
-          <CardDescription className="text-white/80">Key differences in licensing terms</CardDescription>
+          <CardTitle className="text-black">License Comparison Summary</CardTitle>
+          <CardDescription>Key differences in licensing terms</CardDescription>
         </CardHeader>
         <CardContent>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="p-4 bg-transparent border-2 rounded-lg border-white/30 shadow-[0_0_10px_rgba(255,255,255,0.1)]">
-              <h4 className="font-semibold text-white mb-2">Most Permissive</h4>
-              <p className="text-white mb-2">OpenAI GPT-4</p>
-              <p className="text-sm text-white/80">
+            <div className="p-4 bg-white border rounded-lg">
+              <h4 className="font-semibold text-black mb-2">Most Permissive</h4>
+              <p className="text-black mb-2">OpenAI GPT-4</p>
+              <p className="text-sm text-black">
                 Flexible commercial use with minimal restrictions on output usage
               </p>
             </div>
-            <div className="p-4 bg-transparent border-2 rounded-lg border-white/30 shadow-[0_0_10px_rgba(255,255,255,0.1)]">
-              <h4 className="font-semibold text-white mb-2">Most Ethical</h4>
-              <p className="text-white mb-2">Anthropic Claude</p>
-              <p className="text-sm text-white/80">
+            <div className="p-4 bg-white border rounded-lg">
+              <h4 className="font-semibold text-black mb-2">Most Ethical</h4>
+              <p className="text-black mb-2">Anthropic Claude</p>
+              <p className="text-sm text-black">
                 Strong ethical guidelines and constitutional AI principles
               </p>
             </div>
-            <div className="p-4 bg-transparent border-2 rounded-lg border-white/30 shadow-[0_0_10px_rgba(255,255,255,0.1)]">
-              <h4 className="font-semibold text-white mb-2">Enterprise Focus</h4>
-              <p className="text-white mb-2">Google Gemini</p>
-              <p className="text-sm text-white/80">
+            <div className="p-4 bg-white border rounded-lg">
+              <h4 className="font-semibold text-black mb-2">Enterprise Focus</h4>
+              <p className="text-black mb-2">Google Gemini</p>
+              <p className="text-sm text-black">
                 Strong enterprise integration and cloud service alignment
               </p>
             </div>
-            <div className="p-4 bg-transparent border-2 rounded-lg border-white/30 shadow-[0_0_10px_rgba(255,255,255,0.1)]">
-              <h4 className="font-semibold text-white mb-2">Open Alternative</h4>
-              <p className="text-white mb-2">Open Source Models</p>
-              <p className="text-sm text-white/80">
+            <div className="p-4 bg-white border rounded-lg">
+              <h4 className="font-semibold text-black mb-2">Open Alternative</h4>
+              <p className="text-black mb-2">Open Source Models</p>
+              <p className="text-sm text-black">
                 Consider Llama, Mistral for maximum license flexibility
               </p>
             </div>
