@@ -5,7 +5,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { SidebarProvider } from "@/components/ui/sidebar";
-import { ThemeProvider } from "next-themes";
 import Layout from "./components/Layout";
 import Index from "./pages/Index";
 import Performance from "./pages/Performance";
@@ -26,13 +25,12 @@ const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <SidebarProvider>
-            <Layout>
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
+      <BrowserRouter>
+        <SidebarProvider>
+          <Layout>
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/performance" element={<Performance />} />
@@ -52,8 +50,7 @@ const App = () => (
           </Layout>
         </SidebarProvider>
       </BrowserRouter>
-      </TooltipProvider>
-    </ThemeProvider>
+    </TooltipProvider>
   </QueryClientProvider>
 );
 

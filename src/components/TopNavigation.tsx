@@ -24,7 +24,6 @@ import {
   X,
 } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { ThemeToggle } from "./ThemeToggle";
 
 const TopNavigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -51,11 +50,10 @@ const TopNavigation = () => {
 
   if (isMobile) {
     return (
-      <div className="relative flex items-center gap-2">
-        <ThemeToggle />
+      <div className="relative">
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="text-foreground p-2 hover:opacity-80 transition-opacity"
+          className="text-white p-2 hover:text-white/80 transition-colors"
         >
           {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
@@ -139,7 +137,7 @@ const TopNavigation = () => {
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="text-foreground text-lg font-medium hover:opacity-80 transition-opacity bg-transparent border-none hover:bg-transparent data-[state=open]:bg-transparent data-[active]:bg-transparent focus:bg-transparent outline-none focus:outline-none">
+            <NavigationMenuTrigger className="text-white text-lg font-medium hover:text-white/80 transition-colors bg-transparent border-none hover:bg-transparent data-[state=open]:bg-transparent data-[active]:bg-transparent focus:bg-transparent outline-none focus:outline-none">
               Comparison Features
             </NavigationMenuTrigger>
             <NavigationMenuContent className="w-56 bg-white border border-gray-200 shadow-lg z-50 p-2 outline-none focus:outline-none">
@@ -163,7 +161,7 @@ const TopNavigation = () => {
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="text-foreground text-lg font-medium hover:opacity-80 transition-opacity bg-transparent border-none hover:bg-transparent data-[state=open]:bg-transparent data-[active]:bg-transparent focus:bg-transparent outline-none focus:outline-none">
+            <NavigationMenuTrigger className="text-white text-lg font-medium hover:text-white/80 transition-colors bg-transparent border-none hover:bg-transparent data-[state=open]:bg-transparent data-[active]:bg-transparent focus:bg-transparent outline-none focus:outline-none">
               Use Cases
             </NavigationMenuTrigger>
             <NavigationMenuContent className="w-56 bg-white border border-gray-200 shadow-lg z-50 p-2 outline-none focus:outline-none">
@@ -187,7 +185,7 @@ const TopNavigation = () => {
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="text-foreground text-lg font-medium hover:opacity-80 transition-opacity bg-transparent border-none hover:bg-transparent data-[state=open]:bg-transparent data-[active]:bg-transparent focus:bg-transparent outline-none focus:outline-none">
+            <NavigationMenuTrigger className="text-white text-lg font-medium hover:text-white/80 transition-colors bg-transparent border-none hover:bg-transparent data-[state=open]:bg-transparent data-[active]:bg-transparent focus:bg-transparent outline-none focus:outline-none">
               Tools
             </NavigationMenuTrigger>
             <NavigationMenuContent className="w-56 bg-white border border-gray-200 shadow-lg z-50 p-2 outline-none focus:outline-none">
@@ -210,7 +208,7 @@ const TopNavigation = () => {
       {/* News Link (no dropdown) */}
       <Link
         to="/ai-news"
-        className="text-foreground text-lg font-medium hover:opacity-80 transition-opacity outline-none focus:outline-none"
+        className="text-white text-lg font-medium hover:text-white/80 transition-colors outline-none focus:outline-none"
       >
         News
       </Link>
